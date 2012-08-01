@@ -1,0 +1,279 @@
+ModalDialog msimSIMULATION_OPTIONS_PANEL {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        HelpID = msimSIMULATION_SETTINGS;
+        Pos = MAP_SYSFONT( 0, 0 );
+        Size = MAP_SYSFONT( 100, 50 );
+        DeltaLang = < 12; 2; 227; 135; >;
+        DeltaLang[ ENGLISH_US ] = < 49; 38; 170; 115; >;
+        Text = "";
+        Text[ ENGLISH_US ] = "MSIM - Set Simulation Options: ";
+        Moveable = TRUE;
+        Edit msimSIMOPT_NUM_MOLS {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 178; 30; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 15; 15; -1; >;
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 10;
+                };
+        Edit msimSIMOPT_RECORD_INT {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 178; 45; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 27; 15; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 10;
+                };
+        Edit msimSIMOPT_RNDNOSEED {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 178; 58; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 39; 15; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 10;
+                };
+        Edit msimSIMOPT_NUMEVENTS {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 178; 16; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 70; 15; -1; >;
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 10;
+                };
+        Edit msimSIMOPT_ET_LIMIT_VALUE {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 178; 87; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 82; 15; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        RadioButton msimSIMOPT_EQUILDETENABLED {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 5; 121; 5; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 115; 5; -1; >;
+                        Text = "~Enabled";
+                        Text[ ENGLISH_US ] = "~Enabled";
+                        TabStop = TRUE;
+                        Group = TRUE;
+                };
+        RadioButton msimSIMOPT_EQUILDET_DISABLED {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 5; 135; 5; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 127; 5; -1; >;
+                        Text = "D~isabled";
+                        Text[ ENGLISH_US ] = "D~isabled";
+                        TabStop = TRUE;
+                };
+        Edit msimSIMOPT_CYCLECOUNT {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 173; 120; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 114; 15; -1; >;
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 10;
+                };
+        Edit msimSIMOPT_MINEFF {
+                        Border = TRUE;
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 173; 133; 15; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 172; 126; 15; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        OKButton msimSIMOPT_CLOSE {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 8; 151; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 148; Default; -1; >;
+                        Text = "~OK";
+                        Text[ ENGLISH_US ] = "~OK";
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        DefButton = TRUE;
+                };
+        PushButton msimSIMOPT_DEFAULTS {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 62; 151; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 52; 148; Default; -1; >;
+                        Text = "~Defaults";
+                        Text[ ENGLISH_US ] = "~Defaults";
+                        TabStop = TRUE;
+                };
+        PushButton msimSIMOPT_UNDO {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 118; 150; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 100; 148; Default; -1; >;
+                        Text = "~Undo";
+                        Text[ ENGLISH_US ] = "~Undo";
+                        TabStop = TRUE;
+                };
+        HelpButton msimSIMOPT_HELP {
+                        HelpID = msimSIMULATION_SETTINGS;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < 172; 151; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 148; 148; Default; -1; >;
+                        Text = "~Help";
+                        Text[ ENGLISH_US ] = "~Help";
+                        TabStop = TRUE;
+                };
+        FixedText 1 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 20; 18; 115; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 13; 71; 115; -1; >;
+                        Text = "Total number of events: ";
+                        Text[ ENGLISH_US ] = "Stop when total number of events exceeds: ";
+                        Right = TRUE;
+                };
+        FixedText 2 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 20; 32; 115; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 13; 16; 115; Default; >;
+                        Text = "Total number of molecules: ";
+                        Text[ ENGLISH_US ] = "Total number of molecules: ";
+                        Right = TRUE;
+                };
+        FixedText 3 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 20; 46; 115; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 13; 28; 115; Default; >;
+                        Text = "Record state at intervals of: ";
+                        Text[ ENGLISH_US ] = "Record state at intervals of: ";
+                        Right = TRUE;
+                };
+        FixedText 5 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 20; 60; 115; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 13; 40; 115; Default; >;
+                        Text = "Random number seed: ";
+                        Text[ ENGLISH_US ] = "Random number seed: ";
+                        Right = TRUE;
+                };
+        FixedText 6 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 66; 134; 64; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 64; 127; 64; Default; >;
+                        Text = "Selection frequency: ";
+                        Text[ ENGLISH_US ] = "Selection frequency: ";
+                        Right = TRUE;
+                };
+        FixedText 7 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 20; 87; 115; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 13; 83; 115; -1; >;
+                        Text = "Stop when simulation time exceeds: ";
+                        Text[ ENGLISH_US ] = "Stop when time in simulation exceeds: ";
+                        Right = TRUE;
+                };
+        FixedText 8 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 235; 46; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 230; 28; -8; Default; >;
+                        Text = "events";
+                        Text[ ENGLISH_US ] = "events";
+                        Left = TRUE;
+                };
+        FixedText 9 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 66; 122; 64; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 64; 115; 64; Default; >;
+                        Text = "Equil. test cycle length: ";
+                        Text[ ENGLISH_US ] = "Equil. test cycle length: ";
+                        Right = TRUE;
+                };
+        FixedText msimSIMOPT_ET_LIMITS_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 235; 88; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 230; 83; -6; -1; >;
+                        Text = "?";
+                        Text[ ENGLISH_US ] = "sec";
+                        Left = TRUE;
+                };
+        FixedText 12 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 230; 122; -10; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 230; 115; -10; Default; >;
+                        Text = "events";
+                        Text[ ENGLISH_US ] = "events";
+                        Left = TRUE;
+                };
+        FixedText 13 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < 230; 135; -10; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 230; 127; -10; Default; >;
+                        Text = "percent";
+                        Text[ ENGLISH_US ] = "percent";
+                        Left = TRUE;
+                };
+        GroupBox 1 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 24 );
+                        DeltaLang = < 3; 1; 234; 79; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 4; 222; 28; >;
+                        Text = "General Settings";
+                        Text[ ENGLISH_US ] = "General Settings";
+                };
+        GroupBox 2 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 24 );
+                        DeltaLang = < 4; 107; 234; 19; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 104; 222; 14; >;
+                        Text = "Equilibrium Detect";
+                        Text[ ENGLISH_US ] = "Equilibrium Detect";
+                };
+        GroupBox 3 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 32, 20 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 62; 230; 16; >;
+                        Text = "GroupBox";
+                        Text[ ENGLISH_US ] = "Limits";
+                };
+};
+

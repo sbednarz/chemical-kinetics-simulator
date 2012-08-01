@@ -1,0 +1,37 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "popup.hrc"
+WarningBox vID_POPUP_OUT_OF_MEMORY {
+	Message = "Insufficient memory...\nClose an application or window, and repeat the l"
+"ast operation.";
+};
+WarningBox vID_POPUP_PRINTER_BUSY {
+	Message = "The printer is already active.";
+};
+ErrorBox vID_POPUP_PRINTJOB_FAILED_TO_END {
+	Message = "The print job did not successfully complete.";
+};
+ErrorBox vID_POPUP_SIMULATOR_ABORT_FAILED {
+	Message = "The simulation was NOT successfully aborted.";
+};
+InfoBox vID_POPUP_SOURCE_TARGET_COLLISION {
+	Message = "The source and target cannot be the same compartment";
+};
+InfoBox vID_POPUP_NO_UNCONSTRAINED_DIR {
+	Message = "The Variable Volume option requires the selection of at least one dimens"
+"ion that can vary. Either set one or more dimensions as variable, or sel"
+"ect the Constant Volume option.";
+};
+InfoBox vID_POPUP_ALL_CONCENTRATIONS_ZERO {
+	Message = "All initial concentrations are zero. Simulation cannot start";
+};
+InfoBox vID_POPUP_SAVE_UNNAMED_PROFILE {
+	Buttons = WB_YES_NO_CANCEL;
+	Message = "The profile data have been altered. Do you want to save the "
+"modified data?\n\nSelect Yes to save the data. Select No to discard "
+"the data. Select CANCEL to end this operation.";
+};
+WarningBox vID_POPUP_INVALID_SPECIES_SELECTION {
+	Message = "The current species selection is invalid. Correct the selection"
+" and try this operation again.";
+};

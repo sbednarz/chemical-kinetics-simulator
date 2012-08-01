@@ -1,0 +1,137 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "create2d.hrc"
+ModalDialog vID_DLG_CREATE_2D_ARRAY {
+	OutputSize = TRUE;
+	Pos = MAP_SYSFONT( 36, 11 );
+	Size = MAP_SYSFONT( 212, 178 );
+	Text = "Create a 2-D compartment array";
+	Moveable = TRUE;
+	Closeable = TRUE;
+	OKButton vID_OK_BTN {
+			Pos = MAP_SYSFONT( 5, 161 );
+			Size = MAP_SYSFONT( 32, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+		};
+	CancelButton vID_CANCEL_BTN {
+			Pos = MAP_SYSFONT( 42, 161 );
+			Size = MAP_SYSFONT( 32, 11 );
+			Text = "~Cancel";
+			TabStop = TRUE;
+		};
+	HelpButton vID_HELP_BTN {
+			Pos = MAP_SYSFONT( 115, 161 );
+			Size = MAP_SYSFONT( 32, 11 );
+			TabStop = TRUE;
+		};
+	PushButton vID_DEFAULTS_BTN {
+			Pos = MAP_SYSFONT( 78, 161 );
+			Size = MAP_SYSFONT( 32, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 6, 41 );
+			Size = MAP_SYSFONT( 41, 18 );
+			Text = "Overall height of array is";
+			Center = TRUE;
+		};
+	Window vID_WINDOW_SCHEMATIC {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 53, 16 );
+			Size = MAP_SYSFONT( 106, 93 );
+			Text = "";
+		};
+	Edit vID_EDIT_ARRAY_HEIGHT_LENGTH {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 10, 58 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_HEIGHT_LENGTH_UNITS {
+			Pos = MAP_SYSFONT( 10, 71 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "length units";
+			Center = TRUE;
+		};
+	FixedText 3 {
+			Pos = MAP_SYSFONT( 15, 4 );
+			Size = MAP_SYSFONT( 72, 8 );
+			Text = "Overall width of array is";
+			Right = TRUE;
+		};
+	Edit vID_EDIT_ARRAY_WIDTH_LENGTH {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 4 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_WIDTH_LENGTH_UNITS {
+			Pos = MAP_SYSFONT( 123, 4 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "length units";
+			Left = TRUE;
+		};
+	FixedText 5 {
+			Pos = MAP_SYSFONT( 7, 113 );
+			Size = MAP_SYSFONT( 80, 8 );
+			Text = "Array will have";
+			Right = TRUE;
+		};
+	Edit vID_EDIT_ARRAY_WIDTH_NUMBER {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 112 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	FixedText 6 {
+			Pos = MAP_SYSFONT( 165, 49 );
+			Size = MAP_SYSFONT( 41, 10 );
+			Text = "Array will have";
+			Center = TRUE;
+		};
+	Edit vID_EDIT_ARRAY_HEIGHT_NUMBER {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 169, 58 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_STATISTICS_2 {
+			Pos = MAP_SYSFONT( 10, 143 );
+			Size = MAP_SYSFONT( 194, 8 );
+			Text = "Each cell is 000000 length units  wide and 000000 length units  high";
+			Left = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 6, 127 );
+			Size = MAP_SYSFONT( 202, 28 );
+			Text = "Statistics";
+		};
+	FixedText vID_STEXT_STATISTICS_1 {
+			Pos = MAP_SYSFONT( 9, 134 );
+			Size = MAP_SYSFONT( 194, 8 );
+			Text = "This scheme will contain 000 compartments and 000 transfer paths";
+			Left = TRUE;
+		};
+	FixedText 9 {
+			Pos = MAP_SYSFONT( 123, 113 );
+			Size = MAP_SYSFONT( 86, 8 );
+			Text = "cells in the horizontal direction";
+			Left = TRUE;
+		};
+	FixedText 10 {
+			Pos = MAP_SYSFONT( 165, 71 );
+			Size = MAP_SYSFONT( 41, 16 );
+			Text = "cells in the vertical direction";
+			Center = TRUE;
+		};
+};

@@ -1,0 +1,97 @@
+--- OVERALL ARCHITECTURE - VSIM User interface ---
+
+W. Hinsberg 
+last updated 2.28.95
+
+
+--- utility classes ---
+
+class SPECIES_ID
+     * a simple class defined to provide strong type-checking on the assignment and 
+       comparison of unique species identifiers
+
+class SpeciesDatabase
+     * a list of all the species used within the reaction scheme along with their 
+       physical properties such as density, state and thermochemical coefficients
+     * provides a means of assigning unique integer ID's to each species used in 
+       a reaction scheme
+     * only the SpeciesDatabase can assign SPECIES_ID values
+     * SPECIES_ID values can be retrieved for any species by public methods
+
+class NumericString
+     * derived from StarView String class
+     * provides capability of testing that a character string is a valid representation
+       of numeric type with specific range and type characteristics
+     * provides output of flt pt 
+
+
+
+
+-- fundamental classes --- 
+
+class MainAppplication 
+     * MDI application
+     * contains a set of MDI windows as class SchemeWindow
+     * controls application menu, some utility functions such as child wnidow positioning
+
+class MainWindow
+     * the main application window
+     * controls user interface elements such as toolbar and status bar
+
+class SchemeWindow
+     * container for an entire reaction scheme
+     * contains 
+          - name of the reaction scheme
+          - list of compartments
+          - list of transfer objects connecting compartments
+          - visual and program elements for adding. moving, deleting compartments and xfer objects
+     * contains a SpeciesDatabase object which is a list of all the species used within the 
+       reaction scheme along with their physical properties such as density, state and 
+       thermochemical coefficients
+     * contains info on the user-selected simulation settings 
+
+class ProcessObject  
+     * virtual base class for CompartmentObject and TransferObject
+     * provides common functionality eg graphicak elements, position, internal state, etc
+
+class CompartmentObject
+     * derived from ProcessObject
+     * represents a physically isolated chamber within which a set of species are contained
+       and within which reaction can occur
+     * can have attached to it zero or more TrasnferObjects
+     * contains list of Reactions
+     * contains list of Species and concentrations
+     * contains a list of TransferObjects connected to it
+     * contains specific functions describing how a Compartment Object draws itself
+
+class TransferObject
+     * derived from ProcessObject
+     * represents a pathway through which species can be transferred from one CompartmentObejct 
+       to another
+     * must be attached to exactly two Compartment Objects
+     * contains specific functions describing how a Transfer Object draws itself
+     * contains info on what species are transferred, in what directions, and the 
+       rate law governing the transfer 
+
+class CompartmentSpeciesList
+     * contains a list of all the species in a compartment, each with its name, initial 
+       concentration and its unique global species identifier
+     * has means to acquire unique global species identifier from SchemeWindow
+
+class Component
+     * contains information about a specific reactant or product ( a "component" )
+       in a reaction step 
+     * info is : species name, stoichiometric coefficient, rate law exponent, and 
+       the unique global species identifier ( obtained from SpeciesDatabase )
+
+class Reaction
+     * contains information describing a reaction step in a mechanism
+     * contains :
+          - the text of the equation
+          - list of reactant Components
+          - list of product Components
+          - forward and reverse activiation parameters
+          - method for evaluating and reporting on correct equation syntax
+          - internal state information
+
+

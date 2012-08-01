@@ -1,0 +1,3 @@
+/* StarView ressource header file */
+#define vID_WIN_CREATE3D_STATUS     3333
+#define vID_STEXT_CURRENT_OP        2

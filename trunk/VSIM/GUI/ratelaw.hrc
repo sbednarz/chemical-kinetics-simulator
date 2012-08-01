@@ -1,0 +1,27 @@
+#define vID_DLG_RATE_LAW  1300
+#define vID_STEXT_FWD_SPECIES_1     1
+#define vID_STEXT_FWD_SPECIES_2     2
+#define vID_STEXT_FWD_SPECIES_3     3
+#define vID_STEXT_FWD_SPECIES_4     4
+#define vID_STEXT_REV_SPECIES_1     5
+#define vID_STEXT_REV_SPECIES_2     6
+#define vID_STEXT_REV_SPECIES_3     7
+#define vID_STEXT_REV_SPECIES_4     8
+#define vID_STEXT_FWD_K             9
+#define vID_STEXT_REV_K            10
+#define vID_EF_FWD_EXPONENT_1       1  
+#define vID_EF_FWD_EXPONENT_2       2
+#define vID_EF_FWD_EXPONENT_3       3
+#define vID_EF_FWD_EXPONENT_4       4
+#define vID_EF_REV_EXPONENT_1       5
+#define vID_EF_REV_EXPONENT_2       6
+#define vID_EF_REV_EXPONENT_3       7
+#define vID_EF_REV_EXPONENT_4       8
+#define vID_GB_FWD_RATE_LAW         1
+#define vID_GB_REV_RATE_LAW         2
+#define vID_BTN_OK                  1
+#define vID_BTN_UNDO                1
+#define vID_BTN_DEFAULTS            2
+#define vID_BTN_HELP                1
+
+

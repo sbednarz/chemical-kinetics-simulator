@@ -1,0 +1,97 @@
+;*******************************************************************
+;*  MSIM.HPJ
+;*  Author : Bill Hinsberg
+;*  last modified 5/26/95           
+;*******************************************************************
+
+; use this hpj file to build the help files for all CKS online help
+;
+; WIN 3.1 : (1) run "hc msim"; (2) run "copy msim.hlp cks.hlp"
+;
+; OS/2    : (1) run "toipf msim"; (2) edit msim.ipf and change all 
+;           instances of facename='Helv'" to "facename='default'";
+;           (3) run "ipfc msim.ipf" from the \bcos2\ipfc directory
+;           since ipfc needs some include files found there; (4)
+;           "copy msim.hlp cks.hlp"
+;
+; MAC     : ...
+; 
+; AIX     : ...  
+;
+;
+
+
+; in the StarView Help compiler for MAC/AIX the word INDEX is used instead of CONTENTS
+
+[OPTIONS]
+CONTENTS=SUBJECTS
+
+; note : the SV help compiler does not accept the #defines used in 
+; msim.hhc. If I remove the 'msim' prefix from the ID's then it 
+; accepts the names without problems. That's why these things
+; are all defined again here with the same names as in msim.hhc
+; but no 'msim...' prefix 
+
+
+; [FILES] section: the rtf file mainhelp.rtf contains all the
+; help source common to all platforms. The files winhelp.rtf, 
+; machelp.rtf and aixhelp.rtf contain platform-specific help source
+;
+; For OS/2, use the winhelp.rtf module. 
+
+[FILES]
+mainhelp.rtf
+winhelp.rtf
+
+
+[MAP]
+#define OVERVIEW 140
+#define MAIN_WINDOW 141
+#define MAIN_MENU 142
+#define TUTORIAL 143
+#define CONVENTIONS 144
+#define MENU_FILE 145
+#define FILE_PREFERENCES 146
+#define FILE_CREATE 147
+#define FILE_SELECTION 148
+#define UNITS 149
+#define LISTBOXES 150
+#define MENU_EDIT 151
+#define REACTION_DATA_ENTRY 152
+#define REACTION_CONDITIONS 153
+#define SPECIES_DATA 154
+#define NOTEBOOK 155
+#define REACTION_STEP 156
+#define RATE_CONSTANTS 157
+#define RATE_LAW 158
+#define RATE_LAW_EDIT 159
+#define VOLUME 160
+#define TEMPERATURE 161
+#define TEMPERATURE_LINEAR 162
+#define SUBJECTS 163
+#define TEMPERATURE_EXTPROF_EDIT 164
+#define VERIFY_SPECDATA 165
+#define VERIFY_SPECCONC 166
+#define MENU_SIMULATION 167
+#define SIMULATION_SETTINGS 168
+#define QUEUE 169
+#define SIMULATION_STATUSWIN 170
+#define EQUILIBRIUM_DETECT 171
+#define MENU_RESULTS 172
+#define PLOT_SELECT 173
+#define EXTERNAL_DATA 174
+#define PLOTWIN 175
+#define PLOTWIN_AXES 176
+#define PLOTWIN_ATTRIBUTES 177
+#define PLOTWIN_SAVE 178
+#define DEFINITION_DOUBLE_CLICK 179
+#define DEFINITION_DRAG_AND_DROP 180
+#define DEFINITION_PUSHBUTTONS 181
+#define PLOTWIN_PRINT 182
+#define MAIN_RXNLIST_HELP 183
+#define MAIN_BTNS_HELP     184
+#define HELPINDEX_MENU_ITEM  185
+#define TEMPERATURE_CONSTANT  186
+#define TEMPERATURE_VARIABLE  187
+#define MENU_VIEW              188
+

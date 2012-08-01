@@ -1,0 +1,46 @@
+#include "childapp.hrc"
+
+String vID_STR_CHILD_UNKNOWN_ERROR {
+        Text = "unknown error";
+};
+String vID_STR_CHILD_ABORT {
+        Text = "application aborted";
+};
+String vID_STR_CHILD_FILE_ERROR {
+        Text = "file error";
+};
+String vID_STR_CHILD_SEG_VIOLATION {
+        Text = "segment violation";
+};
+String vID_STR_CHILD_MATH_ERROR {
+        Text = "math error";
+};
+String vID_STR_CHILD_ILLEGAL_INSTR {
+        Text = "illegal instruction";
+};
+String vID_STR_CHILD_INPUT_ERROR {
+        Text = "input error";
+};
+String vID_STR_CHILD_MEM_ALLOC_ERROR {
+        Text = "memory allocation error";
+};
+String vID_STR_CHILD_COMMANDLINE_ERROR {
+        Text = "command line error";
+};
+String vID_STR_CHILD_IPC_ERROR {
+        Text = "interprocess communication error";
+};
+String vID_STR_CHILD_ERR_MSG_PART1 {
+     Text = "Fatal error : ";
+};
+String vID_STR_CHILD_ERR_MSG_PART2 {
+     Text = "\n  module : ";
+};
+String vID_STR_CHILD_ERR_MSG_PART3 {
+     Text = "\n  line number : ";
+};
+String vID_STR_CHILD_ERR_MSG_PART4 {
+     Text = "\n  time stamp : ";
+};
+
+          

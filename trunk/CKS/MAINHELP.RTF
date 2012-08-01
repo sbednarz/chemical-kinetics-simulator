@@ -1,0 +1,2153 @@
+{\rtf1\ansi \deff6
+
+
+{\fonttbl
+{\f0\froman Times New Roman;}
+{\f1\froman Symbol;}
+{\f2\fswiss Arial;}
+{\f3\froman Tms Rmn;}
+{\f4\fswiss Helv;}
+{\f5\fmodern Courier;}
+{\f6\fswiss Helvetica;}
+}
+
+{\colortbl
+\red0\green0\blue0;
+}
+
+
+#{\footnote {\fs16\up6 #} OVERVIEW}
+${\footnote {\fs16\up6 $} Overview of Chemical Kinetics Simulator (CKS)}
+K{\footnote {\fs16\up6 K} Overview}
++{\footnote {\fs16\up6 +} Help:005}
+\plain\b\fs22 Overview of Chemical Kinetics Simulator (CKS)\plain \par
+\par
+\par
+\plain \fs22 The Chemical Kinetics Simulator (CKS) provides a rapid, interactive 
+method to simulate chemical reaction mechanisms. It lets you create detailed 
+models of a wide range of reactions, without requiring additional programming.  
+You can model homogeneous systems and also, using simple techniques, a variety 
+of inhomogeneous systems. CKS uses a 
+{\ul stochastic}{\v DEFINITION_STOCHASTIC}  method, based on 
+reaction probabilities, to calculate the time history of a chemical system using 
+the reaction's 
+mechanism and the initial conditions you specify. It treats the reacting system 
+as a volume filled with a limited number of 
+{\ul particles}{\v DEFINITION_PARTICLE}  which represent reactants and products. \par
+\par
+
+\plain \b\fs22 Using Chemical Kinetics Simulator (CKS)\plain \fs22 \par
+CKS makes it easy for you to input data and display results. Since the simulation engine can run 
+as a background process within the program you can use CKS to set up simulations and examine 
+data from previous calculations while running a simulation.\par
+\par
+CKS only requires basic information:  the reaction mechanism and kinetics, initial concentrations, 
+reaction conditions, and several simulator setup parameters. You enter the reaction mechanism in 
+conventional chemical notation, with complete flexibility in how you represent reaction species. You 
+can select reaction conditions to be any physically realistic combination of constant, variable and 
+programmed temperature, constant and variable volume, and constant and variable pressure. If 
+reversible steps in the mechanism come into equilibrium, a situation which is often handled 
+inefficiently by stochastic techniques, an equilibrium detection and emulation option lets you 
+minimize the computer calculation time. CKS provides you with a notebook for each reaction file so 
+you can keep written records as you develop and test a mechanism.\par
+\par
+
+\plain \b\fs22 Simulation results\plain \fs22 \par
+Once a simulation is complete, you select the types of data plots to display. You can choose up to 
+four plots of concentration, temperature, pressure and volume vs. time, and concentration, pressure 
+and volume vs. temperature, depending on the run conditions. You may also import a data set to 
+overlay onto the simulation results. You can print the plot window directly to an attached printer, 
+prepare tables of data to be saved for further analysis, or save it in PostScript or Hewlett-Packard 
+Graphics Language format for export to other applications, or direct high resolution output. A text 
+summary of your reaction, including the mechanism, species data, simulator and reaction conditions, 
+and your notebook text, can be prepared automatically; you can view or print it with any ordinary 
+text editor. \par
+\par
+\par
+\plain \b\fs22 Other Topics to help you get started:\plain \fs22 \par
+
+\pard \fi720 \plain \fs22
+{\uldb How to Run a Simulation : a quick tutorial}{\v TUTORIAL}\par
+{\uldb Using the Main Window}{\v MAIN_WINDOW}\par
+{\uldb Using the Main Menus}{\v MAIN_MENU}\par
+{\uldb Conventions used in CKS Help}{\v CONVENTIONS}\par
+\pard\page 
+
+#{\footnote {\fs16\up6 #} MAIN_WINDOW}
+${\footnote {\fs16\up6 $} Using the Main Window}
+K{\footnote {\fs16\up6 K} Main Window;listbox;help line;}
++{\footnote {\fs16\up6 +} Help:015}
+\b\fs22 Using the Main Window\plain \par
+\par
+\par
+\plain \fs22 
+All of CKS's functions are accessed through the main window. 
+It contains information on the currently active reaction scheme, whose 
+reaction steps are displayed in the 
+{\ul reaction listbox}{\v DEFINITION_REACTION_LISTBOX} .  The 
+reaction scheme and associated reacton conditions can be entered and modified using the main 
+menu bar and 
+{\ul pushbuttons}{\v DEFINITION_PUSHBUTTON} . The help line prompts the next action depending  
+on what is currently highlighted.
+\par
+\par
+\plain \b\fs22 Menu bar\plain \fs22 \par
+When you click on a command from the main menu bar, another menu is displayed.  This 
+{\ul pull-down menu}{\v DEFINITION_PULL_DOWN_MENU}  gives you access to another set of commands 
+and windows.  The six pull-down menus which 
+control CKS's functions are {\b File}, {\b Edit}, {\b View}, {\b Simulation}, {\b Results} 
+and {\b Help}.
+\par
+\par
+\plain \b\fs22 Current Reaction Scheme\plain \fs22 \par
+This area tells you the name and sequence number of the current file, its processing status, the  
+amount of computer time the most recent simulation took and the number of data points generated, 
+the number of reaction steps, and the total number of reaction species.\par
+\par
+\plain \b\fs22 Reaction list\plain \fs22 \par
+The reaction listbox displays all of the reaction steps defined for the current reaction scheme.  Click 
+on a reaction step to highlight it.  Double-click on a step to open its Reaction Data Entry window.\par
+\par
+\plain \b\fs22 Pushbuttons\plain \fs22 \par
+The pushbuttons at the bottom of the window affect the highlighted reaction step. 
+{\b [Add Step...]} 
+adds a blank line to the reaction list immediately below the highlighted one and the Reaction Data 
+Entry window opens automatically.  {\b [Edit Step...]} opens the Reaction Data Entry window for this 
+step.  {\b [Delete Step...]} deletes this step. \plain {\i This cannot be undone}. \par
+\par
+\plain \b\fs22 Help line\plain \fs22 \par
+The help line, located at the bottom of the window, gives you more information about the part of the 
+main window your cursor is currently resting on, or the menu item you have just clicked.\par
+\par
+\par
+\plain \b\fs22 Other relevant topics:\plain \fs22 \par
+\pard \fi720
+{\uldb Using the Main Menus\plain}{\v MAIN_MENU}\par
+
+\par \pard\page 
+
+
+#{\footnote {\fs16\up6 #} MAIN_MENU}
+${\footnote {\fs16\up6 $} Using the Main Menus}
+K{\footnote {\fs16\up6 K} Main Menu}
++{\footnote {\fs16\up6 +} Help:020}
+\plain \fs22 \plain \b\fs22  \plain \b Using the Main Menus\plain \fs22 \par
+\par
+\par
+\plain \fs22 The File, Edit, Simulation, Results and Help menus let you access all of CKS's options and 
+functions.\par
+\par
+The 
+{\b File} menu allows you to create, save and retrieve reaction files which contain all of your data 
+for a particular simulation.\par
+\par
+The {\b Edit} menu lets you enter and edit a reaction mechanism, reaction species data, and any 
+explanatory notebook text.  It becomes active when a reaction scheme has been created or loaded 
+from disk.\par
+\par
+The {\b Simulation} menu allows you to select the operating conditions for the CKS simulator, and to 
+run the simulation.\par
+\par
+The {\b Results} menu displays the data from the simulation.  It is only available after a simulation of 
+the current reaction scheme has been performed.  You may also view the results of a reaction that 
+was run previously and saved, unless the reaction data are modified after the simulation.\par
+\par
+The {\b Help} menu gives you information on using CKS's help system, an overview of CKS, and the 
+basic procedure for simulating a chemical reaction.\par
+\par
+\par
+\par
+\pard 
+\plain \b\fs22  For more information, look at the following topics:\plain \fs22 \par
+\pard \fi720\sl0
+{\uldb Using the File Menu}{\v MENU_FILE}\par
+{\uldb Using the Edit Menu}{\v MENU_EDIT}\par
+{\uldb Using the View Menu}{\v MENU_VIEW}\par
+{\uldb Using the Simulation Menu}{\v MENU_SIMULATION}\par
+{\uldb Using the Results Menu}{\v MENU_RESULTS}\par
+{\uldb Conventions Used in CKS Help}{\v CONVENTIONS}\par
+\par \pard
+\page 
+
+
+#{\footnote {\fs16\up6 #}TUTORIAL}
+${\footnote {\fs16\up6 $}How to Run a Simulation}
+K{\footnote {\fs16\up6 K}simulation;tutorial}
++{\footnote {\fs16\up6 +}Help:010}
+\b\fs22 How to Run a Simulation :  a quick tutorial \plain \fs22 \par
+\pard 
+\par
+\par
+\pard \sl0 
+{\b 1. Open the Reaction File} \par
+\par
+Select {\b File|Create...}.  Two dialog windows will appear.  At the first, specify a name and location for the 
+reaction scheme. The default location for the 
+reaction files can be set by selecting {\b File|Preferences...}.  At the second window, select the time, 
+energy, concentration and volume units to be used for data input and output.  {\i This is the only time 
+the units can be specified for a file.} \par
+\par
+\par
+{\b 2. Enter the Reaction Mechanism.} \par
+\par
+Click the {\b [Add Step...]} pushbutton at the main window.  The Reaction Data Entry window opens 
+so that you may enter an individual reaction step in conventional chemical notation, along with its 
+rate constants and rate law.  You can also open this window by selecting {\b Edit|Reaction 
+Scheme...}.  More detailed help is available at this window.\par
+\par
+
+\par
+{\b 3. Enter the Reaction Conditions.} \par
+\par
+Select {\b Edit|Reaction Conditions...}.  At this window, you enter initial concentrations for species 
+present in the system. Use the radio buttons to choose the reaction condition options:  constant or 
+variable temperature, pressure or volume, or programmed temperature.  More detailed help is 
+available at this window. \par
+\par
+
+\par
+{\b 4. Enter Species Data (for variable temperature and volume simulations).} \par
+\par
+Various physical data for species present in the reacting system are required if variable 
+temperature and/or variable volume conditions are selected.  Select 
+{\b Edit|Species Data...} to input 
+data such as heats of formation, heat capacities and molar densities.  More detailed help is 
+available at this window.  \par
+\par
+\par
+{\b\ 5. Enter simulation parameters.} \par
+\par
+
+Select {\b Simulation|Simulation Settings...} .  The parameters you can set here include the number 
+of {\ul particles}{\v DEFINITION_PARTICLE}  used to represent chemical species in the simulation, 
+the number of {\ul events}{\v DEFINITION_EVENT} , the 
+interval at which the status of the system is to be saved, an optional flag to stop the simulation at 
+a particular time in the reaction, the 
+{\ul random number seed}{\v DEFINITION_RANDOM_NUMBER_SEED}  for propagation of the simulation, and 
+parameters specific to simulations of equilibria and variable temperature reactions.  More detailed  
+help is available at this window.  \par
+\par
+
+\par
+{\b 6. Run the Simulation.} \par
+\par
+Start the simulation by selecting {\b Simulation|Start}.  A window showing the status of the simulation 
+will open.  While the simulation is in progress, you may not edit the currently active simulation file, 
+but you can examine the results of a previous simulation or enter a new reaction scheme.\par
+\par
+
+\par
+{\b 7. End the Simulation.} \par
+\par
+
+The simulation will stop when it has reached the "Total number of events" or the maximum 
+simulation time defined in Step 5 above, or when all event probabilities are zero.  The simulation 
+can be interrupted at any time without data loss by clicking the  
+{\b Stop Simulation} pushbutton.  If 
+you then look at the simulation results (Step 8) and decide to continue the simulation, restart the 
+simulation by selecting {\b Simulation|Resume}. \par
+\par
+
+\par
+{\b 8. Display the Simulation Results.} \par
+\par
+
+You can view the results of the simulation by selecting 
+{\b Results|Plot Results...}.  This activates a 
+dialog window that allows you to select among a variety of options for plotting the simulated data.  
+After you choose the data, click the {\b [Plot]}  pushbutton to display the plot.  The plot window 
+contains pushbuttons which additional menu options for display and export of data.  More detailed 
+help is available at both the Simulation Results and the X/Y Plot window.  \par
+\par
+
+\par
+\par \pard
+\page 
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}MENU_FILE}
+${\footnote {\fs16\up6 $}Using the File Menu}
+K{\footnote {\fs16\up6 K}File Menu;slot;reaction file slot;}
++{\footnote {\fs16\up6 +}Help:025}
+\plain \b\fs22  Using the File Menu\plain \fs22 \par
+\par
+The {\b File} menu allows you to create, save and retrieve reaction files which contain all of your data 
+for a particular simulation.\par
+\par
+{\b Opening, saving and closing reaction files} \par
+You begin working with CKS by opening or creating a reaction file: select either 
+{\b Open...} or 
+{\b Create...} from this menu.  The file will be placed in the next available reaction file 
+{\ul slot}{\v DEFINITION_SLOT} . Once your 
+file is open, and you begin to modify it, you can save your changes by selecting either 
+{\b Save} or {\b\ Save As...}.  When you are ready to close the file, select 
+{\b Close} .  When you select Open..., Create... or 
+Save As..., a file selection window opens where you can specify the name and location of your 
+reaction file.  Default application options for the 
+{\ul file selection search templates}{\v DEFINITION_FILE_SEARCH_TEMPLATE}  can be set using the 
+{\b Preferences} option.\par
+\par
+{\b Making a text summary of your reaction file} \par
+CKS can create a text file in a standardized format which lists the reaction file name, each reaction 
+step with its accompanying rate data, each reaction species and its initial concentration and species 
+data, the reaction conditions, and the simulation conditions.  This file can be read with a 
+conventional text editor or browser, and printed.  To make or update a text summary, select 
+{\b Make Text Summary...}.  A file selection window opens.  When you have entered the filename and 
+directory, click {\b [OK]}.  The file name and time of creation are noted at the top of the text file.\par
+\par
+\plain \b\fs22 Exiting CKS\plain \fs22 \par
+To end your CKS session, select {\b Exit}. You will be asked whether you want to save any reaction 
+schemes which have been modified since they were last saved.\par
+\par
+\par
+\plain \b\fs22 Other related topics:\plain \fs22 \par
+\pard \fi720\sl0
+{\uldb Setting Application Options}{\v FILE_PREFERENCES}\par
+{\uldb Creating Reaction Files}{\v FILE_CREATE} \par
+{\uldb File Selection Windows}{\v FILE_SELECTION}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+\pard \sl0 
+
+
+
+
+#{\footnote {\fs16\up6 #}MENU_VIEW}
+${\footnote {\fs16\up6 $}Using the View Menu}
+K{\footnote {\fs16\up6 K}View Menu;slot;reaction file slot;}
++{\footnote {\fs16\up6 +}Help:028}
+\plain \b\fs22  Using the View Menu\plain \fs22 \par
+\par
+The {\b View} menu allows you to display an open reaction file. A list of the nine reaction file 
+{\ul slots}{\v DEFINITION_SLOT}, and the 
+names of any files loaded in them, are displayed.  Select a reaction file by clicking on it.  The 
+reaction file is displayed, and you may view and edit it.\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}FILE_PREFERENCES}
+${\footnote {\fs16\up6 $}Setting User Preferences}
+K{\footnote {\fs16\up6 K}Preferences;Configuring CKS;Application Options;defaults;file search template}
++{\footnote {\fs16\up6 +}Help:050}
+\plain \b\fs22 Setting Application Options\plain \fs22 \par
+\par
+\par
+\plain \fs22 This dialog window lets you specify your preferences for CKS default options, including the file 
+search template, window position and size, and over-write confirmation.  \par
+\par
+{\b Default File Templates} \par
+The data entry fields are used to specify a 
+{\ul file search template}{\v DEFINITION_FILE_SEARCH_TEMPLATE} .\par
+\par
+The REACTION FILE TEMPLATE is used for files containing reaction schemes.  They contain the 
+data which describe the reaction scheme, and simulation results.  \par
+ \par
+The TEXT OUTPUT FILE TEMPLATE is used for output files containing data in text form, such as a 
+summary of a reaction scheme, or a table of the simulation results.  \par
+\par
+The GRAPHICS OUTPUT FILE TEMPLATE applies to PostScript or HPGL output files created from 
+X-Y plot data.  \par
+\par
+The EXTERNAL DATA FILE TEMPLATE applies to input files containing experimental or calculated 
+data for comparison to simulation results.  The internal format of these files is described in the help 
+screen for the Simulation Results window.\par
+\par
+The TEMPERATURE PROFILE TEMPLATE is used for input files containing time-temperature data 
+used for programmed temperature calculations.  Their format is given in the help for the Select 
+External Temperature Profile window.\par
+\par
+{\b Application options}\par
+Two additional options can be selected using the checkboxes at the bottom of the window.  \par
+\par
+The WINDOW POSITION/SIZE can be changed for the Main and X/Y Plot windows using the mouse 
+to drag the edges or top bar.  Check this option to save the positions and sizes of the windows 
+between sessions.  \par
+\par
+Check the CONFIRM OVER-WRITE OF EXISTING FILE box to insure that a file is not inadvertently 
+re-used.  If you attempt to write over an existing file,  a dialog box will ask you to confirm that it is 
+OK to proceed.  \par
+\par
+\par
+The following pushbuttons are available at the bottom of the window.  \par
+\par
+{\b [OK]} accepts the displayed values and closes the dialog window.  \par
+\par
+{\b [Undo]} resets the file templates and checkboxes to their values when the dialog window was 
+opened.  \par
+\par
+{\b [Defaults]} resets all options to their default values.\par
+\par
+\par \pard
+\page 
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}FILE_CREATE}
+${\footnote {\fs16\up6 $}Creating reaction files}
+K{\footnote {\fs16\up6 K}Create;creating;new}
+\plain \fs22 \b Creating Reaction Files\plain \par
+\par
+\par
+\plain \fs22 When you create a new reaction scheme, you specify its name, location and the units to be used for 
+all data.\par
+\par
+The newly created reaction file will be placed in the first available 
+{\ul slot}{\v DEFINITION_SLOT}.  If all slots are filled, CKS 
+will ask you whether you wish to remove the currently active reaction scheme from memory.  If you 
+wish to remove a different reaction scheme, you may use 
+{\b File|Select} to select a different slot.\par
+\par
+{\b To create a new reaction scheme:} \par
+1. Select {\b File|Create...}.   A file selection window opens.\par
+2. Select the drive and directory where you wish to store your new file.\par
+3. Enter the name of your new reaction file.\par
+4. Click {\b [OK]}.  A units selection window opens.\par
+5. Select units using the appropriate drop-down listbox.  Once chosen, they cannot be changed.\par
+6. Click {\b [OK]}.  You return to the main window.\par
+7. Select {\b File|Save} to save the new file to disk.\par
+\par
+From here, you may enter the reaction steps.\par
+\par
+\par
+\plain \b\fs22 For more about creating new reaction files:\plain \fs22 \par
+\pard \fi720\sl0
+{\uldb Selecting Units for a New Reaction Scheme}{\v UNITS}\par
+\par \pard
+\page 
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}FILE_SELECTION}
+${\footnote {\fs16\up6 $}File selection windows}
+K{\footnote {\fs16\up6 K}file selection window;file search template;}
+\fs22 \plain \b File selection windows\plain \par
+\par
+\par
+\plain \fs22 These are used to specify a filename when you create or open a reaction file, external data file, text 
+summary or plot file.  When the window is first opened, the file information given in your 
+{\ul file search template}{\v DEFINITION_FILE_SEARCH_TEMPLATE}  is displayed.\par
+\par
+TO SELECT AN EXISTING FILE NAME :  Click the desired file name in the File Name listbox, then 
+click {\b [Open]} .  You may also double-click on the desired file name.  \par
+\par
+TO SPECIFY A NEW FILE NAME :  Click in the File Name entry field and type the new file name. \par
+\par
+TO SELECT A DIFFERENT DRIVE:  Click on the {\b [Desktop]} pushbutton to select another drive on the desktop.\par
+\par
+TO SELECT A DIFFERENT DIRECTORY:  Select the pop-up menu displaying the name of the current 
+directory and release the mouse button on the name of the desired higher-level 
+directory. \par
+\par
+TO SPECIFY A DIFFERENT DEFAULT FILE SEARCH TEMPLATE :  You can change the file search template 
+by selecting {\b File|Preferences...}. \par
+\par
+\par
+The following additional pushbuttons are available for this dialog window:  \par
+\par
+{\b [Open]} or {\b [Save]} loads or saves the current selected file.\par
+\par
+{\b [Cancel]} closes this window without selecting a file.\par
+\par
+\par
+\plain \b\fs22 Other relevant topics:\plain \fs22 \par
+\pard \fi720\sl0
+{\uldb Listboxes}{\v LISTBOXES}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}UNITS}
+${\footnote {\fs16\up6 $}Selecting Units for a New Reaction Scheme}
+K{\footnote {\fs16\up6 K}Selecting Units; Creating a New Reaction Scheme}
++{\footnote {\fs16\up6 +}Help:055}
+\plain \fs22 \b Selecting Units for a New Reaction Scheme\plain \fs22 \par
+\par
+\par
+This dialog window allows UNITS for the simulation to be selected.  
+{\i This is the only time this window 
+will appear for this particular reaction scheme!}  \par
+\plain \fs22 \par
+Four unit groups are listed in the window:  CONCENTRATION, TIME, PRESSURE and ENERGY.  
+Unit types from each group can be selected in any combination by selecting options from the drop-
+down listboxes.\par
+\par
+The units chosen must be used consistently for all input data (reminders for the active units are 
+listed on the data entry dialog windows as needed), and will be used for plotting the simulation 
+results.  \par
+\par
+\par
+The following pushbuttons are available at the bottom of the window.  \par
+\par
+{\b [OK]} accepts the selected units and returns you to the main window.  \par
+\par
+{\b [Defaults]} selects default options in all four listboxes.  \par
+\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Listboxes}{\v LISTBOXES} \par
+{\uldb Creating Reaction Files}{\v FILE_CREATE} \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}LISTBOXES}
+${\footnote {\fs16\up6 $}Listboxes}
+K{\footnote {\fs16\up6 K}listbox;listboxes}
+\plain \fs22 \b Listboxes\plain \par
+\par
+\par
+\plain \fs22 Listboxes allow you to select individual items for data entry or plotting.  They come in three types:\par
+\par
+o DROP-DOWN LISTBOX.  The current selection is displayed in the window.  To view available 
+options, click on the adjacent button or the display window.  To select a listed item, click on it.  This 
+type of listbox is used for units and font size selection.\par
+\par
+o SINGLE SELECTION LISTBOX.  The current selection is highlighted in a window which displays a 
+list of all choices.  Click on an item to select it.  This type of listbox is used for species 
+concentrations and the reaction list.  When you double-click on a reaction step in the main window 
+listbox, the Reaction Data Entry window for that step opens.\par
+\par
+o MULTIPLE SELECTION LISTBOX.  One or more currently selected items is highlighted in a 
+window which displays a list of all choices.  To select or de-select a single item, click on it.  
+To select multiple items, press and hold the Command key while clicking the items. This type of 
+listbox is used to select species to plot.\par
+\par
+\par \pard\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}MENU_EDIT}
+${\footnote {\fs16\up6 $}Using the Edit Menu}
+K{\footnote {\fs16\up6 K}Edit Menu;reaction scheme;cut;copy;paste;editing reaction steps}
++{\footnote {\fs16\up6 +} Help:030}
+\plain \fs22 \b Using the Edit Menu\plain \fs22 \par
+\par
+\par
+This menu lets you edit the reaction mechanism and species data, and explanatory notebook text.  It 
+is only active after a reaction scheme has been created or loaded from disk.\par
+\par
+{\b The Reaction Scheme} \par
+After you have created a new reaction scheme, or loaded an existing one into memory, the reaction 
+mechanism appears in the listbox on the CKS main window.  You can now enter the reaction step, 
+rate constants and rate law; the initial concentration and pressure, temperature and volume 
+conditions; species data, if variable temperature and/or variable volume conditions have been 
+selected; and explanatory notebook text.  Select 
+{\b Reaction Scheme...}, {\b Reaction Conditions...},
+{\b Species Data...} and {\b Notebook....}, respectively, to enter this information.\par
+\par
+{\b Editing a reaction scheme at the main window} \par
+You may cut or copy a reaction step displayed in the main window listbox and paste it in another 
+location in your current reaction scheme, or into any reaction scheme loaded in CKS's memory.  
+This can save you substantial amounts of time as you create and edit reaction files.  The reaction 
+step, rate constants and rate law are transferred in this process.  
+{\i Any other information, i.e. species 
+concentrations and data, must be entered separately.} \par
+\par
+{\b Example:  moving a reaction step to another scheme} \par
+1. Highlight the reaction step you wish to cut or copy.\par
+2. Select {\b Cut} or {\b Copy}.  The reaction step is placed on the CKS clipboard.\par
+3. Display the reaction file in which you will paste the reaction step by selecting its name using 
+{\b File|Select} .\par
+4. Highlight the step under which the step is to be placed.\par
+5. Select {\b Paste}.\par
+\par
+\par
+\plain \b\fs22 Related topics:\plain \fs22\par
+\pard \fi720\sl0
+{\uldb The Reaction Scheme}{\v REACTION_DATA_ENTRY}\par
+{\uldb Reaction Conditions}{\v REACTION_CONDITIONS}\par
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA}\par
+{\uldb Using the Notebook}{\v NOTEBOOK}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}REACTION_DATA_ENTRY}
+${\footnote {\fs16\up6 $}The Reaction Scheme}
+K{\footnote {\fs16\up6 K}Reaction Data Entry;reaction step;rate law;rate constant}
+\plain \fs22 \b The Reaction Scheme\plain \par
+\par
+\par
+\plain \fs22 You enter and edit your reaction scheme at the Reaction Data Entry window.  You type in the 
+reaction step, specify the type of rate constant, enter the rate constant(s), and specify the rate law.  
+You must fill in all sections of this window before you may enter a new reaction step.\par
+\par
+You may display sequentially data for each reaction step by using the up- and down-arrow 
+pushbuttons in the upper left corner of the window.\par
+\par
+{\b [OK]} stores the information at this screen in memory, and returns you to the main window.\par
+\par
+{\b [Add Another]} stores the information in memory, adds another reaction step after this one, and 
+displays the blank Reaction Data Entry window for that step.\par
+\par
+{\b [Delete This]} deletes this reaction step and the accompanying data at this window.\par
+\par
+{\b [Undo]} restores the last saved values for this reaction step.\par
+\par
+\par
+{\b Related topics:} \par
+\pard \fi720\sl0
+{\uldb The Reaction Step}{\v REACTION_STEP} \par
+{\uldb Rate Constants}{\v RATE_CONSTANTS}\par
+{\uldb Rate Law}{\v RATE_LAW}\par
+{\uldb Editing a Rate Law}{\v RATE_LAW_EDIT}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}REACTION_CONDITIONS}
+${\footnote {\fs16\up6 $}Reaction Conditions }
+K{\footnote {\fs16\up6 K}Reaction Conditions }
++{\footnote {\fs16\up6 +}Help:100}
+\plain \fs22 \b Reaction Conditions\plain \fs22 \par
+\par
+\par
+When CKS starts a simulation, it sets up internal information required for tracking temperature (T), 
+volume (V) and pressure (P), and apportions 
+{\ul particles}{\v DEFINITION_PARTICLE}  in the simulation volume according to the 
+initial concentration(s) of the species present.  The Reaction Conditions window allows you to supply 
+the concentration data and select among the available T, V and P options.\par
+\par
+{\b Initial reactant concentrations (amounts)} \par
+{\b Initial reactant amounts} \par
+To enter or review the initial concentrations (amounts), select the species to have initial non-zero 
+concentrations by clicking on them in the Species Name listbox.  Enter the values in the "Initial 
+concentration of..." data entry field.  If variable volume conditions are selected, you enter amounts, 
+and concentrations are calculated from them internally.  The units are those specified when the 
+reaction file was first created.  Floating point or scientific notation formats may be used, exponents 
+may range from -308 to 308.  \par
+\par
+{\b System state} \par
+Three groups of radio buttons allow combinations of PRESSURE, TEMPERATURE and VOLUME 
+options to be chosen for the simulation.  Volume may be constant, variable, or not tracked; pressure 
+may be constant or variable; and temperature may be constant or variable, or follow either a linear 
+program or external profile.\par
+\par
+Not all combinations of them are allowed (or physically meaningful!).  The following list summarizes 
+the available options.\par
+\par
+
+\f5 \pard \fi180
+\b\fs22
+  {\ul Pressure      Volume      Temperature} \par \par
+  constant     variable       variable \par
+  variable     constant       variable \par
+  constant    not tracked     variable \par
+  variable     constant      programmed \par
+  constant     variable      programmed \par
+  constant    not tracked    programmed \par
+  constant    not tracked     constant \par
+  variable     constant       constant \par
+  constant     variable       constant \par
+\par \pard \plain
+
+
+{\b \fs22 For more about reaction conditions:} \par
+\pard \fi720\sl0 \fs22
+{\uldb Volume Options}{\v VOLUME} \par
+{\uldb Temperature Options}{\v TEMPERATURE} \par
+{\uldb Pressure Options}{\v PRESSURE} \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}SPECIES_DATA}
+${\footnote {\fs16\up6 $}Entering and Editing Species Data}
+K{\footnote {\fs16\up6 K}Species Data;Physical State;Thermochemical Coefficients;variable temperature;variable volume;enthalpy;heat capacity;}
++{\footnote {\fs16\up6 +}Help:095}
+\plain \b\fs22 Entering and Editing Species Data\plain \par
+\par
+\par
+\plain \fs22 When variable volume and/or variable temperature conditions are selected, you must supply CKS 
+with physical state and density information, and thermochemical coefficients as needed.  These data 
+are entered at the Set Species Data window. Depending upon the reaction conditions you select, 
+part or all of the data entry fields will be active.  Known or estimated data must be supplied for all 
+species in the reaction system.  If you are not using variable volume and/or temperature reaction 
+conditions, this window is not accessible.\par
+\par
+{\b Variable temperature simulations} \par
+If temperature is variable then thermochemical coefficients must be specified for every species in the 
+system.  Temperature changes are calculated from the change in the temperature dependent 
+enthalpy of the system as the reaction proceeds and concentrations of various species increase and 
+decrease.  The expression is:\par
+\par
+\pard \qc\sl0 
+\plain \fs24{\i d} Hf(T) = {\i d} H0 + a + bT + cT^2 + dT^3 \par
+\par
+\pard \sl0 
+\plain \fs22
+where {\i d} H0 is the enthalpy in (kjoules or kcal)/mol and a, b, c and d are coefficients for the 
+temperature dependent heat capacity in (joules or cal)/mol deg^n, n = 0 to 3. In precise calculations 
+{\i d} H0 must be the enthalpy of formation at 0 K. If constant heat capacity is used, b = Cp and 
+coefficients a, c and d are explicitly set equal to zero.  The coefficient b cannot be set to zero. \par
+\par
+{\b Variable volume simulations} \par
+If volume is variable then both the Physical State and the molar density (in moles/unit volume) must 
+also be specified for each species in order for the system volume to be calculated during the 
+simulation.  Although a mixture of phases is allowed to be generated during a simulation, only one 
+phase may be present initially, and only the volume of that phase is tracked.  \par
+\par
+To set or modify thermochemical or density values for a species, click on it in the "Species Name" 
+listbox.  Then click on the value to be changed and type the new value in floating point or scientific 
+notation formats. The allowed range of exponents is -308 to 308. To select a physical state for a 
+species, click on the radio button corresponding to the desired state.\par
+\par
+\par
+The following pushbuttons are available:  \par
+\par
+{\b [OK]} saves the current values of all parameters, and closes the dialog panel.  \par
+\par
+{\b [Undo]} resets all parameters for the currently selected species to their values when that species 
+was selected in the "Species Name" listbox.  \par
+\par
+{\b [Defaults]} resets all parameters for the currently selected species to their default values.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Volume Options}{\v VOLUME}\par
+{\uldb Temperature Options}{\v TEMPERATURE}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}NOTEBOOK}
+${\footnote {\fs16\up6 $}Using the Notebook}
+K{\footnote {\fs16\up6 K}Notebook}
++{\footnote {\fs16\up6 +}Help:045}
+\plain \fs22 \b Using the Notebook\plain \par
+\par
+\par
+\plain \fs22 The notebook window lets you record information about the reaction scheme (for example, the 
+purpose of a simulation, or comments on the reaction scheme or reaction conditions).  The text 
+entered here is saved whenever the reaction file is saved. You may keep the window open as you 
+build the reaction scheme or examine the simulation results, so that notes can be made as 
+necessary.  If another reaction scheme in memory is made active (using {\b File|Select}) while the 
+notebook window is open, the Notebook Entry window is hidden (but not closed) until the original 
+reaction scheme is again made active.  \par
+\par
+To enter text, click on the text entry window and type.  The notebook can contain a maximum of 
+5000 characters.  \par
+\par
+\par
+The following pushbuttons are available in the notebook window:  \par
+\par
+{\b [OK]} accepts the current text in the notebook, and closes the window.  \par
+\par
+{\b [Clear]} erases all text from the notebook.  
+{\i Beware!}  Text can only be restored using {\b [Undo]} if it 
+has been previously saved by closing the notebook window.  \par
+\par
+{\b [Undo]} resets the notebook text to its state when the dialog window was most recently opened.  \par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}REACTION_STEP}
+${\footnote {\fs16\up6 $}The Reaction Step}
+K{\footnote {\fs16\up6 K}reaction step format;species mnemonics;mnemonic;reaction step;maximum number of reaction steps;}
+\plain \fs22 \b The Reaction Step\plain \par
+\par
+\par
+\plain \fs22 Individual reaction steps are entered at the Reaction Data Entry window much as they would be 
+written on paper.  The generalized format for a non-reversible reaction is:\par
+\par
+\pard \qc\sl0 \fs24
+x A + y B + z C => w D + v E\par
+\par
+\pard \sl0 \fs22
+where x, y, z, w and v are stoichiometric coefficients in integer format, and A, B, C, D and E are 
+mnemonics that you choose for the various reactants and products.  The format for a reversible 
+reaction is:\par
+\par
+\pard \qc\sl0 \fs24
+x A + y B + z C <=> w D + v E\par
+\par
+\pard \sl0 \fs22
+Coefficients must be separated from species mnemonics by a blank space.  Arrows are typed as 
+"equals" "greater than"  ( => ) or "less than" "equals" "greater than" ( <=> ).\par
+\par
+A mnemonic may be up to eight characters.  The first character must be alphabetic, and the others 
+may be any letter, symbol or number excluding "<", ">", "+" and "=".  Mnemonics must be used 
+consistently.  Up to four reactant and four product mnemonics may be used in each reaction step.   
+Species may be given any name convenient to you.  They can correspond to real molecules, or to 
+{\ul pseudo-species}{\v DEFINITION_PSEUDO_SPECIES} .\par
+\par
+The size of the simulation is limited by the memory available in the computer and the operating 
+system you are using. The maximum number of reaction steps available on the Macintosh is 65,536. The 
+order in which steps are entered is immaterial to the simulation.\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}RATE_CONSTANTS}
+${\footnote {\fs16\up6 $}Rate Constants}
+K{\footnote {\fs16\up6 K}Reaction Data;Rate Constants}
++{\footnote {\fs16\up6 +}Help:120}
+\plain \fs22 \b Rate Constants\plain \par
+\par
+\par
+\plain \fs22 The rate constant can be entered either in temperature-dependent (Arrhenius) form, 
+or as a temperature-independent, single valued constant.  Select the form of the rate constant by clicking on the 
+appropriate radio button.  \par
+\par
+The general temperature-dependent form is \par
+\par
+\pard \qc\sl0 \fs24
+k = A T^n exp (-E/RT) \par
+\par
+\pard \sl0 \fs22
+where A is the pre-exponential A Factor, n is the Temperature Exponent, and E is the Activation 
+Energy.  \par
+\par
+If the reaction is forward only, one set of parameters is entered.  If it is reversible, two sets are 
+entered. Values may be in floating point or scientific notation formats, with exponents in the range 
+-308 to 308.\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}RATE_LAW}
+${\footnote {\fs16\up6 $}Rate Law}
+K{\footnote {\fs16\up6 K}rate law}
+\plain \fs22 \b Rate Law \plain \fs22 \par
+\par
+\par
+You have two options for specifying the rate law of the reaction step.  Usually it corresponds to the 
+reaction step as written, and is derived by the simulator from the stoichiometry of the reaction step.  
+Under some circumstances it can differ from the stoichiometry, however, and the "Define Special 
+Rate Law" radio button allows the rate law to be EDITED.  When you select this button, the 
+{\b [Edit Rate Law...]} pushbutton is activated and the Edit Special Rate Law window opens.  The Special 
+Rate Law window can be opened at a later time by clicking on the pushbutton.  Detailed help for 
+use of the Special Rate Law option is available at the window.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Editing a Rate Law}{\v RATE_LAW_EDIT} \par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}RATE_LAW_EDIT}
+${\footnote {\fs16\up6 $}Editing a Rate Law}
+K{\footnote {\fs16\up6 K}Rate Law;special rate law}
++{\footnote {\fs16\up6 +}Help:125}
+\plain \fs22 \b Editing a Rate Law\plain \par
+\par
+\par
+\plain \fs22 The general form of a rate law R for a reaction step \par
+\par
+\pard \qc\sl0 \fs24
+n A + m B + ... => products \par
+\par
+\pard \sl0 \fs22 
+is \par
+\par
+\pard \qc\sl0 \fs24 
+R = k [A]^n [B]^m...  \par
+\par
+\pard \sl0 \fs22 
+where k is the rate constant, multiplied by reactant concentrations raised to an order equal to the 
+stoichiometry in the reaction step.  For cases where the rate law should not be directly derived from 
+the stoichiometry, it is specified separately using this dialog window.  \par
+\par
+As a starting point, CKS displays a sample rate law derived from the reactants in the step, allowing 
+the user to change the exponents to the values required.  If the rate is independent of one or more 
+of the reactants, enter a coefficient of 0 for the reactant(s).  If the rate law is known to depend on 
+species which are not part of the stoichiometry, then the step should be rewritten to include those 
+species as both reactants and products; in this manner, there is no net consumption of them but 
+they appear in the sample rate law.  \par
+\par
+\par
+The following pushbuttons are available:  \par
+\par
+{\b [OK]} stores the new rate law and returns to the Reaction Data Entry window.  \par
+\par
+{\b [Undo]} restores the exponents to their original values.  \par
+\par
+{\b [Default]} sets the values of all the exponents equal to the stoichiometric coefficients of the reactants 
+in the current reaction step.\par
+\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}VOLUME}
+${\footnote {\fs16\up6 $}Volume Options}
+K{\footnote {\fs16\up6 K}volume}
+\plain \fs22 \b Volume options\plain \fs22 \par
+\par
+The volume options can be used for all phases of matter.  \par
+\par
+{\b Constant volume} \par
+The volume of the reacting system is held constant even though moles of species, temperature and 
+pressure may change.  \par
+\par
+{\b Variable volume} \par
+The volume of the reacting system is allowed to change as the number of moles of each species 
+changes.  To use this option the densities and phases (gas, solid or liquid) of all species in the 
+reaction must be specified by selecting {\b Edit|Species Data...} .\par
+\par
+The reacting system must start as a single pure phase, gas, liquid or solid, but can evolve to include 
+more than one phase.  {\i Only the total volume of those species designated as having the initial phase 
+is calculated.}  The volume of material in that phase is updated and used to renormalize the 
+concentrations of all species after each event in the simulation.  Since the volume is only that of the 
+initial phase, concentrations of species formed in new phases during the course of a reaction (e.g. 
+gas evolved as a solid reacts) will not be correct.  No steps involving reactants in the new phases 
+should be used in the reaction scheme, or the timebase of the simulation will {\i not} be meaningful. 
+The simulator does not check for this.  \par
+\par
+{\b Volume not tracked} \par
+The volume of the system is not explicitly calculated or constrained during the simulation.  This 
+option saves computational overhead if variations in volume are expected to be small or are not of 
+interest.  This option is mainly intended for condensed phase simulations.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA}\par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}TEMPERATURE}
+${\footnote {\fs16\up6 $}Temperature Options}
+K{\footnote {\fs16\up6 K}temperature;variable temperature;programmed temperature;temperature convergence standard;}
+\plain \fs22 \b Temperature Options\plain \par
+\par
+\par
+\plain \fs22 The reaction can run under isothermal or effective isothermal conditions, with the instantaneous 
+temperature held constant or varied externally, or under adiabatic conditions, with the instantaneous 
+temperature determined by the reaction enthalpy and the heat capacity of the species in the system.\par
+ \par
+{\b Constant temperature} \par
+The reacting system is assumed to be isothermal, i.e.  the temperature is unchanged throughout the 
+reaction. If Arrhenius parameters are used for one or more of the rate constants, the system 
+temperature must be specified, otherwise no value need be given. The system temperature must be 
+greater than 0 (zero) K. \par
+\par
+{\b Variable temperature} \par
+The system is assumed to be completely insulated from its surroundings, and its temperature 
+changes as the simulation proceeds because of heat released or taken up during the reaction. A 
+non-zero  initial temperature must be specified.\par
+\par
+{\b Follow linear program} \par
+The time-dependence of the temperature of the system is predetermined, and supplied to the 
+simulator in the form of an analytic function.  \par
+\par
+{\b Follow external profile} \par
+The time-dependence of the temperature of the system is predetermined, and supplied to the 
+simulator as a table of time-temperature pairs which have been saved in a text file.   \par
+\par
+\par
+Click the {\b [Change Settings...]} pushbutton to enter the data required for the temperature option you 
+select. Additional help is available at the dialog window. \par
+\par
+ \par
+{\b Other relevant topics:} \par
+\par
+\pard \fi720\sl0
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA}\par
+{\uldb Constant Temperature}{\v TEMPERATURE_CONSTANT} \par
+{\uldb Variable Temperature}{\v TEMPERATURE_VARIABLE} \par
+{\uldb Setting up a Linear Temperature Program}{\v TEMPERATURE_LINEAR} \par
+{\uldb Programmed Temperature - Select External Profile}{\v TEMPERATURE_EXTPROF_EDIT} \par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}TEMPERATURE_CONSTANT}
+${\footnote {\fs16\up6 $}Constant Temperature}
+K{\footnote {\fs16\up6 K}constant temperature;Arrhenius;}
+\plain \fs22 \b Constant Temperature \plain \fs22 \par
+\par
+If Arrhenius parameters are used for any of the rate constants, the system temperature must be 
+entered in the Reaction temperature data entry field. The value must be greater than 0 (zero) K.\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}TEMPERATURE_VARIABLE}
+${\footnote {\fs16\up6 $}Variable Temperature}
+K{\footnote {\fs16\up6 K}variable temperature;temperature convergence standard;}
+\plain \fs22 \b Variable Temperature\plain \fs22 \par
+\par
+The initial temperature is typed in the Reaction temperature data entry field. It must be greater than 
+0 (zero) K. Since CKS updates the system temperature after each 
+{\ul event}{\v DEFINITION_EVENT}  in the simulation using an 
+iterative procedure, you must also specify a 
+{\ul temperature convergence standard}{\v DEFINITION_TEMP_CONV_STAND}.  Calculation of the 
+new system temperature from the thermochemistry is iterative, and this parameter adjusts how finely 
+or coarsely the new value is calculated.  A value of 0.5 degrees is satisfactory for most cases.  If 
+there is any doubt, test the invariance of the result to halving the number.  The default value is 
+somewhat smaller.\par
+\par
+\par
+You also need to supply heat capacities and enthalpies for all species in the reaction.  They are 
+entered by selecting {\b Edit|Species Data...} .  \par
+\par
+\par
+{\b For more information:} \par
+\par
+\pard \fi720\sl0
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA} \par
+\plain \fs22 \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}TEMPERATURE_LINEAR}
+${\footnote {\fs16\up6 $}Setting up a Linear Temperature Program}
+K{\footnote {\fs16\up6 K}Temperature Programming;linear program;programmed temperature}
++{\footnote {\fs16\up6 +}Help:130}
+
+\plain \fs22 \b Setting up a Linear Temperature Program\plain \par
+\par
+\par
+\plain \fs22 Here you can set up a temperature program of the form\par
+\par
+\pard \qc\sl0 \fs24
+T(t) = T0 + bt\par
+\par
+\pard \sl0 \fs22
+where T(t) is the time-dependent temperature, T0 is the initial temperature, b is the slope, and t is 
+time.\par
+\par
+{\b Coefficients} \par
+The INITIAL TEMPERATURE is specified in the first data entry field. It must be greater than 0 (zero) 
+K.  The SLOPE is entered in the second field.  The slope can be positive or negative.\par
+\par
+{\b Maximum step size} \par
+The maximum step size limits the temperature jump which the simulator can take as it progresses 
+through the temperature program.  The size of an individual temperature step is determined by the 
+{\ul time step}{\v DEFINITION_TIME_STEP}  size calculated for each 
+{\ul event}{\v DEFINITION_EVENT} .
+Since the time steps are calculated from the 
+system's total 
+reaction probability, when reactions are slow the steps can become too large for simulation accuracy 
+to be maintained.  This happens frequently in  programmed temperature reactions. The maximum 
+temperature step size is used to determine whether the simulation is proceeding smoothly; if the 
+step size is exceeded special algorithms are used to control the simulation.  Typically a step size of 
+10 K is adequate.  \par
+\par
+{\b Final temperature} \par
+The final temperature is the upper or lower limit of the temperature program, depending on whether 
+the slope is positive or negative. {\i When the limit is reached, the simulation is terminated.} \par
+\par
+{\b Note!} \par
+The equilibrium detect option can be selected in combination with programmed temperature 
+simulations using {\b Simulation|Settings...}, but it will not be active.\par
+\par
+\par
+The following pushbuttons are available:  \par
+\par
+{\b [OK]} accepts the current values of the coefficients and closes the dialog panel.  \par
+\par
+{\b [Undo]} resets the coefficients displayed in the entry fields to their values when the dialog panel was 
+activated.  \par
+\par
+{\b [Defaults]} resets the coefficients displayed in the entry fields to the default values.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Equilibrium Detect}{\v EQUILIBRIUM_DETECT} \par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}TEMPERATURE_EXTPROF_EDIT}
+${\footnote {\fs16\up6 $}Programmed Temperature - Select External Profile}
+K{\footnote {\fs16\up6 K}external temperature profile;programmed temperature;profile;}
+\plain \fs22 \b Programmed Temperature - Select External Profile\plain \par
+\par
+\par
+\plain \fs22 You may either select an existing 
+{\ul temperature profile}{\v DEFINITION_TEMP_PROFILE}  file, or create your own. When the window is 
+opened, the most recently selected profile is displayed.\par
+\par
+{\b Selecting a profile} \par
+To select a profile from a profile library you may have on disk, click {\b [Select a File ...]}.  
+This opens a 
+file selection window where you can specify the name of the temperature profile you wish to use for 
+your simulation.\par
+\par
+{\b Creating or changing a profile} \par
+You may also use this window to enter or modify a profile while viewing it.  To create a new file, 
+click {\b [Create New...]} .  To enter or edit data, click in the "Time Temperature" data entry field. The 
+format of the file is pairs of points in the order:\par
+\par
+\pard \sl0 
+time    temperature \par \par
+The time points must be in order of increasing numerical value, and the first time point must be 0 
+(zero). All temperature points must be greater than 0 K.  Data can be entered in floating point or 
+scientific notation, with exponents ranging from -308 to 308.  If you wish to label the data columns, 
+or include other non-numerical text, begin the line with an asterisk (*).  That line will not be read, but 
+will be saved with the profile.  This lets you format the profile for importing into your data plots for 
+comparison to simulation results. \par
+\par
+The maximum length of a profile is 32,768 characters. The primary restriction on the dynamic range 
+of time and temperature values you may use in a profile is the precision allowed by the Macintosh.  As a 
+guideline, keep your range within twelve orders of magnitude.\par
+\par
+{\b Displaying a profile} \par
+To plot a profile as you enter data, click {\b [Refresh Plot]}.  It will be displayed using the color scheme 
+specified at the X/Y Plot window.\par
+\par
+{\b Maximum step size} \par
+The MAXIMUM STEP SIZE limits the temperature jump which the simulator can take as it 
+progresses through the temperature program.  The size of an individual temperature step is 
+determined by the 
+{\ul time step}{\v DEFINITION_TIME_STEP}  size calculated for each 
+{\ul event}{\v DEFINITION_EVENT} .  Since the time steps are calculated 
+from the system's total reaction probability, when reactions are slow the steps can become too large 
+for simulation accuracy to be maintained.  This happens frequently in  programmed temperature 
+reactions. The maximum step size is used to determine whether the simulation is proceeding 
+smoothly; if the step size is exceeded special algorithms are used to control the simulation.  
+Typically a step size of 10 K is adequate.  \par
+\par
+{\b Note!} \par
+If and when the final temperature in the profile is reached, the calculation is converted to a 
+{\i constant temperature}  simulation at the final value.  It continues to run until the event limit is reached, or the 
+total reaction probability has dropped to zero, or the maximum simulation time has been exceeded. \par
+ \par
+The equilibrium detect option can be selected in combination with programmed temperature 
+simulations using {\b Simulation|Settings...}, but it will be inactive as long as the temperature in the 
+simulation is determined by the profile. If the simulation converts to a constant temperature 
+simulation at the end of a profile, the equilibrium detect and emulation option becomes active. \par
+\par
+The following pushbuttons are available:\par
+\par
+{\b [OK]} saves your profile to disk and returns you to the Reaction Data Entry window.\par
+\par
+{\b [Undo]} restores the values from your last saved version.\par
+\par
+{\b [Save As...]} lets you save the displayed time/temperature profile as a new file.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb External data format}{\v EXTERNAL_DATA} \par
+{\uldb Equilibrium Detect}{\v EQUILIBRIUM_DETECT}\par
+\plain \fs22 \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PRESSURE}
+${\footnote {\fs16\up6 $}Pressure Options}
+K{\footnote {\fs16\up6 K}pressure;constant pressure;variable pressure;}
+\plain \fs22 \b Pressure Options\plain \fs22 \par
+\par
+{\b Constant pressure} \par
+This option maintains constant pressure in gas phase reactions.  It should also be selected for all 
+condensed phase simulations.\par
+\par
+{\b Variable pressure} \par
+Selection of this option allows the pressure in gaseous systems to be tracked as temperature and 
+moles of species vary during a reaction.\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}VERIFY_SPECDATA}
+${\footnote {\fs16\up6 $}Verifying Species Data}
+K{\footnote {\fs16\up6 K}Species Data;verify;}
++{\footnote {\fs16\up6 +}Help:135}
+\plain \fs22 \b  Verifying Species Data\plain \par
+\par
+\par
+\plain \fs22 While preparing for the simulation, CKS has detected that you have made changes to the reaction 
+scheme since the last time a simulation was initialized from it. This can include modification of a 
+reaction step, addition of new steps, or changes in species mnemonics.  Please verify data for all 
+species to be sure that the simulation will be performed as desired.  \par
+\par
+This dialog window displays the entire internal data set for each SPECIES in the reaction.  The 
+currently active species is named in the top right corner of the window.  To select a new species 
+click on its name in the Defined Species List box.  \par
+\par
+To enter an INITIAL CONCENTRATION, type the required value in the Initial concentration data 
+entry field.  The units are those specified when the reaction file was first created.  Exponents may 
+range from -308 to 308 if scientific notation is used.  \par
+\par
+If TEMPERATURE is variable then Thermochemical Coefficients must be specified for every species 
+in the system.\par
+\par
+If VOLUME is variable then both the Physical State and the Molar Density (in moles/unit volume) 
+must be specified for each species.\par
+\par
+\par
+The following pushbuttons are available at the bottom of the window.  \par
+\par
+{\b [Start Simuln]} starts the simulation once the data have been verified.  \par
+\par
+{\b [Cancel Simuln]} returns to the main CKS window without performing a simulation.  \par
+\par
+{\b [Default Values]} resets all data fields to their default values.  \par
+\par
+{\b [Undo Changes]} restores all data fields to their values when the window was opened.  \par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Volume Options}{\v VOLUME} \par
+{\uldb Temperature Options}{\v TEMPERATURE} \par
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA} \par
+\pard \sl0 
+\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}VERIFY_SPECCONC}
+${\footnote {\fs16\up6 $}Setting Species Concentrations}
+K{\footnote {\fs16\up6 K}Concentrations;SIMULATION}
++{\footnote {\fs16\up6 +}Help:075}
+\plain \fs22 \b Setting Species Concentrations\plain \par
+\par
+\par
+\plain \fs22 Concentrations for all species are set to zero, and the simulation cannot run.  \par
+\par
+To enter initial concentrations for one or more species, select the species by clicking on it in the 
+Species Name list box, and enter the required value in the "Initial concentration of..." data entry field.  
+The units are those specified when the reaction file was first created. Values may be entered in 
+floating point or scientific notation formats, with exponents in the range -308 to 308.  \par
+\par
+\par
+The following pushbuttons are available:  \par
+\par
+{\b [Start Simuln]} starts the simulation after initial concentration(s) have been entered.  \par
+\par
+{\b [Cancel Simuln]} returns to the main CKS window without performing a simulation.  \par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}MENU_SIMULATION}
+${\footnote {\fs16\up6 $}Using the Simulation Menu}
+K{\footnote {\fs16\up6 K}Simulation Menu;Simulation Options;Starting a Simulation;stopping a simulation}
++{\footnote {\fs16\up6 +}Help:035}
+\plain \fs22 \b Using the Simulation Menu\plain \fs22 \par
+\par
+\par
+{\b Setting up the simulation} \par
+Before you run a simulation, you may verify or change CKS's simulation parameters.  To do this, 
+select {\b Simulation settings...} .\par
+\par
+{\b Starting and stopping a simulation} \par
+To start the simulation of the current reaction scheme, select 
+{\b Start}.  You may also set up the 
+simulation engine to run several simulations sequentially (see the section on simulation queues). 
+When the simulation starts, the Simulation Engine status window will open.\par
+\par
+You may manually terminate a simulation by clicking 
+{\b [Interrupt Simulation]} on the simulation status 
+window.  This will cause the simulation to stop the next time the reaction's state is recorded on disk.  
+If you wish to stop the simulation immediately, select {\b Simulation|Abort}.  If not interrupted, the 
+simulation will stop when the reaction probabilities are zero, or when either the time or the number 
+of events exceeds the limits specified at the "Simulation Settings" window.\par
+\par
+You may resume a simulation which has been manually interrupted by clicking {\b [Interrupt 
+Simulation]}.  To do so, select {\b Simulation|Resume}.  Reaction simulations terminated by 
+{\b Simulation|Abort}.\par
+\par
+{\b Setting up a simulation queue} \par
+Once one simulation has begun, you can queue up to eight additional reaction schemes for 
+subsequent simulation.  This lets you, for example, prepare several simulations and run them 
+overnight.  You queue a reaction simulation by selecting {\b Simulation|Start} , as you would for any 
+other simulation.  CKS tells you that the reaction has been automatically placed at the end of the 
+queue.\par
+\par
+You may not alter a reaction scheme that has been placed in the simulation queue unless you first 
+remove it from the queue.  If you wish to view the queue or make changes to it (i.e. alter the order 
+or cancel a simulation), select {\b Simulation|View Queue}. Additional help is available at that window.\par
+\par
+\par
+{\b For more information:} \par
+\pard \fi720\sl0
+{\uldb Setting Simulation Options}{\v SIMULATION_SETTINGS} \par
+{\uldb Working with a Simulation Queue}{\v QUEUE}\par
+{\uldb The Active Simulation}{\v SIMULATION_STATUSWIN} \par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}SIMULATION_SETTINGS}
+${\footnote {\fs16\up6 $}Setting Simulation Options}
+K{\footnote {\fs16\up6 K}Simulation Options;simulation settings;general settings;number of events;number of molecules;particles;random number;}
++{\footnote {\fs16\up6 +}Help:065}
+\plain \fs22 \b Setting Simulation Options\plain \par
+\par
+\par
+\plain \fs22 These parameters are necessary to operate the simulator.  The settings are in three groups:  the 
+General Settings and Limits, which must be specified for all simulations, and the settings for the 
+Equilibrium Detect option, which can be used if the reaction scheme has reversible steps.\par
+\par
+{\b General settings} \par
+TOTAL NUMBER OF MOLECULES specifies the initial number of 
+{\ul particles}{\v DEFINITION_PARTICLE}  in the reaction 
+simulation.  They are apportioned among species having non-zero initial concentration.  The number 
+should be large enough to span the dynamic range of initial concentrations expected in the 
+simulation.  Larger numbers will reduce stochastic noise in the simulated data, but also extend the 
+computer time required to reach a given point in the simulation.  The largest number allowed is 
+2,147,483,647, the minimum is 1.  \par
+\par
+RECORD STATE AT INTERVALS OF:  xxx EVENTS.  Although the state of the system is 
+accurately maintained at all times in memory, it is only saved to disk at fixed intervals.  This number 
+gives the interval length.  The smallest number is 1, saving after every 
+{\ul event}{\v DEFINITION_EVENT} , and the largest is 
+4,294,967,295.  \par
+\par
+RANDOM NUMBER SEED is an integer between 1 and 30,000 used for initializing the 
+random number string which propagates the simulation.\par
+\par
+{\b Simulation limits} \par
+TOTAL NUMBER OF EVENTS is the maximum number of events which can occur in a given 
+simulation.  When this maximum is reached the simulation will end.  From 1 to 4,294,967,295 events 
+can be specified. \par
+\par
+STOP WHEN SIMULATION TIME EXCEEDS:  xxx TIME UNITS is an optional setting to cause the 
+simulation to be automatically stopped when a particular time is reached in the reaction, even if the 
+maximum number of events has not been exceeded.  It is entered in the time units selected when 
+the reaction file was created. Floating point or scientific notation formats may be used, with 
+exponents in the range -308 to 308.  Enter a value of 0 (zero) to disable the option.  \par
+\par
+{\b Equilibrium detect} \par
+This sets up an option for detecting and emulating equilibria during the course of a simulation.  Use 
+of this option can result in significant savings in computer time. Select the topic line a the bottom 
+of this page for detailed information on this. \par
+\par
+\par
+The following pushbuttons are available at the bottom of the dialog window.  \par
+\par
+{\b [OK]} accepts all values in the window and closes it.  \par
+\par
+{\b [Defaults]} resets all data entry fields and radio buttons to their default values. \par
+\par
+{\b [Undo]} restores all data to their values when the window was first opened.\par
+\par
+\par
+{\b Other relevant topics:} \par
+\pard \fi720\sl0
+{\uldb Equilibrium Detect}{\v EQUILIBRIUM_DETECT} \par
+{\uldb The Active Simulation}{\v SIMULATION_STATUSWIN} \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}QUEUE}
+${\footnote {\fs16\up6 $}Working with a Simulation Queue}
+K{\footnote {\fs16\up6 K}queue;simulation;multiple simulations}
+\plain \fs22 \b Working with a Simulation Queue\plain \par
+\plain \fs22 \par
+The simulation queue allows you to run more than one simulation without having to be there to start 
+it. You place a simulation in the queue by selecting {\b Simulation|Start}.  At the View Simulation 
+Queue window, you may change the queue order and cancel simulations by removing reactions 
+from the queue.\par
+\par
+The queue listbox displays all the reaction schemes waiting for simulation in the order they will be 
+run. Select a reaction file name by clicking on it. {\b [Remove This]} cancels the simulation by 
+removing it from the queue.  {\b [To Top]} places this reaction at the top of the queue, making it the 
+next reaction to be simulated.\par
+\par
+{\b [Remove All]} removes all reactions from the queue.\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}SIMULATION_STATUSWIN}
+${\footnote {\fs16\up6 $}Simulation Status Window}
+K{\footnote {\fs16\up6 K}simulation;status;running a simulation;interrupting a simulation;multiple simulations}
+\plain \fs22 \b The Active Simulation\plain  \par
+\par
+\par
+\plain \fs22 When a simulation is started, the Simulation Engine status window opens. It lists the current time in 
+the simulated system and the number of elapsed events.  It is updated every time the simulation 
+data are saved to disk.  The {\b [Interrupt Simulation]} pushbutton allows you to manually interrupt the 
+simulation, view the results, and resume it later, as long as the reaction file has not been modified.\par
+\par
+While the simulation is running, the CKS main window is available for data entry and plotting.  
+Although you cannot access the reaction scheme you are currently simulating, the other eight file 
+{\ul slots}{\v DEFINITION_SLOT}  can be used without restriction. Although you may not start a second simulation before the first 
+has ended, you may place additional simulations in a queue.\par
+\par
+When the simulation has ended, a message giving the termination conditions (e.g. probabilities zero, 
+or time limit exceeded) will be displayed, along with the total amount of computer time used.  Click 
+on the {\b [OK]} pushbutton to return immediately to the main window. The status window will disappear 
+automatically after 10 seconds.\par
+\par
+\par
+{\b For more information:} \par
+\pard \fi720\sl0
+{\uldb Working with a Simulation Queue}{\v QUEUE} \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}EQUILIBRIUM_DETECT}
+${\footnote {\fs16\up6 $}Equilibrium Detect}
+K{\footnote {\fs16\up6 K}equilibrium detect;equilibrium;reversible}
+\plain \fs22 \b Equilibrium Detect\plain  \par
+\par
+\par
+\plain \fs22 The equilibrium detect option is intended for systems with one or more reversible reaction steps, any 
+of which may come into equilibrium during a simulation.  {\i Reactions which are reversible but are 
+written as two forward steps will not be examined for equilibrium} even though they may come into 
+equilibrium during a reaction.\par
+\par
+This option can be selected during programmed temperature simulations, but is inactive because of 
+computational requirements. If a temperature profile is used, equilibrium detect will become active 
+once the simulation has converted to a constant temperature simulation at the end of the profile.\par
+\par
+{\b About the option} \par
+The core CKS  algorithm is inefficient in simulating equilibria because it spends its time maintaining 
+the equilibrium rather than advancing the chemistry.  This option enables special algorithms to be 
+used to handle equilibria in a more efficient way.  The simulation does not assume the existence of 
+equilibrium.  Rather, CKS monitors the identity of selected 
+{\ul events}{\v DEFINITION_EVENT} , and at specific intervals, 
+examines the list for how frequently reversible steps are being selected.  If one or more pairs of 
+steps is judged to be in equilibrium, an emulation procedure is invoked to advance the chemistry. 
+The system is then returned to normal simulation mode and a new equilibrium detect cycle is 
+initiated.  This saves substantial computer time without a loss of accuracy.  \par
+\par
+{\b Using equilibrium detect} \par
+Select the "Enabled" radio button if you wish to use this option.  It can be left on even if no 
+equilibrium occurs or if no steps are reversible in the reaction scheme,  the simulation will only be 
+slowed down a little by the detect cycle.  To explicitly avoid equilibrium detection, select "Disabled".\par
+\par
+When equilibrium detect is enabled, the data entry fields for the option will be come active.  \par
+\par
+EQUIL. TEST CYCLE LENGTH sets the number of events included in a detect cycle. The optimum 
+length for the cycle will depend on the reaction scheme, i.e.  number of reversible steps, relative 
+rates of reversible and non-reversible steps, and so on.  Typically, values between 100 and 500 are 
+good starting points.  \par
+\par
+SELECTION FREQUENCY is used to diagnose whether a particular reversible reaction is in 
+equilibrium.  Equilibrium is found if one or more reversible pairs is selected to occur at least 
+(selection frequency) % of the total number of events in the current test cycle, and the forward and 
+reverse steps of each pair are selected with frequencies at least (selection frequency) % of each 
+other.  Typically values of 80-90% provide sufficient accuracy.  \par
+\par
+\par
+{\b Other relevant topics:} \par
+\par
+\pard \fi720\sl0
+{\uldb Setting up a Linear Temperature Program}{\v TEMPERATURE_LINEAR}\par
+{\uldb Programmed Temperature - Select External Profile}{\v TEMPERATURE_EXTPROF_EDIT} \par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}MENU_RESULTS}
+${\footnote {\fs16\up6 $}Using the Results Menu}
+K{\footnote {\fs16\up6 K}Results Menu;Displaying Results;Plotting Results}
++{\footnote {\fs16\up6 +}Help:040}
+\plain \fs22  \b Using the Results Menu\plain  \par
+\par
+\par
+\plain \fs22 Select {\b Plot Results...} to plot the results of a simulation.  A window opens to let you select the type 
+of plot.  This menu is available only after a simulation of the current reaction scheme has been 
+performed.  You may also view the results of a simulation that was run previously and saved, unless 
+any changes to the reaction file have been made since then.  External data in the form of a text file 
+can be imported and displayed as well.\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PLOT_SELECT}
+${\footnote {\fs16\up6 $}Selecting Plots of Simulation Results}
+K{\footnote {\fs16\up6 K}Simulation Results;Viewing Simulation Results;plot types;external data;select species;data points;plotting results;selecting plot;overlaying data;}
++{\footnote {\fs16\up6 +}Help:060}
+\plain \fs22 \b Selecting Plots of Simulation Results\plain  \par
+\par
+\par
+\plain \fs22 You may choose which portions of the simulation data to plot, and also select an external data file to 
+overlay onto the simulation results.  To plot data, follow these steps:\par
+\par
+{\b\ 1. Select the plot type} \par
+\sect \sectd \sbknone\marglsxn1626 
+
+Click on any of the active checkboxes at the top of the window.  The abbreviations "Conc" and 
+"Temp" stand for concentration and temperature, respectively.  The types of plots available 
+depend on the reaction conditions originally chosen for the simulation by selecting 
+{\b Simulation|Reaction Conditions...}. The concentration versus time (Conc / time) plots are always 
+available.  Up to four plot types can be selected at a time.   \par
+\sect \sectd \sbknone 
+
+\par
+{\b 2. Option: select external data to plot} \par
+\sect \sectd \sbknone\marglsxn1626 
+
+Use the {\b [Select file...]} pushbutton if you wish to load an external data file into memory.  The data 
+may be, for example, experimental results to compare to the calculated curves, or selected results  
+from a previous simulation.  The data must be in the correct format.  Once data are loaded, the 
+"External Data:" checkbox is active and the name of the imported file is shown.  Click on it to 
+include the external data set in the appropriate plot.  \par
+\sect \sectd \sbknone 
+
+\par
+{\b 3. Select species to plot} \par
+\sect \sectd \sbknone\marglsxn1626 
+
+If you select a Conc/time or Conc/temp plot, then you must also select which reaction species you 
+wish to plot.  Use the "Select Species" listbox to select up to seven species to display in any one 
+plot.  Select or deselect a species by clicking on it.\par
+\sect \sectd \sbknone 
+
+\par
+{\b 4. Select the number of data points} \par
+\sect \sectd \sbknone\marglsxn1626 
+
+The initially displayed maximum is the total number of data points or 1000, whichever is smaller.  
+You may override the maximum number by clicking on the "Max number to plot" data entry field, 
+and typing in a new value.  If you have more than 1000 data points, or type in a number less than 
+the total available, the points displayed will be evenly spaced to span the full range of the data. \par
+\par
+\sect \sectd \sbknone 
+
+\par
+The pushbuttons at the bottom of the window allow you to draw a plot or close the plot session.  \par
+\par
+{\b [Close]} returns you to the CKS main window.\par
+\par
+{\b [Plot]} draws the plot(s).  A new window will be opened to display them.  \par
+\par
+\plain \fs22 \par
+{\b For more information:} \par
+\pard \fi720\sl0
+{\uldb External Data Format}{\v EXTERNAL_DATA} \par
+\pard \sl0 
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}EXTERNAL_DATA}
+${\footnote {\fs16\up6 $}External Data Format}
+K{\footnote {\fs16\up6 K}external data;external data format;programmed temperature profile;}
+\plain \fs22 \b External Data Format\plain  \fs22 \par
+\par
+\par
+{\b File format} \par
+The data must be in text format.  The first line optionally may contain two words to identify the data types to 
+the plotting routines.  These words can be in any mixture of upper/lower case.  The first word must be 
+either TIME or TEMPERATURE; it can be preceded by an asterisk (*).  The second word must be 
+CONCENTRATION, VOLUME, PRESSURE (or TEMPERATURE if the first word was TIME).  If this line specifying 
+data types is absent, then the user will be prompted for the correct data type when the plot is constructed. 
+\par 
+\par
+The remaining lines in the text files should each contain two entries in floating point or scientific notation 
+format (exponents may range from -308 to 308), giving the values of the external data, separated by one or more blanks.  The first 
+value in each line will be read as time or temperature, and the second value will be read as 
+concentration, volume, pressure or temperature.  Any line which does not have two valid numeric 
+values is skipped in the input procedure.  \par
+\par
+{\b Examples} \par
+\par
+1. The general format looks like:\par
+\par
+\f5 \pard \fi180
+\b\fs22
+time concentration \par
+0.0     1.0e-1\par
+1.3     0.6e-1\par
+1.1e1   0.4e-1\par
+2.5e1   0.0\par
+\par \pard \plain
+\par
+2. Annotating a file\par
+\par
+If the file you wish to plot is a 
+{\ul programmed temperature profile}{\v DEFINITION_TEMP_PROFILE}, put an asterisk (*) at the beginning 
+of the first line, so that it reads\par
+\par
+\f5 \pard \fi180
+\b\fs22
+*time\tab temperature\par
+\par \pard \plain
+\par
+This lets you use the same file for setting your reaction conditions and for overlaying onto simulation 
+results.\par
+\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PLOTWIN}
+${\footnote {\fs16\up6 $}Plotting Your Data}
+K{\footnote {\fs16\up6 K}plot;plot window}
+\plain \fs22 \b Plotting Your Data\plain  \par
+\par
+\par
+\plain \fs22 The plot you selected for your simulation data is displayed at this window.  You may use the 
+following pushbuttons to change the appearance of your plot, save the plot to a file, and generate a 
+draft hardcopy of your plot.\par
+\par
+{\b [Close]} returns you to the Simulation Results window.\par
+\par
+{\b [Axes...]} allows you to change the limits of your plot and choose your tick mark interval.\par
+\par
+{\b [Attributes...]} lets you customize the appearance of your plot.\par
+\par
+{\b [Save...]} allows you to save the results displayed in the plot to a file in graphical or text format.\par
+\par
+{\b [Print...]} lets you send the plot directly to an attached printer.\par
+\par
+\par
+{\b For more information:} \par
+\pard \fi720\sl0
+{\uldb Adjusting Plot Limits}{\v PLOTWIN_AXES} \par
+{\uldb Plot Attributes}{\v PLOTWIN_ATTRIBUTES} \par
+{\uldb Saving the Current Plot as a File}{\v PLOTWIN_SAVE} \par
+{\uldb Printing the Plot}{\v PLOTWIN_PRINT} \par
+\pard \sl0 
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PLOTWIN_AXES}
+${\footnote {\fs16\up6 $}Adjusting Plot Limits}
+K{\footnote {\fs16\up6 K}Plot Limits;plot axes}
++{\footnote {\fs16\up6 +}Help:080}
+\plain \fs22 \b Adjusting Plot Limits\plain  \par
+\par
+\par
+\plain \fs22 You can modify the horizontal and vertical limits of the plot, the number of tic marks, and the 
+number of decimal places for the axis labels.\par
+\par
+The minimum and maximum limits can be set to any desired range. You may use any tic mark 
+interval, with a limit of 40 tics on an axis. Up to 5 decimal places can be specified. To change any of 
+these values, click on the data entry field for the value to be changed and type in the new value 
+using floating point or scientific notation formats, or integers as appropriate.\par
+\par
+\par
+The following pushbuttons are available:\par
+\par
+{\b [OK]} accepts the current values, closes this window and redraws the plot using the new limits.  \par
+\par
+{\b [Undo]} resets the limits to their values when the dialog panel was activated.  \par
+\par
+{\b [Defaults]} resets the limits to their default values.  The default values are set by the minimum and 
+maximum values of the data sets being displayed, allowing all available data to be visible in the 
+plots.  \par
+\par
+{\b [Previous]} sets the limits to those used for the most recent plot of the data set.  \par
+\par
+\par \pard
+\page 
+
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PLOTWIN_SAVE}
+${\footnote {\fs16\up6 $}Saving the Current Plot as a File}
+K{\footnote {\fs16\up6 K}Saving a Plot;HPGL Output;PostScript Output;Tabular Output;simulation results;output;encapsulated PostScript Output;}
++{\footnote {\fs16\up6 +}Help:090}
+\plain \fs22 \b Saving the Current Plot as a File\plain \fs22 \par
+\par
+\par
+{\b File Formats} \par
+The plot displayed on the screen can be saved to a disk file in the following formats:\par
+\par
+o  as a standard PostScript file\par
+o  as an encapsulated PostScript file for import into other documents\par
+o  as an HPGL (Hewlett-Packard Graphics Language) file \par
+o  as a text file containing plot data in tabular form which can be imported into other software for 
+plotting or data analysis.  \par
+\par
+If the file is saved in graphical format it will have attributes (linestyles, colors, plot limits, etc.) 
+equivalent to those used to create the current plot(s) in the plot window.  If the file is saved in text 
+format, it will contain the simulation data visible in the current plot window.  \par
+\par
+{\b Orientation} \par
+You may select between landscape (horizontal) and portrait (vertical) formats for your plot.  This 
+rotates the plot by 90 degrees and rescales the x- and y-axes accordingly.\par
+\par
+{\b Color} \par
+SAVE AS MONOCHROME allows you to create a graphics file in black and white, rather than with 
+the colors displayed.  This option allows you to accomodate a variety of presentation needs and 
+printer capabilities.  If this option remains unchecked, the plot will be saved with the colors that 
+appear on your screen.\par
+\par
+{\b To save your plot to a file:} \par
+1.  Select the file format.\par
+2.  For plot files, select the orientation, and if you choose, the monochrome option.\par
+3.  Click {\b [Create File...]}.  This opens a filename selection window.\par
+4.  Specify a name and directory for the file to be created.\par
+5.  Click {\b [OK]}  in the filename dialogue box.\par
+\par
+\par
+The following pushbuttons are available:\par
+\par
+{\b [Close]} closes this window without creating a new output file.\par
+\par
+{\b [Create File...]} opens a filename selection window where you specify the name and location of the
+plot file.  A new file is created when you select {\b [OK]} at this window.\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}PLOTWIN_PRINT}
+${\footnote {\fs16\up6 $}Printing the Plot}
+K{\footnote {\fs16\up6 K}print;printing the plot;hardcopy;}
+\plain \fs22 \b Printing the Plot\plain \fs22 \par
+\par
+\par
+You may print a plot of the results of your simulation directly on a printer connected to your 
+computer.  This lets you generate hardcopies rapidly, but possibly at lower resolution than saving a 
+plot to a file.  CKS displays information on your default printer and printer driver, and allows you 
+to select available printer options.\par
+\par
+{\b Print as Monochrome} \par
+Checking this box causes your plot to be sent to the printer with all color information removed. The plot 
+will be printed in black and white, even if your printer has the capability for color printing. 
+This option allows you to accomodate a variety of presentation needs and printer 
+qualities.  If this option remains unchecked, the plot is sent to your printer with color information 
+that produces a color print using the current selected screen color set.
+\par
+\par
+\par
+The following pushbuttons are available:\par
+\par
+{\b [Close]} returns you to the plot window without printing a plot.\par
+\par
+{\b [Start Print]} prints the plot according to the selected options.\par
+\par
+{\b [Cancel Print]} cancels a print job. It is only available when the print job is active.\par
+\par
+{\b [Printer Setup]} opens the printer setup dialog window for your operating system.\par
+\par \pard
+\page 
+
+
+
+\pard \sl0 
+#{\footnote {\fs16\up6 #}SUBJECTS}
+${\footnote {\fs16\up6 $}Help subject index}
+K{\footnote {\fs16\up6 K}Topics}
+\plain \fs22 \b Help Subject Index\plain  \fs22 \par
+\par
+\par
+{\uldb The Active Simulation}{\v SIMULATION_STATUSWIN} \par
+{\uldb Adjusting Plot Limits}{\v PLOTWIN_AXES} \par
+{\uldb Constant Temperature}{\v TEMPERATURE_CONSTANT} \par 
+{\uldb Conventions Used in CKS Help}{\v CONVENTIONS} \par
+{\uldb Creating Reaction Files}{\v FILE_CREATE} \par
+{\uldb Editing a Rate Law}{\v RATE_LAW_EDIT} \par
+{\uldb Entering and Editing Species Data}{\v SPECIES_DATA} \par
+{\uldb Equilibrium Detect}{\v EQUILIBRIUM_DETECT} \par
+{\uldb External Data Format}{\v EXTERNAL_DATA} \par
+{\uldb File selection windows}{\v FILE_SELECTION} \par
+{\uldb How to Run a Simulation :  a quick tutorial}{\v TUTORIAL} \par
+{\uldb Listboxes}{\v LISTBOXES} \par
+{\uldb Overview of CKS}{\v OVERVIEW} \par
+{\uldb Plot Attributes}{\v PLOTWIN_ATTRIBUTES} \par
+{\uldb Plotting Your Data}{\v PLOTWIN} \par
+{\uldb Pressure Options}{\v PRESSURE} \par
+{\uldb Printing the Plot}{\v PLOTWIN_PRINT} \par
+{\uldb Programmed Temperature - Select External Profile}{\v TEMPERATURE_EXTPROF_EDIT} \par
+{\uldb Rate Constants}{\v RATE_CONSTANTS} \par
+{\uldb Rate Law}{\v RATE_LAW} \par
+{\uldb Reaction Conditions}{\v REACTION_CONDITIONS} \par
+{\uldb The Reaction Scheme}{\v REACTION_DATA_ENTRY} \par
+{\uldb The Reaction Step}{\v REACTION_STEP} \par
+{\uldb Saving the Current Plot as a File}{\v PLOTWIN_SAVE} \par
+{\uldb Selecting Plots of Simulation Results}{\v PLOT_SELECT} \par
+{\uldb Selecting Units for a New Reaction Scheme}{\v UNITS} \par
+{\uldb Setting Application Options}{\v FILE_PREFERENCES} \par
+{\uldb Setting Simulation Options}{\v SIMULATION_SETTINGS} \par
+{\uldb Setting Species Concentrations}{\v VERIFY_SPECCONC} \par
+{\uldb Setting up a Linear Temperature Program}{\v TEMPERATURE_LINEAR} \par
+{\uldb Temperature Options}{\v TEMPERATURE} \par
+{\uldb Using the Edit Menu}{\v MENU_EDIT} \par
+{\uldb Using the File Menu}{\v MENU_FILE} \par
+{\uldb Using the Main Menus}{\v MAIN_MENU} \par
+{\uldb Using the Main Window}{\v MAIN_WINDOW} \par
+{\uldb Using the Notebook}{\v NOTEBOOK} \par
+{\uldb Using the Results Menu}{\v MENU_RESULTS} \par
+{\uldb Using the Simulation Menu}{\v MENU_SIMULATION} \par
+{\uldb Using the View Menu}{\v MENU_VIEW} \par
+{\uldb Variable Temperature}{\v TEMPERATURE_VARIABLE} \par
+{\uldb Verifying Species Data}{\v VERIFY_SPECDATA} \par
+{\uldb Volume options}{\v VOLUME} \par
+{\uldb Working with a Simulation Queue}{\v QUEUE} \par
+\par \pard\page
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_ASCII}
+\plain \fs22 ASCII format\par
+\par
+This format is the American Standard Code for Information Interchange. The computer uses this code 
+to convert standard symbols such as punctuation, numerals, upper and lower case letters and certain 
+control characters (line feed, for example) to the form used internally.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_CHECKBOX}
+\plain \fs22 checkbox\par
+\par
+One or more checkboxes are provided for some program options to allow  settings to be selected. 
+None or all may be chosen in any combination.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_CLICK}
+\plain \fs22 \plain \fs22 click\par
+\par
+A single-click of the left mouse button.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_CLIPBOARD}
+\plain \fs22 clipboard\par
+\par
+This is a location where reaction steps cut or copied from the reaction scheme are placed.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_DATA_ENTRY_FIELD}
+\plain \fs22 data entry field\par
+\par
+Dialog windows for data input have one or more spaces where numbers or text can be typed. These 
+data entry fields become active when the cursor is placed on them.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_DETERMINISTIC}
+\plain \fs22 deterministic\par
+\par
+A deterministic simulation is one in which a system of equations is solved to predict the time history of 
+a reacting system.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_DOUBLE_CLICK}
+\plain \fs22 \plain \fs22 double-click\par
+\par
+Two rapid clicks of the left mouse button.\par
+\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_DRAG_AND_DROP}
+\plain \fs22 \plain \fs22 drag-and-drop\par
+\par
+Select an icon (by clicking on it with the left mouse button), and move it (by holding the right mouse 
+button down and moving the pointer to the desired location).\par
+\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_EVENT}
+\plain \fs22 event\par
+\par
+A simulation is carried out by selecting reaction steps from the reaction scheme, and updating the 
+system. Each selection cycle is an event.\par
+\par \pard\page
+
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_HELP_LINE}
+\plain \fs22 \plain \fs22 help line\par
+\par
+Describes the function of the main window item your mouse is currently pointing to.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_INDUCTIVE}
+\plain \fs22 inductive\par
+\par
+This is a method of reasoning which is commonly used to develop complex models. Experimental data 
+are analyzed to extract a simple mechanism, which is then used to make specific predictions about the 
+behavior of the system under different conditions. These predictions are compared to new experiments, 
+which are used in turn to refine the model in an iterative way.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_LISTBOX}
+\plain \fs22 listbox\par
+\par
+A set of names or lines of data are displayed in a listbox so that one or more can be selected for 
+actions such as data entry. There are three types of listboxes: \par
+o  single selection, where only one item can be selected at a time,\par
+o  multiple selection, where more than one item can be selected, and\par
+o  drop down, which shows only the currently selected item but is displayed in full when its button is 
+pushed.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_MULTITASKING}
+\plain \fs22 multitasking\par
+\par
+A multitasking operating system is one which allows the computer to work on several programs at once. 
+A computer program can also be designed to be internally multitasking, carrying out several tasks at 
+once. In this way, computer time is used very efficiently.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_PARTICLE}
+\plain \fs22 particle\par
+\par
+A simulation system contains a number of particles used to represent molecules, atoms and 
+pseudo-species which participate in the reaction scheme. Each particle is proportional to a 
+concentration or an amount, depending on the reaction conditions selected.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_PATH}
+\plain \fs22 path\par
+\par
+A path is the sequence of directory names leading from the root directory on a disk to a particular file. 
+Its form is drive:folder:subfolder:filename.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_PSEUDO_SPECIES}
+\plain \fs22 pseudo-species\par
+\par
+Simulations can be structured so that parts of molecules, or particular groups of molecules are followed 
+in the mechanism, rather than actual molecules. These pseudo-species are useful devices for 
+simplifying reaction schemes, or highlighting important features of a reaction.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_PULL_DOWN_MENU}
+\plain \fs22 pull-down menu\par
+\par
+Selection of one of the menu names listed in the main window causes a list of options to appear 
+beneath it. This list is a pull-down menu.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_PUSHBUTTON}
+\plain \fs22 pushbutton\par
+\par
+Pushbuttons located on dialog windows allow various actions to be chosen.\par
+\par \pard\page
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_RADIO_BUTTON}
+\plain \fs22 radio button\par
+\par
+A set of radio buttons is used to represent several possible settings available for a particular program 
+option. They are used when one, but only one, of the settings must be selected.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_RANDOM_NUMBER_SEED}
+\plain \fs22 random number seed\par
+\par
+This is a number between 1 and 30000 which is used to initiate a sequence of random numbers for 
+selection of events in the simulation.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_REACTION_LISTBOX}
+\plain \fs22 \plain \fs22 reaction listbox\par
+\par
+The reaction steps of the currently active reaction scheme are displayed in the reaction listbox.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_SLOT}
+\plain \fs22 slot\par
+\par
+Up to nine reaction schemes can be kept active in memory at once. Each scheme is placed in a slot, 
+the nine slots are shown using \plain \b\fs22 File|Select\plain \fs22 .\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_STOCHASTIC}
+\plain \fs22 stochastic\par
+\par
+The stochastic simulation is a probabilistic method for predicting the time evolution of a reacting 
+system.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_TEMP_CONV_STAND}
+\plain \fs22 temperature convergence standard\par
+\par
+This is a parameter used in variable temperature calculations. When the temperature is updated, it is 
+calculated iteratively from the enthalpy and temperature-dependent heat capacity of the system. The 
+convergence standard is used to compare temperatures from two successive iterations. If their 
+difference is less than the standard, the calculation has converged.\par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_TEMP_PROFILE}
+\plain \fs22 temperature profile\par
+\par
+This is a list of time-temperature points which establishes the instantaneous temperature in a
+simulation. \par
+\par \pard\page
+
+
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_TIME_STEP}
+\plain \fs22 time step\par
+\par
+This is the calculated time which elapses between two events in a simulation.\par
+\par \pard\page
+
+\pard \sl0
+#{\footnote {\fs16\up6 #}DEFINITION_TIMEBASE}
+\plain \fs22 timebase\par
+\par
+The timebase in a simulation is the time history of the events which are selected.
+\par \pard\page
+
+
+
+}

@@ -1,0 +1,63 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "filquery.hrc"
+ModalDialog vID_FILL_QUERY_DLG {
+	Pos = MAP_SYSFONT( 25, 17 );
+	Size = MAP_SYSFONT( 222, 87 );
+	Text = "Paste/Fill Dimensioned Compartment";
+	Moveable = TRUE;
+	Closeable = TRUE;
+	PushButton vID_BTN_USE_CLIP_DIMS {
+			Pos = MAP_SYSFONT( 115, 5 );
+			Size = MAP_SYSFONT( 100, 12 );
+			Text = "Use these dimensions";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_USE_TARGET_DIMS {
+			Pos = MAP_SYSFONT( 115, 22 );
+			Size = MAP_SYSFONT( 100, 12 );
+			Text = "Leave target compt dimns unchanged";
+			TabStop = TRUE;
+		};
+	CancelButton vID_BTN_CANCEL {
+			Pos = MAP_SYSFONT( 115, 39 );
+			Size = MAP_SYSFONT( 100, 12 );
+			Text = "Cancel this operation";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 115, 56 );
+			Size = MAP_SYSFONT( 100, 12 );
+			TabStop = TRUE;
+		};
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 5, 5 );
+			Size = MAP_SYSFONT( 101, 16 );
+			Text = "The compartment on the clipboard has the following dimensions:";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_X {
+			Pos = MAP_SYSFONT( 14, 22 );
+			Size = MAP_SYSFONT( 80, 8 );
+			Text = "X :";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_Y {
+			Pos = MAP_SYSFONT( 14, 29 );
+			Size = MAP_SYSFONT( 79, 8 );
+			Text = "Y:";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_Z {
+			Pos = MAP_SYSFONT( 14, 36 );
+			Size = MAP_SYSFONT( 80, 8 );
+			Text = "Z :";
+			Left = TRUE;
+		};
+	FixedText 5 {
+			Pos = MAP_SYSFONT( 5, 50 );
+			Size = MAP_SYSFONT( 101, 16 );
+			Text = "How should the target compartment be dimensioned during this operation?";
+			Left = TRUE;
+		};
+};

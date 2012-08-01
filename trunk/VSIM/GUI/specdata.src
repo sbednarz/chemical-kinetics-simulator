@@ -1,0 +1,325 @@
+ModalDialog msimSPECIESDATA_PANEL {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        HelpID = msimSPECIES_DATA;
+        Pos = MAP_SYSFONT( 0, 0 );
+        Size = MAP_SYSFONT( 100, 50 );
+        DeltaLang = < Default; Default; Default; Default; >;
+        DeltaLang[ ENGLISH_US ] = < 6; Default; 170; 142; >;
+        Text = "ModalDialog";
+        Text[ ENGLISH_US ] = "MSIM - Species Data Edit : ";
+        Moveable = TRUE;
+        ListBox msimSPECIESDATA_LISTBOX {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 24 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 56; 14; 20; 33; >;
+                        TabStop = TRUE;
+                        HScroll = TRUE;
+                };
+        FixedText msimSPECIESDATA_SPECIES_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 132; 25; 65; Default; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "The properties of species";
+                        Center = TRUE;
+                };
+        FixedText 2 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 132; 49; 65; Default; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "  are currently displayed";
+                        Center = TRUE;
+                };
+        RadioButton msimSPECIESDATA_SOLID {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 93; Default; -1; >;
+                        Text = "RadioButton";
+                        Text[ ENGLISH_US ] = "~Solid";
+                        TabStop = TRUE;
+                };
+        RadioButton msimSPECIESDATA_LIQUID {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 105; Default; -1; >;
+                        Text = "RadioButton";
+                        Text[ ENGLISH_US ] = "~Liquid";
+                        TabStop = TRUE;
+                };
+        RadioButton msimSPECIESDATA_GAS {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 117; Default; -1; >;
+                        Text = "RadioButton";
+                        Text[ ENGLISH_US ] = "~Gas";
+                        TabStop = TRUE;
+                };
+        FixedText msimSPECIESDATA_DENSITY_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 137; 20; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "Molar Density :";
+                        Left = TRUE;
+                };
+        Edit msimSPECIESDATA_DENSITY {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 12; 149; Default; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_DENSUNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 58; 150; Default; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        FixedText msimSPECIESDATA_ENTHALPY_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 114; 96; -7; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "Enthalpy";
+                        Right = TRUE;
+                };
+        Edit msimSPECIESDATA_ENTHALPY {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 152; 95; 5; -1; >;
+                        Text = "Edit";
+                        Text[ ENGLISH_US ] = "";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_ENTH_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 200; 96; 22; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        FixedText msimSPECIESDATA_A_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 114; 110; -7; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "A";
+                        Right = TRUE;
+                };
+        Edit msimSPECIESDATA_A {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 152; 109; 5; -1; >;
+                        Text = "Edit";
+                        Text[ ENGLISH_US ] = "";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_A_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 200; 110; 22; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        FixedText msimSPECIESDATA_B_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 116; 124; -9; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "B";
+                        Right = TRUE;
+                };
+        Edit msimSPECIESDATA_B {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 152; 123; 5; -1; >;
+                        Text = "Edit";
+                        Text[ ENGLISH_US ] = "";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_B_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 200; 124; 22; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        FixedText msimSPECIESDATA_C_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 116; 138; -9; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "C";
+                        Right = TRUE;
+                };
+        Edit msimSPECIESDATA_C {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 152; 137; 5; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_C_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 200; 138; 22; Default; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        FixedText msimSPECIESDATA_D_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 114; 152; -7; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "D";
+                        Right = TRUE;
+                };
+        Edit msimSPECIESDATA_D {
+                        Border = TRUE;
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 152; 151; 5; -1; >;
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText msimSPECIESDATA_D_UNITS {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 200; 152; 22; -1; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "";
+                        Left = TRUE;
+                };
+        OKButton msimSPECIESDATA_CLOSE {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 175; Default; -1; >;
+                        Text = "";
+                        Text[ ENGLISH_US ] = "~OK";
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        PushButton msimSPECIESDATA_DEFAULTS {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 48; 175; Default; -1; >;
+                        Text = "PushButton";
+                        Text[ ENGLISH_US ] = "~Defaults";
+                        TabStop = TRUE;
+                };
+        PushButton msimSPECIESDATA_UNDO {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 94; 175; Default; -1; >;
+                        Text = "PushButton";
+                        Text[ ENGLISH_US ] = "~Undo All";
+                        TabStop = TRUE;
+                };
+        HelpButton msimSPECIESDATA_HELP {
+                        HelpID = msimSPECIES_DATA;
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 12 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 138; 175; Default; -1; >;
+                        Text = "";
+                        Text[ ENGLISH_US ] = "~Help";
+                        TabStop = TRUE;
+                };
+        FixedText msimSPECIESDATA_NAME_STR {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 40, 10 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 160; 37; 10; Default; >;
+                        Text = "FixedText";
+                        Text[ ENGLISH_US ] = "O";
+                        Center = TRUE;
+                };
+        GroupBox msimSPECIESDATA_COEFFLABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 28, 17 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 110; 81; 128; 71; >;
+                        Text = "GroupBox";
+                        Text[ ENGLISH_US ] = "Thermochemical Coefficients";
+                };
+        GroupBox 2 {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 28, 17 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 6; 234; 52; >;
+                        Text = "GroupBox";
+                        Text[ ENGLISH_US ] = "Select Species";
+                };
+        GroupBox msimSPECIESDATA_STATE_LABEL {
+                        Pos = MAP_SYSFONT( 0, 0 );
+                        Size = MAP_SYSFONT( 28, 17 );
+                        DeltaLang = < Default; Default; Default; Default; >;
+                        DeltaLang[ ENGLISH_US ] = < 4; 81; 70; 71; >;
+                        Text = "GroupBox";
+                        Text[ ENGLISH_US ] = "Physical State";
+                };
+};
+

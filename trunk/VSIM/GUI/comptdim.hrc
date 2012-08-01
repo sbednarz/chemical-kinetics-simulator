@@ -1,0 +1,12 @@
+/* StarView ressource header file */
+#define vID_DLG_COMPT_DIM_EDIT 4740
+#define vID_GB_1 1
+#define vID_BTN_CLOSE 1
+#define vID_BTN_UNDO 1
+#define vID_BTN_HELP 1
+#define vID_STEXT_Y_DIMENSION 4
+#define vID_STEXT_Z_DIMENSION 5
+#define vID_STEXT_X_DIMENSION 3
+#define vID_X_DIM_EF 1
+#define vID_Y_DIM_EF 2
+#define vID_Z_DIM_EF 3

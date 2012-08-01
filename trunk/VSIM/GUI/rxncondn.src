@@ -1,0 +1,829 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "rxncondn.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_CONST_TEMP {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_CONSTTEMP;
+	Pos = MAP_SYSFONT( 19, 24 );
+	Size = MAP_SYSFONT( 164, 59 );
+	Text = "Set Reaction Temperature";
+	Moveable = TRUE;
+	Edit vID_EF_CONST_TEMP_VALUE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 16 );
+			Size = MAP_SYSFONT( 39, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 59, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 116, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_UNITS_LABEL {
+			Pos = MAP_SYSFONT( 131, 17 );
+			Size = MAP_SYSFONT( 24, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_ENTRYFIELD_LABEL {
+			Pos = MAP_SYSFONT( 10, 17 );
+			Size = MAP_SYSFONT( 78, 10 );
+			Text = "Reaction temperature";
+			Right = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 156, 32 );
+		};
+};
+ModalDialog vID_DLG_VAR_TEMP {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_VARTEMP;
+	Pos = MAP_SYSFONT( 24, 26 );
+	Size = MAP_SYSFONT( 188, 77 );
+	Text = "Set Initial Temperature";
+	Moveable = TRUE;
+	Edit vID_EF_INITTEMP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 112, 18 );
+			Size = MAP_SYSFONT( 35, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_TEMP_CONVERGE_STD {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 112, 34 );
+			Size = MAP_SYSFONT( 35, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 60 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 71, 60 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 140, 60 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_INIT_TEMP_LABEL {
+			Pos = MAP_SYSFONT( 6, 19 );
+			Size = MAP_SYSFONT( 104, 10 );
+			Text = "Initial Temperature";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_CONVG_STD_LABEL {
+			Pos = MAP_SYSFONT( 6, 36 );
+			Size = MAP_SYSFONT( 104, 10 );
+			Text = "Temperature convergence std";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_INIT_TEMP_UNITS {
+			Pos = MAP_SYSFONT( 149, 19 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_CONVG_STD_UNITS {
+			Pos = MAP_SYSFONT( 149, 36 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 180, 50 );
+		};
+};
+ModalDialog vID_DLG_RXN_OPTIONS {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_RXNCONDN;
+	Pos = MAP_SYSFONT( 33, 8 );
+	Size = MAP_SYSFONT( 278, 182 );
+	Text = "Set Reaction Conditions";
+	Moveable = TRUE;
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 3, 6 );
+			Size = MAP_SYSFONT( 204, 78 );
+			Text = "Temperature";
+		};
+	RadioButton vID_RB_CONST_TEMP {
+			Pos = MAP_SYSFONT( 9, 17 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "~Constant at 298 deg K";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_VAR_TEMP {
+			Pos = MAP_SYSFONT( 9, 28 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "V~ariable with initial T = 298 deg K";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_PROG_TEMP {
+			Pos = MAP_SYSFONT( 9, 39 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Follow ~linear prog T(t) = 100.0 + 1.0 t (sec)";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_EXT_T_PROFILE {
+			Pos = MAP_SYSFONT( 9, 49 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Follow ~external profile in file : >>no file<<";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_CHANGE_TEMP_SETTINGS {
+			Pos = MAP_SYSFONT( 68, 67 );
+			Size = MAP_SYSFONT( 75, 11 );
+			Text = "Change ~Settings...";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 3, 91 );
+			Size = MAP_SYSFONT( 204, 65 );
+			Text = "Volume";
+		};
+	RadioButton vID_RB_CONST_VOLUME {
+			Pos = MAP_SYSFONT( 9, 104 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Cons~tant";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_VAR_VOLUME {
+			Pos = MAP_SYSFONT( 9, 115 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "~Variable";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_DONT_CARE_VOL {
+			Pos = MAP_SYSFONT( 9, 126 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Not trac~ked";
+			TabStop = TRUE;
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 214, 91 );
+			Size = MAP_SYSFONT( 60, 65 );
+			Text = "Pressure";
+		};
+	RadioButton vID_RB_CONST_PRESS {
+			Pos = MAP_SYSFONT( 218, 104 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "Co~nstant";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_VAR_PRESS {
+			Pos = MAP_SYSFONT( 218, 115 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "Va~riable";
+			TabStop = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 3, 164 );
+			Size = MAP_SYSFONT( 48, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			Pos = MAP_SYSFONT( 63, 164 );
+			Size = MAP_SYSFONT( 48, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 123, 164 );
+			Size = MAP_SYSFONT( 48, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 183, 164 );
+			Size = MAP_SYSFONT( 48, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_CHANGE_VOLUME_SETTINGS {
+			Pos = MAP_SYSFONT( 68, 139 );
+			Size = MAP_SYSFONT( 75, 11 );
+			Text = "Change ~Settings...";
+			TabStop = TRUE;
+		};
+	GroupBox 4 {
+			Pos = MAP_SYSFONT( 214, 6 );
+			Size = MAP_SYSFONT( 60, 78 );
+			Text = "Compartment Phase";
+		};
+	RadioButton vID_RB_SOLID_PHASE {
+			Pos = MAP_SYSFONT( 218, 17 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "~Solid";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_LIQUID_PHASE {
+			Pos = MAP_SYSFONT( 218, 28 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "Li~quid";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_GAS_PHASE {
+			Pos = MAP_SYSFONT( 218, 39 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "~Gas";
+			TabStop = TRUE;
+		};
+};
+ModalDialog vID_DLG_RXN_OPTIONS_3D {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_RXNCONDN;
+	Pos = MAP_SYSFONT( 33, 6 );
+	Size = MAP_SYSFONT( 277, 152 );
+	Text = "Set Reaction Conditions";
+	Moveable = TRUE;
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 3, 6 );
+			Size = MAP_SYSFONT( 204, 78 );
+			Text = "Temperature";
+		};
+	RadioButton vID_RB_CONST_TEMP {
+			Pos = MAP_SYSFONT( 9, 17 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "~Constant at 298 deg K";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_VAR_TEMP {
+			Pos = MAP_SYSFONT( 9, 28 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "V~ariable with initial T = 298 deg K";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_PROG_TEMP {
+			Pos = MAP_SYSFONT( 9, 39 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Follow ~linear prog T(t) = 100.0 + 1.0 t (sec)";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_EXT_T_PROFILE {
+			Pos = MAP_SYSFONT( 9, 49 );
+			Size = MAP_SYSFONT( 195, 12 );
+			Text = "Follow ~external profile in file : >>no file<<";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_CHANGE_TEMP_SETTINGS {
+			Pos = MAP_SYSFONT( 68, 67 );
+			Size = MAP_SYSFONT( 75, 11 );
+			Text = "Change ~Settings...";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 3, 91 );
+			Size = MAP_SYSFONT( 204, 41 );
+			Text = "Volume";
+		};
+	RadioButton vID_RB_CONST_VOLUME {
+			Pos = MAP_SYSFONT( 9, 104 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "Cons~tant";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_VAR_VOLUME {
+			Pos = MAP_SYSFONT( 9, 114 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "~Variable";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_VARIABLE_DIMENSIONS {
+			Pos = MAP_SYSFONT( 63, 106 );
+			Size = MAP_SYSFONT( 142, 8 );
+			Text = "Dimensions that can vary with volume";
+			Center = TRUE;
+		};
+	CheckBox vID_CB_X {
+			Pos = MAP_SYSFONT( 100, 115 );
+			Size = MAP_SYSFONT( 20, 10 );
+			Text = "~X";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_Y {
+			Pos = MAP_SYSFONT( 125, 115 );
+			Size = MAP_SYSFONT( 20, 10 );
+			Text = "~Y";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_Z {
+			Pos = MAP_SYSFONT( 148, 115 );
+			Size = MAP_SYSFONT( 20, 10 );
+			Text = "~Z";
+			TabStop = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 3, 138 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			Pos = MAP_SYSFONT( 50, 138 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 97, 138 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 144, 138 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 212, 6 );
+			Size = MAP_SYSFONT( 60, 78 );
+			Text = "Compartment Phase";
+		};
+	RadioButton vID_RB_SOLID_PHASE {
+			Pos = MAP_SYSFONT( 216, 17 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "~Solid";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_LIQUID_PHASE {
+			Pos = MAP_SYSFONT( 216, 28 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "Li~quid";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_GAS_PHASE {
+			Pos = MAP_SYSFONT( 216, 39 );
+			Size = MAP_SYSFONT( 50, 12 );
+			Text = "~Gas";
+			TabStop = TRUE;
+		};
+};
+ModalDialog vID_DLG_EXT_T_PROFILE {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_EXT_TPRO;
+	Pos = MAP_SYSFONT( 23, 2 );
+	Size = MAP_SYSFONT( 257, 206 );
+	Text = "Select External Temperature Profile";
+	Moveable = TRUE;
+	FixedText vID_STEXT_FILENAME {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 12, 16 );
+			Size = MAP_SYSFONT( 236, 10 );
+			Text = "filename goes here";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	PushButton vID_BTN_SELECT_FILE {
+			Pos = MAP_SYSFONT( 37, 31 );
+			Size = MAP_SYSFONT( 76, 11 );
+			Text = "~Select a File...";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_PROFILE_CREATE {
+			Pos = MAP_SYSFONT( 137, 31 );
+			Size = MAP_SYSFONT( 76, 11 );
+			Text = "Create ~New...";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_EDIT_PROF_LABEL {
+			Pos = MAP_SYSFONT( 12, 66 );
+			Size = MAP_SYSFONT( 73, 10 );
+			Text = " Time  Temperature";
+			Left = TRUE;
+			Right = TRUE;
+		};
+	FixedText 3 {
+			Pos = MAP_SYSFONT( 11, 167 );
+			Size = MAP_SYSFONT( 90, 10 );
+			Text = "Maximum step size :";
+			Right = TRUE;
+		};
+	FixedText 4 {
+			Pos = MAP_SYSFONT( 157, 167 );
+			Size = MAP_SYSFONT( 40, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	MultiLineEdit vID_MLE_EDIT_PROFILE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 14, 76 );
+			Size = MAP_SYSFONT( 73, 66 );
+			TabStop = TRUE;
+			Left = TRUE;
+			HScroll = TRUE;
+			VScroll = TRUE;
+		};
+	PushButton vID_BTN_REFRESH {
+			Pos = MAP_SYSFONT( 16, 144 );
+			Size = MAP_SYSFONT( 68, 11 );
+			Text = "~Refresh Plot";
+			TabStop = TRUE;
+		};
+	Edit vID_EF_STEPSIZE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 104, 166 );
+			Size = MAP_SYSFONT( 50, 12 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 6, 189 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 58, 189 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_SAVEAS {
+			Pos = MAP_SYSFONT( 110, 189 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "Save ~As...";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 163, 189 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 4, 53 );
+			Size = MAP_SYSFONT( 249, 106 );
+			Text = "File contents";
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 3, 5 );
+			Size = MAP_SYSFONT( 249, 40 );
+			Text = "Temperature profile data file";
+		};
+	Window vID_WINDOW_PLOT_WINDOW {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 93, 62 );
+			Size = MAP_SYSFONT( 155, 91 );
+		};
+};
+ModalDialog vID_DLG_VARIABLE_VOLUME {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_VARVOL;
+	Pos = MAP_SYSFONT( 19, 24 );
+	Size = MAP_SYSFONT( 164, 59 );
+	Text = "Set Initial Compartment Volume";
+	Moveable = TRUE;
+	Edit vID_EF_INITIAL_VOLUME_VALUE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 16 );
+			Size = MAP_SYSFONT( 39, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 47, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 89, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_VOLUME_UNITS {
+			Pos = MAP_SYSFONT( 131, 17 );
+			Size = MAP_SYSFONT( 24, 10 );
+			Text = "liters";
+			Left = TRUE;
+		};
+	FixedText 2 {
+			Pos = MAP_SYSFONT( 6, 17 );
+			Size = MAP_SYSFONT( 82, 10 );
+			Text = "Compartment volume";
+			Right = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 156, 32 );
+		};
+};
+ModalDialog vID_DLG_CONST_VOLUME {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_CONSTVOL;
+	Pos = MAP_SYSFONT( 19, 24 );
+	Size = MAP_SYSFONT( 164, 59 );
+	Text = "Set Compartment Volume";
+	Moveable = TRUE;
+	Edit vID_EF_CONST_VOLUME_VALUE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 16 );
+			Size = MAP_SYSFONT( 39, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 47, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 89, 42 );
+			Size = MAP_SYSFONT( 35, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_VOLUME_UNITS {
+			Pos = MAP_SYSFONT( 131, 17 );
+			Size = MAP_SYSFONT( 24, 10 );
+			Text = "liters";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_VOLUME_LABEL {
+			Pos = MAP_SYSFONT( 6, 17 );
+			Size = MAP_SYSFONT( 82, 10 );
+			Text = "Compartment volume";
+			Right = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 156, 32 );
+		};
+};
+ModalDialog vID_DLG_TEMP_PROGR {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_LIN_TPROG;
+	Pos = MAP_SYSFONT( 18, 12 );
+	Size = MAP_SYSFONT( 208, 153 );
+	Text = "Set Linear Temperature Program";
+	Moveable = TRUE;
+	FixedText vID_STEXT_EQN_LABEL {
+			Pos = MAP_SYSFONT( 12, 18 );
+			Size = MAP_SYSFONT( 176, 10 );
+			Text = "T(t) = Initial Temperature + (Slope x time) where";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_INIT_TEMP_LABEL {
+			Pos = MAP_SYSFONT( 9, 34 );
+			Size = MAP_SYSFONT( 93, 10 );
+			Text = "Initial Temperature";
+			Right = TRUE;
+		};
+	Edit vID_EF_INIT_TEMP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 107, 32 );
+			Size = MAP_SYSFONT( 50, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	FixedText vID_STEXT_TEMP_UNIT_LABEL {
+			Pos = MAP_SYSFONT( 161, 34 );
+			Size = MAP_SYSFONT( 40, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_SLOPE_LABEL {
+			Pos = MAP_SYSFONT( 13, 52 );
+			Size = MAP_SYSFONT( 89, 10 );
+			Text = "Slope";
+			Right = TRUE;
+		};
+	Edit vID_EF_SLOPE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 107, 50 );
+			Size = MAP_SYSFONT( 50, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	FixedText vID_STEXT_SLOPE_UNITS_LABEL {
+			Pos = MAP_SYSFONT( 161, 52 );
+			Size = MAP_SYSFONT( 40, 10 );
+			Text = "deg/min";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_STEP_SIZE_LABEL {
+			Pos = MAP_SYSFONT( 8, 92 );
+			Size = MAP_SYSFONT( 94, 10 );
+			Text = "Maximum Step Size";
+			Right = TRUE;
+		};
+	Edit vID_EF_MAX_TEMP_STEP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 107, 90 );
+			Size = MAP_SYSFONT( 50, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	FixedText vID_STEXT_MAX_STEP_UNITS {
+			Pos = MAP_SYSFONT( 161, 92 );
+			Size = MAP_SYSFONT( 40, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_MAX_TEMP_LABEL {
+			Pos = MAP_SYSFONT( 8, 110 );
+			Size = MAP_SYSFONT( 94, 10 );
+			Text = "Final Temperature";
+			Right = TRUE;
+		};
+	Edit vID_EF_MAX_TEMP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 107, 108 );
+			Size = MAP_SYSFONT( 50, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	FixedText vID_STEXT_MAX_TEMP_UNITS {
+			Pos = MAP_SYSFONT( 161, 110 );
+			Size = MAP_SYSFONT( 40, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 5, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 55, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			Pos = MAP_SYSFONT( 105, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 155, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 76 );
+			Size = MAP_SYSFONT( 200, 54 );
+			Text = "Other Settings";
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 200, 64 );
+			Text = "Temperature Program";
+		};
+};
+
+ModalDialog vID_DLG_SET_COMPT_TEMP {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_SET_COMPT_TEMP;
+	Pos = MAP_SYSFONT( 19, 24 );
+	Size = MAP_SYSFONT( 164, 59 );
+	Text = "Set Temperature For All Compartments";
+	Moveable = TRUE;
+	Edit vID_EF_CONST_TEMP_VALUE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 90, 16 );
+			Size = MAP_SYSFONT( 39, 10 );
+			Text = "Edit";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 59, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 116, 42 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_UNITS_LABEL {
+			Pos = MAP_SYSFONT( 131, 17 );
+			Size = MAP_SYSFONT( 24, 10 );
+			Text = "deg K";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_ENTRYFIELD_LABEL {
+			Pos = MAP_SYSFONT( 10, 17 );
+			Size = MAP_SYSFONT( 78, 10 );
+			Text = "Compartment temperature";
+			Right = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 156, 32 );
+		};
+};

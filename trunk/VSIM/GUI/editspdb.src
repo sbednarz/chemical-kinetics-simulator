@@ -1,0 +1,212 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "editspdb.hrc"
+#include "help.hhc"          
+ModalDialog vID_DLG_SPECIES_DATA {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 38, 18 );
+        Size = MAP_SYSFONT( 270, 192 );
+        Text = "Edit Species Data";
+        Moveable = TRUE;
+        HelpID = HLP_EDITSPDB;   
+        ListBox vID_LB_SPECIES_NAMES {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 56, 14 );
+                        Size = MAP_SYSFONT( 60, 57 );
+                        TabStop = TRUE;
+                        HScroll = TRUE;
+                };
+        FixedText vID_STEXT_SPECIES_LABEL {
+                        Pos = MAP_SYSFONT( 132, 25 );
+                        Size = MAP_SYSFONT( 105, 10 );
+                        Text = "The properties of species";
+                        Center = TRUE;
+                };
+        FixedText 2 {
+                        Pos = MAP_SYSFONT( 132, 49 );
+                        Size = MAP_SYSFONT( 105, 10 );
+                        Text = "  are currently displayed";
+                        Center = TRUE;
+                };
+        RadioButton vID_RB_PHASE_SOLID {
+                        Pos = MAP_SYSFONT( 12, 93 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Solid";
+                        TabStop = TRUE;
+                };
+        RadioButton vID_RB_PHASE_LIQUID {
+                        Pos = MAP_SYSFONT( 12, 105 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Liquid";
+                        TabStop = TRUE;
+                };
+        RadioButton vID_RB_PHASE_GAS {
+                        Pos = MAP_SYSFONT( 12, 117 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Gas";
+                        TabStop = TRUE;
+                };
+        FixedText vID_STEXT_DENSITY_LABEL {
+                        Pos = MAP_SYSFONT( 12, 137 );
+                        Size = MAP_SYSFONT( 60, 9 );
+                        Text = "Molar Density :";
+                        Left = TRUE;
+                };
+        Edit vID_EF_DENSITY {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 12, 149 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_DENSITY_UNITS {
+                        Pos = MAP_SYSFONT( 58, 150 );
+                        Size = MAP_SYSFONT( 40, 9 );
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_ENTHALPY_LABEL {
+                        Pos = MAP_SYSFONT( 114, 96 );
+                        Size = MAP_SYSFONT( 33, 9 );
+                        Text = "Enthalpy";
+                        Right = TRUE;
+                };
+        Edit vID_EF_ENTHALPY {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 152, 95 );
+                        Size = MAP_SYSFONT( 45, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_ENTHALPY_UNITS {
+                        Pos = MAP_SYSFONT( 200, 96 );
+                        Size = MAP_SYSFONT( 62, 9 );
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_A_LABEL {
+                        Pos = MAP_SYSFONT( 114, 110 );
+                        Size = MAP_SYSFONT( 33, 9 );
+                        Text = "A";
+                        Right = TRUE;
+                };
+        Edit vID_EF_A {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 152, 109 );
+                        Size = MAP_SYSFONT( 45, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_A_UNITS {
+                        Pos = MAP_SYSFONT( 200, 110 );
+                        Size = MAP_SYSFONT( 62, 9 );
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_B_LABEL {
+                        Pos = MAP_SYSFONT( 116, 124 );
+                        Size = MAP_SYSFONT( 31, 9 );
+                        Text = "B";
+                        Right = TRUE;
+                };
+        Edit vID_EF_B {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 152, 123 );
+                        Size = MAP_SYSFONT( 45, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_B_UNITS {
+                        Pos = MAP_SYSFONT( 200, 124 );
+                        Size = MAP_SYSFONT( 62, 9 );
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_C_LABEL {
+                        Pos = MAP_SYSFONT( 116, 138 );
+                        Size = MAP_SYSFONT( 31, 9 );
+                        Text = "C";
+                        Right = TRUE;
+                };
+        Edit vID_EF_C {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 152, 137 );
+                        Size = MAP_SYSFONT( 45, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_C_UNITS {
+                        Pos = MAP_SYSFONT( 200, 138 );
+                        Size = MAP_SYSFONT( 62, 10 );
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_D_LABEL {
+                        Pos = MAP_SYSFONT( 114, 152 );
+                        Size = MAP_SYSFONT( 33, 9 );
+                        Text = "D";
+                        Right = TRUE;
+                };
+        Edit vID_EF_D {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 152, 151 );
+                        Size = MAP_SYSFONT( 45, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        FixedText vID_STEXT_D_UNITS {
+                        Pos = MAP_SYSFONT( 200, 152 );
+                        Size = MAP_SYSFONT( 62, 9 );
+                        Left = TRUE;
+                };
+        OKButton vID_BTN_CLOSE {
+                        Pos = MAP_SYSFONT( 5, 175 );
+                        Size = MAP_SYSFONT( 48, 11 );
+                        Text = "~OK";
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        PushButton vID_BTN_DEFAULTS {
+                        Pos = MAP_SYSFONT( 60, 175 );
+                        Size = MAP_SYSFONT( 48, 11 );
+                        Text = "~Defaults";
+                        TabStop = TRUE;
+                };
+        PushButton vID_BTN_UNDO {
+                        HelpID = 1;
+                        Pos = MAP_SYSFONT( 115, 175 );
+                        Size = MAP_SYSFONT( 48, 11 );
+                        Text = "~Undo";
+                        TabStop = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 170, 175 );
+                        Size = MAP_SYSFONT( 48, 11 );
+                        Text = "~Help";
+                        TabStop = TRUE;
+                };
+        FixedText vID_STEXT_SPECIES_NAME {
+                        Pos = MAP_SYSFONT( 160, 37 );
+                        Size = MAP_SYSFONT( 50, 10 );
+                        Text = "O";
+                        Center = TRUE;
+                };
+        GroupBox vID_GB_COEFF_LABEL {
+                        Pos = MAP_SYSFONT( 110, 81 );
+                        Size = MAP_SYSFONT( 156, 88 );
+                        Text = "Thermochemical Coefficients";
+                };
+        GroupBox 2 {
+                        Pos = MAP_SYSFONT( 4, 6 );
+                        Size = MAP_SYSFONT( 262, 69 );
+                        Text = "Select Species";
+                };
+        GroupBox vID_GB_STATE_LABEL {
+                        Pos = MAP_SYSFONT( 4, 81 );
+                        Size = MAP_SYSFONT( 98, 88 );
+                        Text = "Physical State";
+                };
+};
+

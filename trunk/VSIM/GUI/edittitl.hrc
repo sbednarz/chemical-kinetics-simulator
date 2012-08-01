@@ -1,0 +1,7 @@
+/* StarView ressource header file */
+#define v_ID_DLG_EDIT_TITLE 2555
+#define vID_BTN_CLOSE 1
+#define vID_BTN_UNDO 1
+#define vID_BTN_HELP 1
+#define vID_EF_TITLE_TEXT 1
+

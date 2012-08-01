@@ -1,0 +1,23 @@
+#define vID_DLG_SIMULATION_OPTIONS         5600
+#define vID_EF_NUM_MOLS                    1
+#define vID_EF_RECORD_INTERVAL             2
+#define vID_EF_RND_NUM_SEED                3
+#define vID_EF_NUM_EVENTS                  4
+#define vID_EF_ELAPSED_TIME_LIMIT          5
+#define vID_EF_CYCLE_COUNT                 6
+#define vID_EF_MIN_EFFICIENCY              7
+#define vID_RB_ENABLE_EQUIL_DETECT         1
+#define vID_RB_DISABLE_EQUIL_DETECT        2
+#define vID_BTN_CLOSE                      1
+#define vID_BTN_DEFAULTS                   1
+#define vID_BTN_UNDO                       2
+#define vID_BTN_HELP                       1
+#define vID_STEXT_MAX_NUM_EVENTS_LABEL     1
+#define vID_STEXT_NUM_MOLS_LABEL           2
+#define vID_STEXT_RECORD_INTERVAL_LABEL    3
+#define vID_STEXT_RANDOM_NUM_SEED_LABEL    5
+#define vID_STEXT_SELECTION_FREQ_LABEL     6
+#define vID_STEXT_MAX_SIMULATION_TIME_LABEL 7
+#define vID_STEXT_CYCLE_LENGTH_LABEL        9
+#define vID_STEXT_ET_LIMITS_UNITS          10
+

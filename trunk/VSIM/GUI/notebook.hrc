@@ -1,0 +1,7 @@
+#define vID_DLG_NOTEBOOK       5500
+#define vID_MLE_NOTEBOOK       1
+#define vID_BTN_CLOSE          1
+#define vID_BTN_UNDO           1
+#define vID_BTN_CLEAR          2
+#define vID_BTN_HELP           1
+

@@ -1,0 +1,802 @@
+#include "mainmenu.hrc"
+
+Menu vID_MENU_MAIN
+{
+    ItemList =
+    {
+        MenuItem
+        {
+            Identifier = vID_MI_FILE;
+            Text       = "~File";
+            SubMenu    = Menu vID_MENU_FILE;
+            HelpText   = "Initiates various file actions ";
+        };
+        MenuItem
+        {
+            Identifier = vID_MI_EDIT;
+            Text       = "~Edit";
+            SubMenu    = Menu vID_MENU_EDIT;
+            HelpText   = "Enter and edit reaction mechanisms and conditions ";
+        };
+        MenuItem
+        {
+            Identifier = vID_MI_VIEW;
+            Text       = "~View";
+            SubMenu    = Menu vID_MENU_VIEW;
+            HelpText   = "change the magnification of the active window ";
+        };
+        MenuItem
+        {
+            Identifier = vID_MI_WINDOW;
+            Text       = "~Window";
+            SubMenu    = Menu vID_MENU_WINDOW;
+            HelpText   = "Initiates window operations ";
+        };
+        MenuItem
+        {
+            Identifier = vID_MI_HELP;
+            Text       = "~Help";
+            SubMenu    = Menu vID_MENU_HELP;
+            HelpText   = "Activates extended help ";
+        };
+    };
+};
+
+
+
+
+Menu vID_MENU_EDIT
+{
+    ItemList =
+    {
+        MenuItem
+        {
+            Identifier = vID_MI_CUT;
+            Text       = "~Cut";
+            HelpText   = "Move the selected object to the clipboard ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_COPY;
+            Text       = "C~opy";
+            HelpText   = "Copy the selected object to the clipboard ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_PASTE;
+            Text       = "~Paste";
+            HelpText   = "Paste the object currently on the clipboard into the scheme ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_DELETE;
+            Text       = "~Delete";
+            HelpText   = "Remove the selected object from the scheme ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_ADD_COMPARTMENT;
+            Text       = "~Add Compartment";
+            HelpText   = "Add a new compartment to the scheme " ;
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_ADD_PATH;
+            Text       = "Add ~Transfer path";
+            HelpText   = "Add a new transfer path to the scheme " ;
+        };
+
+        MenuItem  
+        {
+            Separator   = TRUE;
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_SELECT_ALL_COMPTS;
+            Text       = "~Select All Compartments";
+            HelpText   = "Select all compartments in the scheme";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_SELECT_ALL_XFERPATHS;
+            Text       = "Select All T~ransfer Paths";
+            HelpText   = "Select all transfer paths in the scheme";
+        };
+
+        MenuItem  
+        {
+            Separator   = TRUE;
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_CHANGE_COMPT_DIMENSIONS;
+            Text       = "~Redimension Compartments";
+            HelpText   = "Changes the spatial dimensions of all compartments in this reaction scheme";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_CHANGE_SCHEME_TEMPERATURE;
+            Text       = "C~hange Scheme Temperature";
+            HelpText   = "Changes the temperature to a specified constant value in all compartments in this reaction scheme";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_GLOBAL_CONC_CHANGE;
+            Text       = "C~hange a Specified Species Concentration";
+            HelpText   = "Globally changes a species concentration to a specified constant value or set of values read from a file";
+        };
+
+        MenuItem  
+        {
+            Separator   = TRUE;
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_USER_PREFERENCES;
+            Text       = "~User Preferences...";
+            HelpText   = "View and modify user preferences " ;
+        };
+    };
+};
+
+Menu vID_MENU_VIEW
+{
+    ItemList =
+    {
+        MenuItem
+        {
+            Identifier = vID_MI_ZOOMIN;
+            Text       = "Zoom ~In";
+            HelpText   = "Increase the size of objects in the window ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_ZOOMOUT;
+            Text       = "Zoom ~Out";
+            HelpText   = "Decrease the size of objects in the window ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_ZOOM100;
+            Text       = "~Full Size";
+            HelpText   = "Show objects in the window at standard scale ";
+        };
+
+    };
+};
+
+
+
+
+
+
+
+
+
+Menu vID_MENU_HELP
+{
+    ItemList =
+    {
+        MenuItem  
+        {
+            Identifier = vID_MI_HELPBALLOON;
+            Text       = "Show Help ~Balloons";
+            HelpText   = "Toggles the display of Help Balloons";
+        };
+
+        MenuItem  
+        {
+            Identifier = vID_MI_HELPHELP;
+            Text       = "~Using the Help System";
+            HelpText   = "Displays Help on using Extended Help";
+        };
+
+        MenuItem  
+        {
+            Identifier = MI_OVERVIEW;
+            Text       = "~Overview of Simulator";
+            HelpText   = "Displays a General Description of the Simulator";
+        };
+
+        MenuItem  
+        {
+            Identifier = MI_TUTORIAL;
+            Text       = "~Simulation step-by-step";
+            HelpText   = "Describes the general method for performing a simulation";
+        };
+
+        MenuItem  
+        {
+            Separator = TRUE;
+        };
+
+        MenuItem  
+        {
+            Identifier  = MI_WINHELP;
+            Text        = "Using the Main ~Window";
+            HelpText    = "Displays Help on using the main window ";
+        };
+
+        MenuItem  
+        {
+            Identifier  = MI_MENUHELP;
+            Text        = "Using the Main ~Menu";
+            HelpText    = "Displays Help on using the main menu ";
+        };
+
+        MenuItem  
+        {
+            Identifier  = MI_TOOLHELP;
+            Text        = "Using the ~Toolbar";
+            HelpText    = "Displays Help on using the Toolbar ";
+        };
+
+        MenuItem  
+        {
+            Separator   = TRUE;
+        };
+
+        MenuItem  
+        {
+            Identifier  = MI_INDEX;
+            Text        = "Subject ~Index";
+            HelpText    = "Displays an index of Help subjects ";
+        };
+        MenuItem  
+        {
+            Separator  = TRUE;
+        };
+
+        MenuItem  
+        {
+            Identifier = vID_MI_ABOUT;
+            About      = TRUE;
+            Text       = "~Product Info...";
+            HelpText   = "Displays info on the application ";
+        };
+
+     };
+};
+
+
+
+Menu vID_MENU_FILE
+{
+    ItemList =
+    {
+        MenuItem
+        {
+            Identifier = vID_MI_NEW_SCHEME;
+            Text       = "~New";
+            HelpText   = "Create a new reaction scheme ";
+            SubMenu    = Menu
+            {
+                ItemList =
+                {
+                    MenuItem
+                    {
+                        Identifier = vID_MI_NEW_COMPARTMENT_SCHEME;
+                        Text       = "~Compartmental";
+                        HelpText   = "Create a new reaction scheme based on a compartmental model";
+                    };
+
+                    MenuItem
+                    {
+                        Identifier = vID_MI_NEW_3D_SCHEME;
+                        Text       = "~Three-dimensional";
+                        HelpText   = "Create a new reaction scheme based on a three-dimensional array of cells";
+                    };
+
+                };
+            };
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_CLOSE_SCHEME;
+            Text       = "~Close";
+            HelpText   = "Close the active reaction scheme ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_LOAD_SCHEME;
+            Text       = "~Open...";
+            HelpText   = "Load a reaction scheme file";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_SAVE_SCHEME;
+            Text       = "~Save";
+            HelpText   = "Save the active reaction scheme ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_SAVE_SCHEME_AS;
+            Text       = "Save ~As";
+            HelpText   = "Save the active reaction scheme under a different name";
+        };
+
+        MenuItem
+        {
+            Separator = TRUE;
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_EXIT;
+            Text       = "E~xit";
+            HelpText = "Exit the application ";
+            AccelKey   = KeyCode
+            {
+                Function = KEYFUNC_QUIT;
+            };
+        };
+
+    };
+};
+
+
+
+
+
+Menu vID_MENU_WINDOW
+{
+    ItemList =
+    {
+        MenuItem
+        {
+            Identifier = vID_MI_CASCADE;
+            Text       = "~Cascade";
+            HelpText   = "Place open windows in a cascade arrangement ";
+            AccelKey   = KeyCode
+            {
+                Shift      = TRUE;
+                Code       = KEY_F5;
+            };
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_TILE;
+            Text       = "~Tile";
+            HelpText   = "Place open windows in a tiled arrangement ";
+            AccelKey   = KeyCode
+            {
+                Shift      = TRUE;
+                Code       = KEY_F4;
+            };
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_HORIZONTAL;
+            Text       = "~Horizontal";
+            HelpText   = "Place open windows in a horizontal arrangement ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_VERTICAL;
+            Text       = "~Vertical";
+            HelpText   = "Place open windows in a vertical arrangement ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_ARRANGE;
+            Text       = "Arrange ~Icons";
+            HelpText   = "Clean up icons arrangement ";
+        };
+
+        MenuItem
+        {
+            Identifier = vID_MI_CLOSEALL;
+            Text       = "Close ~All";
+            HelpText   = "Close all open windows ";
+        };
+    };
+};
+
+
+ToolBox vID_TOOLBOX_APP
+{
+    SVLook     = TRUE;
+    Border     = TRUE;
+    Scroll     = TRUE;
+    Align      = BOXALIGN_LEFT;
+    ButtonType = BUTTON_SYMBOLTEXT;
+
+    ItemList =
+    {
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ADD_COMPARTMENT;
+            Text       = "Compartment";
+            HelpText   = "Add a new compartment to scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "compt.bmp";
+            };
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ADD_PATH;
+            Text       = "Transfer";
+            HelpText   = "Add a Transfer Path to scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "xfer.bmp";
+            };
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ZOOMIN;
+            Text       = "Zoom In";
+            HelpText   = "Increase the size of objects in the window";
+            ItemBitmap = Bitmap
+            {
+                FILE = "zoomin.bmp";
+            };
+        };
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ZOOMOUT;
+            Text       = "Zoom Back";
+            HelpText   = "Decrease the size of objects in the window";
+            ItemBitmap = Bitmap
+            {
+                FILE = "zoomout.bmp";
+            };
+        };
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ZOOM100;
+            Text       = "Full Size";
+            HelpText   = "Show objects in the window at standard scale";
+            ItemBitmap = Bitmap
+            {
+                FILE = "zoom100.bmp";
+            };
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_CUT;
+            Text       = "Cut";
+            HelpText   = "Move the selected item to the clipboard";
+            ItemBitmap = Bitmap
+            {
+                FILE = "cut.bmp";
+            };
+        };
+        ToolBoxItem
+        {
+            Identifier = vID_TI_COPY;
+            Text       = "Copy";
+            HelpText   = "Copy the selected item to the clipboard";
+            ItemBitmap = Bitmap
+            {
+                FILE = "copy.bmp";
+            };
+        };
+        ToolBoxItem
+        {
+            Identifier = vID_TI_PASTE;
+            Text       = "Paste";
+            HelpText   = "Paste the clipboard contents into the scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "paste.bmp";
+            };
+        };
+        ToolBoxItem
+        {
+            Identifier = vID_TI_DELETE;
+            Text       = "Delete";
+            HelpText   = "Remove the selected object from scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "delete.bmp";
+            };
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SELECT_ALL_COMPTS;
+            Text       = "All Compts";
+            HelpText   = "Select all compartments in the scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "allcompt.bmp";
+            };
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SELECT_ALL_XFERPATHS;
+            Text       = "All Xfers";
+            HelpText   = "Select all transfer paths in the scheme";
+            ItemBitmap = Bitmap
+            {
+                FILE = "allxfer.bmp";
+            };
+        };
+
+
+    };
+};
+
+
+
+ToolBox vID_TOOLBOX_SCHEME
+{
+    SVLook     = TRUE;
+    Border     = TRUE;
+    Scroll     = TRUE;
+    Align      = BOXALIGN_TOP;
+    ButtonType = BUTTON_TEXT;
+
+    ItemList =
+    {
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SCHEMEWIN_HELP;
+            Text       = "Help";
+            HelpText   = "View help on using this window";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SPECIES_PROPERTIES;
+            Text       = "Species Data";
+            HelpText   = "View/Edit the properties of all species in the scheme";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_USER_NOTES;
+            Text       = "Notebook";
+            HelpText   = "View/Edit user notes for this reaction scheme";
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SIM_OPTIONS;
+            Text       = "Simulation Options";
+            HelpText   = "View/Edit settings for the simulation";
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_START_SIMULATION;
+            Text       = "Start Simulation";
+            HelpText   = "start a simulation of the active reaction scheme";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_ABORT_SIMULATION;
+            Text       = "Abort Simulation";
+            HelpText   = "abort the simulation of the active reaction scheme";
+            Disable    = TRUE;
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_RESULTS;
+            Text       = "Results";
+            HelpText   = "View the simulation results";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_SUMMARY;
+            Text       = "Statistics";
+            HelpText   = "View a summary of statistics for this reaction scheme";
+        };
+
+
+
+    };
+};
+
+
+
+ToolBox vID_TOOLBOX_XYPLOT
+{
+    SVLook     = TRUE;
+    Border     = TRUE;
+    Scroll     = TRUE;
+    Align      = BOXALIGN_TOP;
+    ButtonType = BUTTON_TEXT;
+
+    ItemList =
+    {
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_XYPLOT_HELP;
+            Text       = "Help";
+            HelpText   = "View help on using this window";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_XYPLOT_ATTRIBUTES;
+            Text       = "Attributes...";
+            HelpText   = "Modify attributes of this window";
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_XYPLOT_SAVE;
+            Text       = "Save...";
+            HelpText   = "Save this window as a file";
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_XYPLOT_PRINT;
+            Text       = "Print...";
+            HelpText   = "Print the simulation results";
+        };
+
+    };
+};
+
+
+ToolBox vID_TOOLBOX_TEXT
+{
+    SVLook     = TRUE;
+    Border     = TRUE;
+    Scroll     = TRUE;
+    Align      = BOXALIGN_TOP;
+    ButtonType = BUTTON_TEXT;
+
+    ItemList =
+    {
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_TEXT_HELP;
+            Text       = "Help";
+            HelpText   = "View help on using this window";
+        };
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_TEXT_SAVE;
+            Text       = "Save...";
+            HelpText   = "Save this window as a file";
+        };
+
+
+        ToolBoxItem
+        {
+            Type = TOOLBOXITEM_SEPARATOR;
+        };
+
+        ToolBoxItem
+        {
+            Identifier = vID_TI_TEXT_PRINT;
+            Text       = "Print...";
+            HelpText   = "Print the simulation results";
+        };
+
+    };
+};
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+#pragma CHARSET IBMPC
+
+#include "fonts.hrc"
+
+#if defined(WIN) || defined(WNT)
+FONT vID_FNT_APPLICATION {
+		WEIGHT		= WEIGHT_BOLD;
+		CHARSET 	= CHARSET_ANSI;
+		HEIGHT		= 12;
+		WIDTH		= 0;
+		TRANSPARENT = FALSE;
+		FONTCOLOR = Color  {
+			PREDEFINE = COL_WINDOWTEXT;
+		};
+		FILLCOLOR = Color  {
+			PREDEFINE = COL_WINDOWWORKSPACE;
+		};
+		TEXT		= "MS Sans Serif";
+		PITCH		= PITCH_VARIABLE;
+		FAMILY		= FAMILY_SWISS;
+};
+
+#elif defined(PM2) || defined(OS2)
+FONT vID_FNT_APPLICATION {
+		WEIGHT		= WEIGHT_BOLD;
+		CHARSET 	= CHARSET_IBMPC;
+		HEIGHT		= 12;
+		WIDTH		= 0;
+		TRANSPARENT = FALSE;
+		FONTCOLOR = Color  {
+			PREDEFINE = COL_WINDOWTEXT;
+		};
+		FILLCOLOR = Color  {
+			PREDEFINE = COL_WINDOWWORKSPACE;
+		};
+		TEXT		= "Helv";
+		PITCH		= PITCH_VARIABLE;
+		FAMILY		= FAMILY_SWISS;
+};
+
+#elif defined(MAC)
+FONT vID_FNT_APPLICATION {
+		HEIGHT		= 12;
+		FONTCOLOR = Color  {
+			PREDEFINE = COL_WINDOWTEXT;
+		};
+		FILLCOLOR = Color  {
+			PREDEFINE = COL_WINDOWWORKSPACE;
+		};
+		TEXT		= "Chicago";
+};
+
+#elif defined(UNX)
+FONT vID_FNT_APPLICATION {
+		HEIGHT		= 16;
+		FONTCOLOR = Color  {
+			PREDEFINE = COL_WINDOWTEXT;
+		};
+		FILLCOLOR = Color  {
+			PREDEFINE = COL_WINDOWWORKSPACE;
+		};
+		TEXT		= "lucida";
+};
+
+#endif
+

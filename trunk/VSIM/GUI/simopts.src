@@ -1,0 +1,192 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "simopts.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_SIMULATION_OPTIONS {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_SIMOPTNS;
+	Pos = MAP_SYSFONT( 46, 30 );
+	Size = MAP_SYSFONT( 270, 165 );
+	Text = "Set Simulation Options";
+	Moveable = TRUE;
+	Edit vID_EF_NUM_MOLS {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 14 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	Edit vID_EF_RECORD_INTERVAL {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 26 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	Edit vID_EF_RND_NUM_SEED {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 38 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	Edit vID_EF_NUM_EVENTS {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 70 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	Edit vID_EF_ELAPSED_TIME_LIMIT {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 82 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	RadioButton vID_RB_ENABLE_EQUIL_DETECT {
+			Pos = MAP_SYSFONT( 12, 113 );
+			Size = MAP_SYSFONT( 45, 10 );
+			Text = "~Enabled";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_DISABLE_EQUIL_DETECT {
+			Pos = MAP_SYSFONT( 12, 125 );
+			Size = MAP_SYSFONT( 45, 10 );
+			Text = "D~isabled";
+			TabStop = TRUE;
+		};
+	Edit vID_EF_CYCLE_COUNT {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 113 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	Edit vID_EF_MIN_EFFICIENCY {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 172, 125 );
+			Size = MAP_SYSFONT( 55, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 148 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			Pos = MAP_SYSFONT( 52, 148 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Pos = MAP_SYSFONT( 100, 148 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 148, 148 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_MAX_NUM_EVENTS_LABEL {
+			Pos = MAP_SYSFONT( 13, 72 );
+			Size = MAP_SYSFONT( 155, 10 );
+			Text = "Maximum number of events";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_MOLS_LABEL {
+			Pos = MAP_SYSFONT( 13, 16 );
+			Size = MAP_SYSFONT( 155, 10 );
+			Text = "Total number of molecules";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_RECORD_INTERVAL_LABEL {
+			Pos = MAP_SYSFONT( 13, 28 );
+			Size = MAP_SYSFONT( 155, 10 );
+			Text = "Record state interval";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_RANDOM_NUM_SEED_LABEL {
+			Pos = MAP_SYSFONT( 13, 40 );
+			Size = MAP_SYSFONT( 155, 10 );
+			Text = "Random number seed";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_SELECTION_FREQ_LABEL {
+			Pos = MAP_SYSFONT( 64, 126 );
+			Size = MAP_SYSFONT( 104, 10 );
+			Text = "Selection frequency";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_MAX_SIMULATION_TIME_LABEL {
+			Pos = MAP_SYSFONT( 13, 84 );
+			Size = MAP_SYSFONT( 155, 10 );
+			Text = "Maximum time in simulation";
+			Right = TRUE;
+		};
+	FixedText 8 {
+			Pos = MAP_SYSFONT( 230, 28 );
+			Size = MAP_SYSFONT( 32, 10 );
+			Text = "events";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_CYCLE_LENGTH_LABEL {
+			Pos = MAP_SYSFONT( 64, 115 );
+			Size = MAP_SYSFONT( 104, 10 );
+			Text = "Equil. test cycle length";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_ET_LIMITS_UNITS {
+			Pos = MAP_SYSFONT( 230, 84 );
+			Size = MAP_SYSFONT( 34, 10 );
+			Text = "sec";
+			Left = TRUE;
+		};
+	FixedText 12 {
+			Pos = MAP_SYSFONT( 230, 115 );
+			Size = MAP_SYSFONT( 30, 10 );
+			Text = "events";
+			Left = TRUE;
+		};
+	FixedText 13 {
+			Pos = MAP_SYSFONT( 230, 126 );
+			Size = MAP_SYSFONT( 30, 10 );
+			Text = "percent";
+			Left = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 4 );
+			Size = MAP_SYSFONT( 262, 52 );
+			Text = "General Settings";
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 4, 104 );
+			Size = MAP_SYSFONT( 262, 38 );
+			Text = "Equilibrium Detect";
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 4, 62 );
+			Size = MAP_SYSFONT( 262, 36 );
+			Text = "Limits";
+		};
+};

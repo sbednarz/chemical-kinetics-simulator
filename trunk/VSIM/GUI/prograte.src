@@ -1,0 +1,95 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "prograte.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_RATE_PROFILE {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_RATE_PRO;
+	Pos = MAP_SYSFONT( 23, 2 );
+	Size = MAP_SYSFONT( 257, 180 );
+	Text = "Select Rate Constant Profile";
+	Moveable = TRUE;
+	FixedText vID_STEXT_FILENAME {
+			Pos = MAP_SYSFONT( 18, 15 );
+			Size = MAP_SYSFONT( 220, 10 );
+			Text = "filename goes here";
+			TabStop = TRUE;
+			Left = TRUE;
+		};
+	PushButton vID_BTN_SELECT_FILE {
+			Pos = MAP_SYSFONT( 37, 27 );
+			Size = MAP_SYSFONT( 76, 11 );
+			Text = "~Select a File...";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_PROFILE_CREATE {
+			Pos = MAP_SYSFONT( 137, 27 );
+			Size = MAP_SYSFONT( 76, 11 );
+			Text = "Create ~New...";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_EDIT_PROF_LABEL {
+			Pos = MAP_SYSFONT( 12, 60 );
+			Size = MAP_SYSFONT( 73, 10 );
+			Text = " Time       Rate constant";
+			Left = TRUE;
+			Right = TRUE;
+		};
+	MultiLineEdit vID_MLE_EDIT_PROFILE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 14, 70 );
+			Size = MAP_SYSFONT( 73, 72 );
+			TabStop = TRUE;
+			Left = TRUE;
+			HScroll = TRUE;
+			VScroll = TRUE;
+		};
+	PushButton vID_BTN_REFRESH {
+			Pos = MAP_SYSFONT( 16, 144 );
+			Size = MAP_SYSFONT( 68, 11 );
+			Text = "~Refresh Plot";
+			TabStop = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 4, 164 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 56, 164 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_SAVEAS {
+			Pos = MAP_SYSFONT( 108, 164 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "Save ~As...";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 162, 164 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 4, 51 );
+			Size = MAP_SYSFONT( 249, 108 );
+			Text = "File contents";
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 4, 5 );
+			Size = MAP_SYSFONT( 249, 38 );
+			Text = "Rate constant profile data file";
+		};
+	Window vID_WINDOW_PLOT_WINDOW {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 93, 60 );
+			Size = MAP_SYSFONT( 155, 94 );
+		};
+};

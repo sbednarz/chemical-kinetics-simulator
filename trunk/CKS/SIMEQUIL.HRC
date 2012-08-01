@@ -1,0 +1,13 @@
+#define sim_MAIN_WINDOW 300
+#define sim_APP_FONT 310
+#define sim_ACTIVE_FILENAME 10
+#define simLINE_1 20
+#define simLINE_2 22
+#define simLINE_3 23
+#define simLINE_4 24
+#define simLINE_5 25
+#define simLINE_6 26
+#define sim_PUSHBTN 20
+#define simMAIN_ICON  320
+
+

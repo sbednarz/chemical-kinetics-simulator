@@ -1,0 +1,141 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "userpref.hrc"
+#include "help.hhc"
+ModalDialog USER_PREFS_DLG {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_USERPREFS;
+	Pos = MAP_SYSFONT( 57, 15 );
+	Size = MAP_SYSFONT( 260, 150 );
+	Text = "User Preferences";
+	Moveable = TRUE;
+	Edit vID_RXN_FILE_DIR {
+			Border = TRUE;
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 65, 16 );
+			Size = MAP_SYSFONT( 186, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 255;
+		};
+	Edit vID_TEXT_FILE_DIR {
+			Border = TRUE;
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 66, 32 );
+			Size = MAP_SYSFONT( 186, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 255;
+		};
+	Edit vID_RPROG_FILE_DIR {
+			Border = TRUE;
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 66, 46 );
+			Size = MAP_SYSFONT( 186, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 255;
+		};
+	Edit vID_TPROG_FILE_DIR {
+			Border = TRUE;
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 66, 62 );
+			Size = MAP_SYSFONT( 186, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 255;
+		};
+	Edit vID_ANY_FILE_DIR {
+			Border = TRUE;
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 66, 76 );
+			Size = MAP_SYSFONT( 186, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 255;
+		};
+	CheckBox vID_CB_SAVE_WINDOW_DATA {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 12, 107 );
+			Size = MAP_SYSFONT( 100, 11 );
+			Text = "~Save window size/position on exit";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_CONFIRM_FILE_OVERWRITE {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 130, 107 );
+			Size = MAP_SYSFONT( 100, 11 );
+			Text = "~Confirm over-write of existing files";
+			TabStop = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 6, 133 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 56, 133 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 106, 133 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			HelpID = HLP_USERPREFS;
+			Pos = MAP_SYSFONT( 156, 133 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 10, 16 );
+			Size = MAP_SYSFONT( 52, 10 );
+			Text = "Reaction files";
+			Right = TRUE;
+		};
+	FixedText 2 {
+			Pos = MAP_SYSFONT( 10, 31 );
+			Size = MAP_SYSFONT( 52, 10 );
+			Text = "Output text files";
+			Right = TRUE;
+		};
+	FixedText 3 {
+			Pos = MAP_SYSFONT( 10, 46 );
+			Size = MAP_SYSFONT( 52, 10 );
+			Text = "Rate const. profiles";
+			Right = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 5, 5 );
+			Size = MAP_SYSFONT( 250, 86 );
+			Text = "Default directories";
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 6, 97 );
+			Size = MAP_SYSFONT( 250, 31 );
+			Text = "Other properties";
+		};
+	FixedText 4 {
+			Pos = MAP_SYSFONT( 8, 61 );
+			Size = MAP_SYSFONT( 54, 10 );
+			Text = "Temperature profiles";
+			Right = TRUE;
+		};
+	FixedText 5 {
+			Pos = MAP_SYSFONT( 10, 76 );
+			Size = MAP_SYSFONT( 52, 10 );
+			Text = "Other files";
+			Right = TRUE;
+		};
+};

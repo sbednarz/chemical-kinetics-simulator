@@ -1,0 +1,14 @@
+#define vID_ICO_SCHEME_ICON         1000
+#define vID_ICO_XYPLOTWIN           1001
+#define vID_ICO_RUNNING_ICON        1002
+#define vID_ICO_WATERFALL_PLOTWIN   1003
+#define vID_ICO_SCHEME1D_ICON       1004
+#define vID_ICO_SCHEME2D_ICON       1005
+#define vID_ICO_SCHEME3D_ICON       1006
+#define vID_ICO_TEXTWIN             1007
+
+#define vID_BITMAP_PASTE_COMPT      1000
+#define vID_BITMAP_PASTE_XFER       1001
+#define vID_BITMAP_PASTE            1002
+#define vID_BITMAP_FILL_COMPT       1003
+#define vID_BITMAP_FILL_XFER        1004

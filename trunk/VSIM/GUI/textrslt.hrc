@@ -1,0 +1,53 @@
+/* StarView ressource header file */
+
+#define vID_DLG_TEXT_RESULTS_SETUP 8090
+
+// checkboxes 
+
+#define vID_CB_CONC    1
+#define vID_CB_TEMP    2
+#define vID_CB_VOLUME  3
+#define vID_CB_PRESS   4
+#define vID_CB_AMOUNT  5
+
+// PushButtons 
+
+#define vID_BTN_SELECT_ALL_SPECIES 3
+#define vID_BTN_DESELECT_ALL_SPECIES 4
+#define vID_BTN_PREV_SPECIES_SELECT 5
+#define vID_BTN_SELECT_ALL_COMPTS 6
+#define vID_BTN_DESELECT_ALL_COMPTS 7
+#define vID_BTN_PREV_COMPTS_SELECT 8
+
+// OKButton 
+
+#define vID_BTN_PLOT 1
+
+// listboxes 
+
+#define vID_LB_SPECIES_LIST 1
+
+#define vID_LB_COMPT_LIST 2
+
+// group boxes 
+
+#define vID_GB_SPECIES_LABEL 7
+
+// static text 
+
+#define vID_STEXT_NUM_POINTS_AVAIL 1
+#define vID_STEXT_NUM_SPECIES_SELECTED 2
+#define vID_STEXT_NUM_COMPTS_SELECTED 8
+#define vID_STEXT_NUM_SPECIES_SELECTED_LABEL 9
+
+// entry field 
+#define vID_EF_MAX_POINTS_TO_DISPLAY 1
+
+// help button 
+
+#define vID_BTN_HELP 1
+
+// Cancel Button 
+
+#define vID_BTN_CANCEL 1
+

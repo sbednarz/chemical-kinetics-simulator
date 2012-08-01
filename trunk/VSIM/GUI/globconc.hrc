@@ -1,0 +1,11 @@
+/* StarView ressource header file */
+#define vID_DLG_GLOBAL_CONC_CHANGE  5700
+#define vID_LB_SPECIES_LIST         1
+#define vID_RB_USE_FILE             1
+#define vID_RB_USE_SINGLE_VALUE     2
+#define vID_BTN_SELECT_FILE         1
+#define vID_EF_CONC_VALUE           1
+#define vID_BTN_OK                  1
+#define vID_BTN_HELP                1
+#define vID_STEXT_CONC_UNITS        1
+#define vID_BTN_CANCEL              1

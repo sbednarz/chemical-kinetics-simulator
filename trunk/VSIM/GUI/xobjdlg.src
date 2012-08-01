@@ -1,0 +1,115 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "xobjdlg.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_XFERPATH_EDIT {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_EDIT_XFERPATH;
+	Pos = MAP_SYSFONT( 52, 18 );
+	Size = MAP_SYSFONT( 252, 180 );
+	Text = "Edit Transfer Path";
+	Moveable = TRUE;
+	Closeable = TRUE;
+	FixedText vID_STEXT_NAME_LABEL {
+			Pos = MAP_SYSFONT( 42, 15 );
+			Size = MAP_SYSFONT( 78, 8 );
+			Text = "Name of Transfer Path";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_SOURCE_LABEL {
+			Pos = MAP_SYSFONT( 42, 30 );
+			Size = MAP_SYSFONT( 78, 8 );
+			Text = "Source Compartment:";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_TARGET_LABEL {
+			Pos = MAP_SYSFONT( 42, 45 );
+			Size = MAP_SYSFONT( 78, 8 );
+			Text = "Target Compartment:";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_SOURCE_NAME {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 124, 28 );
+			Size = MAP_SYSFONT( 78, 10 );
+			Text = "SourceNameg";
+			Center = TRUE;
+		};
+	FixedText vID_STEXT_TARGET_NAME {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 124, 43 );
+			Size = MAP_SYSFONT( 78, 10 );
+			Text = "TargetName";
+			Center = TRUE;
+		};
+	Edit vID_EF_NAME {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 124, 13 );
+			Size = MAP_SYSFONT( 78, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	GroupBox vID_GB_1 {
+			Pos = MAP_SYSFONT( 5, 4 );
+			Size = MAP_SYSFONT( 242, 55 );
+		};
+	ListBox vID_LB_XFER_STEPS {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 9, 74 );
+			Size = MAP_SYSFONT( 158, 75 );
+			TabStop = TRUE;
+			Sort = TRUE;
+			HScroll = TRUE;
+			VScroll = TRUE;
+		};
+	PushButton vID_PB_ADD_VDIFFN_STEP {
+			Pos = MAP_SYSFONT( 172, 89 );
+			Size = MAP_SYSFONT( 70, 11 );
+			Text = "Add ~virtual diffusion step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_ADD_SDIFFN_STEP {
+			Pos = MAP_SYSFONT( 172, 74 );
+			Size = MAP_SYSFONT( 70, 11 );
+			Text = "Add ~standard diffusion step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_ADD_MASS_XFER_STEP {
+			Pos = MAP_SYSFONT( 172, 104 );
+			Size = MAP_SYSFONT( 70, 11 );
+			Text = "Add ~mass transfer step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_EDIT_XFER_STEP {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 172, 119 );
+			Size = MAP_SYSFONT( 70, 11 );
+			Text = "~Edit step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_DELETE_XFER_STEP {
+			Pos = MAP_SYSFONT( 172, 134 );
+			Size = MAP_SYSFONT( 70, 11 );
+			Text = "~Remove step";
+			TabStop = TRUE;
+		};
+	GroupBox vID_GB_PATH_CONTENTS {
+			Pos = MAP_SYSFONT( 5, 65 );
+			Size = MAP_SYSFONT( 242, 91 );
+			Text = "Defined Transfer Steps";
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 5, 161 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT(  57, 161 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+};

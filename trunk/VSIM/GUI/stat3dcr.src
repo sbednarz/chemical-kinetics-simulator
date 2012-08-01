@@ -1,0 +1,23 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "stat3dcr.hrc"
+WorkWindow vID_WIN_CREATE3D_STATUS {
+	OutputSize = TRUE;
+	Border = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 52, 40 );
+	Size = MAP_SYSFONT( 130, 75 );
+	Text = "";
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 5, 26 );
+			Size = MAP_SYSFONT( 120, 8 );
+			Text = "Please wait ...";
+			Center = TRUE;
+		};
+	FixedText vID_STEXT_CURRENT_OP {
+			Pos = MAP_SYSFONT( 5, 42 );
+			Size = MAP_SYSFONT( 120, 8 );
+			Text = "";
+			Center = TRUE;
+		};
+};

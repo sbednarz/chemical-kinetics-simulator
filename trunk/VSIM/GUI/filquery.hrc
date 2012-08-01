@@ -1,0 +1,9 @@
+/* StarView ressource header file */
+#define vID_FILL_QUERY_DLG    1585
+#define vID_BTN_USE_CLIP_DIMS 1
+#define vID_BTN_USE_TARGET_DIMS 2 
+#define vID_BTN_CANCEL 1
+#define vID_BTN_HELP 1
+#define vID_STEXT_X 2
+#define vID_STEXT_Y 3
+#define vID_STEXT_Z 4

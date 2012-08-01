@@ -1,0 +1,13 @@
+/* StarView ressource header file */
+#define vID_DLG_PLOT_ATTR 1450
+#define vID_CB_VARY_LINECOLOR 1
+#define vID_CB_VARY_LINESTYLE 2
+#define vID_CB_VARY_MARKERSTYLE 3
+#define vID_CB_SHOW_LINES 4
+#define vID_CB_SHOW_MARKERS 5
+#define vID_BTN_CLOSE 1
+#define vID_BTN_UNDO 1
+#define vID_BTN_HELP 1
+#define vID_CB_SHOW_RECT 6
+#define vID_EF_MAX_POINTS_TO_PLOT 1
+#define vID_STEXT_NUM_POINTS_AVAIL 3

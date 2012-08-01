@@ -1,0 +1,89 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "specconc.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_INIT_CONC {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_SPECCONC;
+	Pos = MAP_SYSFONT( 22, 28 );
+	Size = MAP_SYSFONT( 233, 118 );
+	Text = "Set Initial Concentrations";
+	Moveable = TRUE;
+	GroupBox vID_GB_CONC_LABEL {
+			Pos = MAP_SYSFONT( 4, 6 );
+			Size = MAP_SYSFONT( 225, 90 );
+			Text = "Initial concentrations ";
+		};
+	ListBox vID_LB_SPECIES_LIST {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 14, 15 );
+			Size = MAP_SYSFONT( 60, 75 );
+			Text = "line";
+			TabStop = TRUE;
+			HScroll = TRUE;
+		};
+	FixedText vID_STEXT_SPECIES_LABEL {
+			Pos = MAP_SYSFONT( 79, 23 );
+			Size = MAP_SYSFONT( 138, 10 );
+			Text = "Initial concentration of  species";
+			Center = TRUE;
+		};
+	Edit vID_EDIT_CONC {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 128, 48 );
+			Size = MAP_SYSFONT( 40, 10 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	FixedText vID_STEXT_CONC_UNITS {
+			Pos = MAP_SYSFONT( 170, 49 );
+			Size = MAP_SYSFONT( 57, 10 );
+			Text = "units";
+			Left = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 5, 103 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_DEFAULTS {
+			Pos = MAP_SYSFONT( 51, 103 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Defaults";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Pos = MAP_SYSFONT( 95, 103 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 141, 103 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText 2 {
+			Pos = MAP_SYSFONT( 116, 50 );
+			Size = MAP_SYSFONT( 10, 7 );
+			Text = "is";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_SPECIES_NAME {
+			Pos = MAP_SYSFONT( 109, 34 );
+			Size = MAP_SYSFONT( 78, 10 );
+			Text = "SpeciesName";
+			Center = TRUE;
+		};
+	CheckBox vID_CB_SHOW_REACTIVE_SPECIES {
+			Pos = MAP_SYSFONT( 80, 82 );
+			Size = MAP_SYSFONT( 146, 10 );
+			Text = "Show only species in reactions in this compartment";
+			TabStop = TRUE;
+		};
+};

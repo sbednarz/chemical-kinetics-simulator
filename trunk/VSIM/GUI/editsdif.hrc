@@ -1,0 +1,40 @@
+#define vID_DLG_EDIT_STD_DIFFUSION     4710
+
+#define vID_STEXT_TRANSFER_STEP        1
+#define vID_STEXT_REVERSE              2
+#define vID_STEXT_AFACTOR              3
+#define vID_STEXT_EA                   4
+#define vID_STEXT_AFACTOR_UNITS        5
+#define vID_STEXT_EA_UNITS             6
+#define vID_STEXT_FORWARD              7
+#define vID_STEXT_TEMP_EXPONENT        8
+#define vID_STEXT_FWD_RATE_LAW         9
+#define vID_STEXT_REV_RATE_LAW        10
+#define vID_STEXT_SPECIES_LABEL       11
+
+#define vID_EF_FWD_AFACTOR             2
+#define vID_EF_FWD_TEXP                3
+#define vID_EF_FWD_EA                  4
+#define vID_EF_REV_A_FACTOR            5
+#define vID_EF_REV_TEXP                6
+#define vID_EF_REV_EA                  7
+#define vID_EF_FWD_CONC_EXPONENT       8
+#define vID_EF_REV_CONC_EXPONENT       9
+
+#define vID_RB_ARRH_FORM               1
+#define vID_RB_SINGLE_RATE             2
+#define vID_RB_SRC_TO_TARGET           3
+#define vID_RB_REVERSIBLE              4
+#define vID_RB_TARGET_TO_SRC           5
+
+#define vID_PB_CLOSE                   2
+#define vID_PB_ADD_STEP                3
+#define vID_PB_DELETE_STEP             4
+#define vID_PB_UNDO                    5
+
+#define vID_HBTN_HELP                  1
+
+#define vID_WIN_XFER_SCHEMATIC         1
+
+
+#define vID_LB_SPECIES                 1

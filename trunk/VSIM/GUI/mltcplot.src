@@ -1,0 +1,241 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "mltcplot.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_MULT_COMPT_PLOT_SETUP {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 22, 1 );
+	Size = MAP_SYSFONT( 275, 210 );
+	Text = "Create a plot of multiple compartments-";
+	Moveable = TRUE;
+	Closeable = TRUE;
+	MultiListBox vID_LB_COMPT_LIST {
+			Border = TRUE;
+			HelpID = HLP_MLTCPLOT;
+			Pos = MAP_SYSFONT( 11, 12 );
+			Size = MAP_SYSFONT( 60, 53 );
+			TabStop = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 5, 3 );
+			Size = MAP_SYSFONT( 117, 68 );
+			Text = "Select Compartments";
+		};
+	RadioButton vID_RB_CONC_V_TIME {
+			Pos = MAP_SYSFONT( 141, 10 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "C~onc / time";
+			TabStop = TRUE;
+			Group = TRUE;
+			Check = TRUE;
+		};
+	RadioButton vID_RB_AMOUNT_V_TIME {
+			Pos = MAP_SYSFONT( 141, 22 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Amount / t~ime";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_TEMP_V_TIME {
+			Pos = MAP_SYSFONT( 141, 34 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Temp / time";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_VOLUME_V_TIME {
+			Pos = MAP_SYSFONT( 141, 46 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Volume / time";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_PRESS_V_TIME {
+			Pos = MAP_SYSFONT( 141, 59 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "P~ressure / time";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_CONC_V_TEMP {
+			Pos = MAP_SYSFONT( 206, 10 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Co~nc / temp";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_AMOUNT_V_TEMP {
+			Pos = MAP_SYSFONT( 206, 22 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Amount / te~mp";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_VOLUME_V_TEMP {
+			Pos = MAP_SYSFONT( 206, 34 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Vo~lume / temp";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_PRESS_V_TEMP {
+			Pos = MAP_SYSFONT( 206, 46 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Press~ure / temp";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 130, 4 );
+			Size = MAP_SYSFONT( 140, 68 );
+			Text = "Select Plot Type";
+		};
+	CheckBox vID_CB_PLOT_EXTRNDATA {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 11, 83 );
+			Size = MAP_SYSFONT( 250, 8 );
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	PushButton vID_BTN_SELECT_EXTERN_FILE {
+			Pos = MAP_SYSFONT( 11, 95 );
+			Size = MAP_SYSFONT( 50, 11 );
+			Text = "~Select file...";
+			TabStop = TRUE;
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 5, 75 );
+			Size = MAP_SYSFONT( 265, 35 );
+			Text = "Overlay External Data";
+		};
+	MultiListBox vID_LB_SPECIES_LIST {
+			Disable = TRUE;
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 12, 125 );
+			Size = MAP_SYSFONT( 60, 69 );
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	GroupBox vID_GB_SPECIES_LABEL {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 5, 115 );
+			Size = MAP_SYSFONT( 117, 88 );
+			Text = "Select Species to Plot";
+		};
+	FixedText 4 {
+			Pos = MAP_SYSFONT( 132, 137 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Maximum number to plot";
+			Right = TRUE;
+		};
+	FixedText 7 {
+			Pos = MAP_SYSFONT( 132, 124 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Number of points available:";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_SPECIES_SELECTED_LABEL {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 133, 174 );
+			Size = MAP_SYSFONT( 97, 8 );
+			Text = "Species selected for plotting :";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_SPECIES_SELECTED {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 234, 174 );
+			Size = MAP_SYSFONT( 30, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	Edit vID_EF_MAX_POINTS_TO_PLOT {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 220, 136 );
+			Size = MAP_SYSFONT( 45, 11 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	GroupBox 5 {
+			Pos = MAP_SYSFONT( 130, 115 );
+			Size = MAP_SYSFONT( 140, 36 );
+			Text = "Data Points";
+			Group = TRUE;
+		};
+	OKButton vID_BTN_PLOT {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 130, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "Create ~Plot";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 228, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_NUM_POINTS_AVAIL {
+			Pos = MAP_SYSFONT( 220, 124 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	PushButton vID_BTN_SELECT_ALL_SPECIES {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 137 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Select ~All";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_DESELECT_ALL_SPECIES {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 155 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Deselect All";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_PREV_SPECIES_SELECT {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 173 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Pr~evious";
+			TabStop = TRUE;
+		};
+	FixedText 10 {
+			Pos = MAP_SYSFONT( 133, 163 );
+			Size = MAP_SYSFONT( 97, 8 );
+			Text = "Compartments selected for plotting :";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_COMPTS_SELECTED {
+			Pos = MAP_SYSFONT( 234, 163 );
+			Size = MAP_SYSFONT( 30, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	CancelButton vID_BTN_CANCEL {
+			Pos = MAP_SYSFONT( 179, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "~Cancel";
+			TabStop = TRUE;
+		};
+	GroupBox 6 {
+			Pos = MAP_SYSFONT( 130, 156 );
+			Size = MAP_SYSFONT( 140, 29 );
+			Text = "Status";
+		};
+	PushButton vID_BTN_PREV_COMPTS_SELECT {
+			Pos = MAP_SYSFONT( 76, 51 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Pre~vious";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_DESELECT_ALL_COMPTS {
+			Pos = MAP_SYSFONT( 76, 33 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Dese~lect All";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_SELECT_ALL_COMPTS {
+			Pos = MAP_SYSFONT( 76, 15 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Selec~t All";
+			TabStop = TRUE;
+		};
+};
