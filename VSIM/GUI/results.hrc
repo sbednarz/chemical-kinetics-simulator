@@ -1,0 +1,12 @@
+/* StarView ressource header file */
+#define vID_BTN_CLOSE 1
+#define vID_BTN_PLOT 1
+#define vID_BTN_HELP 1
+#define vID_DLG_SIM_RESULTS 5300
+#define vID_RB_SINGLE_PLOT 1
+#define vID_RB_MULTCOMPT_PLOT 2
+#define vID_RB_BAR_GRAPH 4
+#define vID_RB_WATERFALL_PLOT 5
+#define vID_RB_TEXT_TABLE 6
+#define vID_BTN_CREATE_PLOT 1
+

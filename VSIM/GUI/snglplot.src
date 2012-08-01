@@ -1,0 +1,238 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "snglplot.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_ONE_COMPT_PLOT_SETUP {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 0, 0 );
+	Size = MAP_SYSFONT( 275, 210 );
+	Text = "Create plots of single compartment - ";
+	Moveable = TRUE;
+	Closeable = TRUE;
+     HelpID = HLP_SNGLCOMPT;
+	ListBox vID_LB_COMPT_LIST {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 72, 11 );
+			Size = MAP_SYSFONT( 124, 40 );
+			TabStop = TRUE;
+			DropDown = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 5, 3 );
+			Size = MAP_SYSFONT( 265, 22 );
+			Text = "Select Compartment";
+		};
+	CheckBox vID_CB_CONC_V_TIME {
+			Pos = MAP_SYSFONT( 10, 37 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "C~onc / time";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	CheckBox vID_CB_AMOUNT_V_TIME {
+			Pos = MAP_SYSFONT( 10, 47 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Amount / t~ime";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_VOLUME_V_TIME {
+			Pos = MAP_SYSFONT( 75, 37 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Volume / time";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_PRESS_V_TIME {
+			Pos = MAP_SYSFONT( 75, 47 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "P~ressure / time";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_TEMP_V_TIME {
+			Pos = MAP_SYSFONT( 75, 57 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Temp / time";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_CONC_V_TEMP {
+			Pos = MAP_SYSFONT( 205, 37 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Co~nc / temp";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_AMOUNT_V_TEMP {
+			Pos = MAP_SYSFONT( 205, 47 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Amount / te~mp";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_VOLUME_V_TEMP {
+			Pos = MAP_SYSFONT( 140, 37 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Vo~lume / temp";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_PRESS_V_TEMP {
+			Pos = MAP_SYSFONT( 140, 47 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "Press~ure / temp";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 5, 30 );
+			Size = MAP_SYSFONT( 265, 40 );
+			Text = "Select Plot Types";
+		};
+	CheckBox vID_CB_PLOT_EXTRNDATA {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 10, 83 );
+			Size = MAP_SYSFONT( 250, 8 );
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	PushButton vID_BTN_SELECT_EXTERN_FILE {
+			Pos = MAP_SYSFONT( 10, 95 );
+			Size = MAP_SYSFONT( 50, 11 );
+			Text = "~Select file...";
+			TabStop = TRUE;
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 5, 75 );
+			Size = MAP_SYSFONT( 265, 35 );
+			Text = "Overlay External Data";
+		};
+	MultiListBox vID_LB_SPECIES_LIST {
+			Disable = TRUE;
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 11, 125 );
+			Size = MAP_SYSFONT( 60, 69 );
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	GroupBox vID_GB_SPECIES_LABEL {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 5, 115 );
+			Size = MAP_SYSFONT( 117, 88 );
+			Text = "Select Species to Plot";
+		};
+	FixedText 4 {
+			Pos = MAP_SYSFONT( 132, 137 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Maximum number to plot";
+			Right = TRUE;
+		};
+	FixedText 7 {
+			Pos = MAP_SYSFONT( 132, 124 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Number of points available:";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_SPECIES_SELECTED_LABEL {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 132, 174 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Species selected for plotting :";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_SPECIES_SELECTED {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 220, 174 );
+			Size = MAP_SYSFONT( 30, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	Edit vID_EF_MAX_POINTS_TO_PLOT {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 220, 136 );
+			Size = MAP_SYSFONT( 45, 11 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	GroupBox 5 {
+			Pos = MAP_SYSFONT( 130, 115 );
+			Size = MAP_SYSFONT( 140, 36 );
+			Text = "Data Points";
+			Group = TRUE;
+		};
+	OKButton vID_BTN_PLOT {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 130, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "Create ~Plot";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 228, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_NUM_POINTS_AVAIL {
+			Pos = MAP_SYSFONT( 220, 124 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	PushButton vID_BTN_SELECT_ALL_SPECIES {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 137 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Select ~All";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_DESELECT_ALL_SPECIES {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 155 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Deselect All";
+			TabStop = TRUE;
+		};
+	PushButton vID_BTN_PREV_SPECIES_SELECT {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 76, 173 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "Pr~evious";
+			TabStop = TRUE;
+		};
+	FixedText 10 {
+			Pos = MAP_SYSFONT( 132, 163 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Plot types specified :";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_NUM_PLOTS_SPECIFIED {
+			Pos = MAP_SYSFONT( 220, 163 );
+			Size = MAP_SYSFONT( 30, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	ListBox vID_LB_EXTDAT_TYPE {
+			Disable = TRUE;
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 186, 97 );
+			Size = MAP_SYSFONT( 80, 40 );
+			TabStop = TRUE;
+			DropDown = TRUE;
+		};
+	FixedText vID_STEXT_EXTDATA_TYPE_LABEL {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 103, 97 );
+			Size = MAP_SYSFONT( 80, 8 );
+			Text = "Plot external data as";
+			Right = TRUE;
+		};
+	CancelButton vID_BTN_CANCEL {
+			Pos = MAP_SYSFONT( 179, 192 );
+			Size = MAP_SYSFONT( 42, 11 );
+			Text = "~Cancel";
+			TabStop = TRUE;
+		};
+	GroupBox 6 {
+			Pos = MAP_SYSFONT( 130, 156 );
+			Size = MAP_SYSFONT( 140, 29 );
+			Text = "Status";
+		};
+};

@@ -1,0 +1,48 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "logo.hrc"
+WorkWindow vID_WIN_LOGO {
+        OutputSize = TRUE;
+        Border = TRUE;
+        Hide = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_PIXEL( 100, 100 );
+        Size = MAP_PIXEL( 458, 238 );
+        FixedBitmap 1 {
+                        Border = TRUE;
+                        Pos = MAP_PIXEL( 5, 5 );
+                        Size = MAP_PIXEL( 448, 228 );
+                        Fixed = Bitmap  {
+                                File = "vckslogo.bmp";
+                        };
+                };
+};
+ModalDialog vID_DLG_ABOUT {
+        OutputSize = TRUE;
+        Border = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_PIXEL( 33, 18 );
+        Size = MAP_PIXEL( 508, 288 );
+        Moveable = TRUE;
+        Closeable = TRUE;
+        FixedBitmap 1 {
+                        Border = TRUE;
+                        Pos = MAP_PIXEL( 30, 12 );
+                        Size = MAP_PIXEL( 448, 228 );
+                        Fixed = Bitmap  {
+                                File = "vckslogo.bmp";
+                        };
+                };
+        OKButton 1 {
+                        Pos = MAP_PIXEL( 30, 253 );
+                        Size = MAP_PIXEL( 80, 24 );
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        FixedText 1 {
+                        Pos = MAP_PIXEL( 141, 253 );
+                        Size = MAP_PIXEL( 336, 20 );
+                        Text = "Private Build #1d    09.17.98      16:10";
+                        Left = TRUE;
+                };
+};

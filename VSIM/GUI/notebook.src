@@ -1,0 +1,52 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "notebook.hrc"
+#include "help.hhc"
+ModelessDialog vID_DLG_NOTEBOOK {
+        OutputSize = TRUE;
+        Hide = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 50, 41 );
+        Size = MAP_SYSFONT( 200, 142 );
+        Text = "NoteBook Entry - ";
+        HelpID = HLP_NOTEBOOK;   
+        Moveable = TRUE;
+        MultiLineEdit vID_MLE_NOTEBOOK {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 4, 9 );
+                        Size = MAP_SYSFONT( 192, 110 );
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 5000;
+                        HScroll = TRUE;
+                        VScroll = TRUE;
+                };
+        OKButton vID_BTN_CLOSE {
+                        Pos = MAP_SYSFONT( 4, 125 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~OK";
+                        TabStop = TRUE;
+                        Group = TRUE;
+                };
+        PushButton vID_BTN_UNDO {
+                        Pos = MAP_SYSFONT( 50, 125 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Undo";
+                        TabStop = TRUE;
+                        Disable = TRUE;
+                };
+        PushButton vID_BTN_CLEAR {
+                        Pos = MAP_SYSFONT( 95, 125 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Clear";
+                        TabStop = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 140, 125 );
+                        Size = MAP_SYSFONT( 40, 11 );
+                        Text = "~Help";
+                        TabStop = TRUE;
+                };
+};
+

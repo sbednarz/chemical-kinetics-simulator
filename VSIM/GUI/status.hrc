@@ -1,0 +1,7 @@
+/* StarView ressource header file */
+#define vID_DLG_STATUS   9750
+#define vID_LB_STATUS_TYPE  1
+#define vID_MLE_DETAILS     1
+#define vID_BTN_OK          1
+#define vID_BTN_HELP        1
+

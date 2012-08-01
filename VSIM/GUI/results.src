@@ -1,0 +1,115 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "results.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_SIM_RESULTS {
+        FillInBrush = Brush  {
+                Style = BRUSH_NULL;
+        };
+        OutputSize = TRUE;
+        Hide = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 82, 15 );
+        Size = MAP_SYSFONT( 212, 185 );
+        Text = "Simulation Results - ";
+        Moveable = TRUE;
+        Closeable = TRUE;
+        HelpID = HLP_RESULTS;   
+        OKButton vID_BTN_CLOSE {
+                        Pos = MAP_SYSFONT( 5, 171 );
+                        Size = MAP_SYSFONT( 54, 11 );
+                        Text = "~Close";
+                        TabStop = TRUE;
+                        Group = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 153, 171 );
+                        Size = MAP_SYSFONT( 54, 11 );
+                        TabStop = TRUE;
+                };
+        FixedBitmap 1 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 10, 15 );
+                        Size = MAP_SYSFONT( 32, 24 );
+                        Fixed = Bitmap  {
+                                File = "multplot.bmp";
+                        };
+                };
+        GroupBox 1 {
+                        Pos = MAP_SYSFONT( 5, 5 );
+                        Size = MAP_SYSFONT( 202, 160 );
+                        Text = "Display Formats Available";
+                };
+        RadioButton vID_RB_SINGLE_PLOT {
+                        Pos = MAP_SYSFONT( 46, 23 );
+                        Size = MAP_SYSFONT( 155, 10 );
+                        Text = "One or more plot types for ~one compartment";
+                        TabStop = TRUE;
+                        Group = TRUE;
+                        Check = TRUE;
+                };
+        FixedBitmap 2 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 10, 45 );
+                        Size = MAP_SYSFONT( 32, 24 );
+                        Fixed = Bitmap  {
+                                File = "multcplt.bmp";
+                        };
+                };
+        RadioButton vID_RB_MULTCOMPT_PLOT {
+                        Pos = MAP_SYSFONT( 46, 53 );
+                        Size = MAP_SYSFONT( 155, 10 );
+                        Text = "Single plot type for ~multiple compartments";
+                        TabStop = TRUE;
+                };
+        FixedBitmap 3 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 10, 75 );
+                        Size = MAP_SYSFONT( 32, 24 );
+                        Fixed = Bitmap  {
+                                File = "bargraph.bmp";
+                        };
+                };
+        RadioButton vID_RB_BAR_GRAPH {
+                        Pos = MAP_SYSFONT( 46, 83 );
+                        Size = MAP_SYSFONT( 155, 10 );
+                        Text = "~Aminated bar graphs on reaction scheme";
+                        TabStop = TRUE;
+                };
+        PushButton vID_BTN_CREATE_PLOT {
+                        Pos = MAP_SYSFONT( 79, 171 );
+                        Size = MAP_SYSFONT( 54, 11 );
+                        Text = "Create ~Window";
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        FixedBitmap 4 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 10, 105 );
+                        Size = MAP_SYSFONT( 32, 24 );
+                        Fixed = Bitmap  {
+                                File = "watrfall.bmp";
+                        };
+                };
+        RadioButton vID_RB_WATERFALL_PLOT {
+                        Pos = MAP_SYSFONT( 46, 113 );
+                        Size = MAP_SYSFONT( 155, 10 );
+                        Text = "~Stacked single plot type for multiple compartments ";
+                        TabStop = TRUE;
+                };
+        FixedBitmap 5 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 10, 135 );
+                        Size = MAP_SYSFONT( 32, 24 );
+                        Fixed = Bitmap  {
+                                File = "texttabl.bmp";
+                        };
+                };
+        RadioButton vID_RB_TEXT_TABLE {
+                        Pos = MAP_SYSFONT( 46, 143 );
+                        Size = MAP_SYSFONT( 155, 10 );
+                        Text = "~Tabular text";
+                        TabStop = TRUE;
+                };
+};
+

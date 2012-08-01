@@ -1,0 +1,26 @@
+/* StarView ressource header file */
+#define vID_DLG_XFERPATH_EDIT 2220 
+#define vID_GB_1 1
+#define vID_GB_PATH_CONTENTS 2
+#define vID_BTN_CLOSE 1
+#define vID_BTN_HELP 1
+#define vID_EF_NAME 1
+
+#define vID_PB_ADD_VDIFFN_STEP   2
+#define vID_PB_ADD_SDIFFN_STEP    3
+#define vID_PB_ADD_MASS_XFER_STEP  4
+#define vID_PB_EDIT_XFER_STEP 5
+#define vID_PB_DELETE_XFER_STEP 6
+
+#define vID_LB_XFER_STEPS 1
+
+#define vID_STEXT_LABEL 1
+#define vID_STEXT_SOURCE_LABEL 2
+#define vID_STEXT_TARGET_LABEL 3
+#define vID_STEXT_SOURCE_NAME 4
+#define vID_STEXT_TARGET_NAME 5
+#define vID_STEXT_XFER_STEPS_LIST 6
+#define vID_STEXT_NON_XFER_STEPS_LIST 7
+#define vID_STEXT_NAME_LABEL 8
+
+

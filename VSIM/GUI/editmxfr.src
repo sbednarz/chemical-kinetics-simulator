@@ -1,0 +1,187 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "editmxfr.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_EDIT_MASS_XFER {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_EDIT_MASS_XFER;
+	Pos = MAP_SYSFONT( 16, 12 );
+	Size = MAP_SYSFONT( 305, 177 );
+	Text = "Mass Transfer Step Definition";
+	Moveable = TRUE;
+	ListBox vID_LB_SPECIES {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 61, 20 );
+			Size = MAP_SYSFONT( 53, 89 );
+			TabStop = TRUE;
+			DropDown = TRUE;
+		};
+	FixedText vID_STEXT_SPECIES_LABEL {
+			Pos = MAP_SYSFONT( 1, 20 );
+			Size = MAP_SYSFONT( 57, 8 );
+			Text = "Transferring species :";
+			Right = TRUE;
+		};
+	RadioButton vID_RB_ARRH_FORM {
+			Pos = MAP_SYSFONT( 16, 54 );
+			Size = MAP_SYSFONT( 100, 11 );
+			Text = "Arr~henius form";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_SINGLE_RATE {
+			Pos = MAP_SYSFONT( 16, 68 );
+			Size = MAP_SYSFONT( 100, 11 );
+			Text = "~Single-valued form";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_SRC_TO_TARGET {
+			Pos = MAP_SYSFONT( 174, 51 );
+			Size = MAP_SYSFONT( 75, 10 );
+			Text = "Sour~ce to Target only";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	RadioButton vID_RB_REVERSIBLE {
+			Pos = MAP_SYSFONT( 174, 61 );
+			Size = MAP_SYSFONT( 75, 10 );
+			Text = "~Reversible";
+			TabStop = TRUE;
+		};
+	RadioButton vID_RB_TARGET_TO_SRC {
+			Pos = MAP_SYSFONT( 174, 71 );
+			Size = MAP_SYSFONT( 75, 10 );
+			Text = "~Target to Source only";
+			TabStop = TRUE;
+		};
+	Window vID_WIN_XFER_SCHEMATIC {
+			SVLook = TRUE;
+			Pos = MAP_SYSFONT( 129, 7 );
+			Size = MAP_SYSFONT( 170, 32 );
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 5, 45 );
+			Size = MAP_SYSFONT( 117, 38 );
+			Text = "Form of Transfer Rate Coefficient";
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 129, 45 );
+			Size = MAP_SYSFONT( 170, 38 );
+			Text = "Direction of Transfer Step";
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 5, 88 );
+			Size = MAP_SYSFONT( 294, 66 );
+			Text = "Values of Transfer Rate Coefficients";
+		};
+	FixedText vID_STEXT_FORWARD {
+			Pos = MAP_SYSFONT( 101, 96 );
+			Size = MAP_SYSFONT( 50, 10 );
+			Text = "Forward kf";
+			Center = TRUE;
+		};
+	FixedText vID_STEXT_REVERSE {
+			Pos = MAP_SYSFONT( 151, 96 );
+			Size = MAP_SYSFONT( 50, 10 );
+			Text = "Reverse kr";
+			Center = TRUE;
+		};
+	FixedText vID_STEXT_AFACTOR {
+			Pos = MAP_SYSFONT( 8, 109 );
+			Size = MAP_SYSFONT( 96, 10 );
+			Text = "A Factor ";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_TEMP_EXPONENT {
+			Pos = MAP_SYSFONT( 8, 123 );
+			Size = MAP_SYSFONT( 95, 10 );
+			Text = "Temperature Exponent ";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_EA {
+			Pos = MAP_SYSFONT( 8, 137 );
+			Size = MAP_SYSFONT( 95, 10 );
+			Text = "Activation Energy ";
+			Right = TRUE;
+		};
+	FixedText vID_STEXT_AFACTOR_UNITS {
+			Pos = MAP_SYSFONT( 198, 109 );
+			Size = MAP_SYSFONT( 98, 10 );
+			Text = "1/time units";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_EA_UNITS {
+			Pos = MAP_SYSFONT( 198, 137 );
+			Size = MAP_SYSFONT( 98, 10 );
+			Text = "kcal/mole";
+			Left = TRUE;
+		};
+	Edit vID_EF_FWD_AFACTOR {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 106, 108 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_FWD_TEXP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 106, 122 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_FWD_EA {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 106, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_REV_A_FACTOR {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 156, 108 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_REV_TEXP {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 156, 122 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	Edit vID_EF_REV_EA {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 156, 136 );
+			Size = MAP_SYSFONT( 40, 11 );
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	OKButton vID_PB_CLOSE {
+			Pos = MAP_SYSFONT( 5, 160 );
+			Size = MAP_SYSFONT( 55, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			DefButton = TRUE;
+		};
+	HelpButton vID_HBTN_HELP {
+			Pos = MAP_SYSFONT( 123, 160 );
+			Size = MAP_SYSFONT( 55, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_UNDO {
+			Pos = MAP_SYSFONT( 64, 160 );
+			Size = MAP_SYSFONT( 55, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+};

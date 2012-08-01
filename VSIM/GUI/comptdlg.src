@@ -1,0 +1,124 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "comptdlg.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_COMPT_EDIT {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 22, 7 );
+	Size = MAP_SYSFONT( 250, 200 );
+	Text = "Edit Compartment";
+	Moveable = TRUE;
+	Closeable = TRUE;
+     HelpID = HLP_COMPTDLG;   
+	GroupBox vID_GB_ATTR {
+			Pos = MAP_SYSFONT( 5, 5 );
+			Size = MAP_SYSFONT( 240, 45 );
+			Text = "Compartment Attributes";
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 6, 183 );
+			Size = MAP_SYSFONT( 48, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 60, 184 );
+			Size = MAP_SYSFONT( 48, 11 );
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_LABEL {
+			Pos = MAP_SYSFONT( 10, 16 );
+			Size = MAP_SYSFONT( 22, 8 );
+			Text = "Name";
+			Right = TRUE;
+		};
+	Edit vID_EF_NAME {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 33, 15 );
+			Size = MAP_SYSFONT( 62, 10 );
+			Text = "MMMMMMMMMMMM";
+			TabStop = TRUE;
+			Left = TRUE;
+			MaxTextLength = 20;
+		};
+	PushButton vID_PB_COMPT_COLOR {
+			Pos = MAP_SYSFONT( 112, 14 );
+			Size = MAP_SYSFONT( 24, 11 );
+			Text = "Co~lor";
+			TabStop = TRUE;
+		};
+	Window vID_WIN_COLOR_SAMPLE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 137, 16 );
+			Size = MAP_SYSFONT( 8, 8 );
+			Text = "";
+		};
+	PushButton vID_PB_RXN_CONDNS {
+			Pos = MAP_SYSFONT( 10, 31 );
+			Size = MAP_SYSFONT( 65, 11 );
+			Text = "~Reaction Conditions...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_EDIT_CONCS {
+			Pos = MAP_SYSFONT( 79, 31 );
+			Size = MAP_SYSFONT( 65, 11 );
+			Text = "Initial ~Concentrations...";
+			TabStop = TRUE;
+		};
+	GroupBox vID_GB_RXNSTEPS {
+			Pos = MAP_SYSFONT( 6, 60 );
+			Size = MAP_SYSFONT( 240, 117 );
+			Text = "Reaction Steps";
+		};
+	PushButton vID_PB_ADD_STEP {
+			Pos = MAP_SYSFONT( 25, 162 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Add Step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_EDIT_STEP {
+			Pos = MAP_SYSFONT( 98, 162 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Edit Step...";
+			TabStop = TRUE;
+		};
+	PushButton vID_PB_DELETE_STEP {
+			Pos = MAP_SYSFONT( 170, 162 );
+			Size = MAP_SYSFONT( 60, 11 );
+			Text = "~Delete Step";
+			TabStop = TRUE;
+		};
+	ListBox vID_LB_RXNSTEPS {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 14, 71 );
+			Size = MAP_SYSFONT( 226, 85 );
+			TabStop = TRUE;
+			HScroll = TRUE;
+			VScroll = TRUE;
+		};
+	FixedText 2 {
+			Pos = MAP_SYSFONT( 162, 14 );
+			Size = MAP_SYSFONT( 39, 8 );
+			Text = "Dimensions ";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_X_DIMENSION {
+			Pos = MAP_SYSFONT( 171, 23 );
+			Size = MAP_SYSFONT( 70, 8 );
+			Text = "X : 0.0000e-00 length units";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_Y_DIMENSION {
+			Pos = MAP_SYSFONT( 171, 31 );
+			Size = MAP_SYSFONT( 70, 8 );
+			Text = "Y : 0.0000e-00 length units";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_Z_DIMENSION {
+			Pos = MAP_SYSFONT( 171, 39 );
+			Size = MAP_SYSFONT( 70, 8 );
+			Text = "Z : 0.0000e-00 length units";
+			Left = TRUE;
+		};
+};

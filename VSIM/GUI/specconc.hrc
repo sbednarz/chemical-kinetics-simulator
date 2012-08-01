@@ -1,0 +1,14 @@
+/* StarView ressource header file */
+#define vID_DLG_INIT_CONC 3100
+#define vID_GB_CONC_LABEL 1
+#define vID_LB_SPECIES_LIST 1
+#define vID_STEXT_SPECIES_LABEL 3
+#define vID_EDIT_CONC 1
+#define vID_STEXT_CONC_UNITS 4
+#define vID_BTN_CLOSE 1
+#define vID_BTN_DEFAULTS 1
+#define vID_BTN_UNDO 2
+#define vID_BTN_HELP 1
+#define vID_STEXT_SPECIES_NAME 5
+#define vID_CB_SHOW_REACTIVE_SPECIES 1
+

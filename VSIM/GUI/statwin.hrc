@@ -1,0 +1,6 @@
+/* StarView ressource header file */
+
+#define vID_WIN_STATUS              3333
+#define vID_STEXT_CURRENT_OP        2
+#define vID_CLOCK_ICON               1
+#define vID_CLOCK_ICON_1             901

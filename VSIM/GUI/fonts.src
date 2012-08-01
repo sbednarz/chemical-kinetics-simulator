@@ -1,0 +1,13 @@
+#include "fonts.hrc"
+
+FONT vID_FNT_APPLICATION {
+                HEIGHT          = 12;
+                FONTCOLOR = Color  {
+                        PREDEFINE = COL_WINDOWTEXT;
+                };
+                FILLCOLOR = Color  {
+                        PREDEFINE = COL_WINDOWWORKSPACE;
+                };
+                TEXT            = "Chicago";
+};
+

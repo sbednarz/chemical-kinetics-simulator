@@ -1,0 +1,133 @@
+
+// we define here menu and toolbox ID's
+
+#define vID_MENU_MAIN                 1000
+#define vID_MENU_FILE                 1001
+#define vID_MENU_WINDOW               1002
+#define vID_TOOLBOX_APP               1003
+#define vID_TOOLBOX_SCHEME            1004
+#define vID_MENU_HELP                 1005
+#define vID_TOOLBOX_XYPLOT            1006
+#define vID_MENU_EDIT                 1007
+#define vID_MENU_VIEW                 1008
+#define vID_TOOLBOX_TEXT              1009
+
+
+// menu item ID's for the main menu
+
+#define vID_MI_FILE                     100
+#define vID_MI_EDIT                     101
+#define vID_MI_WINDOW                   102
+#define vID_MI_HELP                     103
+#define vID_MI_VIEW                     104
+
+
+// menu item ID's for the Edit submenu
+
+#define  vID_MI_CUT                     170
+#define  vID_MI_COPY                    171
+#define  vID_MI_PASTE                   172
+#define  vID_MI_DELETE                  173
+#define  vID_MI_ADD_COMPARTMENT         174
+#define  vID_MI_ADD_PATH                175
+#define  vID_MI_USER_PREFERENCES        176
+#define vID_MI_SELECT_ALL_COMPTS        177
+#define vID_MI_SELECT_ALL_XFERPATHS     178
+#define vID_MI_SPECIAL_EDIT             179
+#define vID_MI_CHANGE_COMPT_DIMENSIONS  180
+#define vID_MI_CHANGE_SCHEME_TEMPERATURE  181
+#define vID_MI_GLOBAL_CONC_CHANGE       182
+
+// menu item ID's for the View submenu
+
+#define  vID_MI_ZOOM100                 190
+#define  vID_MI_ZOOMOUT                 191
+#define  vID_MI_ZOOMIN                  192
+
+
+// menu item ID's for the File submenu
+
+#define vID_MI_NEW_SCHEME               110
+#define vID_MI_EXIT                     112
+#define vID_MI_CLOSE_SCHEME             113
+#define vID_MI_SAVE_SCHEME              114
+#define vID_MI_LOAD_SCHEME              115
+#define vID_MI_SAVE_SCHEME_AS           116
+
+// used as starting pt for assiging IDs to reloadable rxn scheme file names
+//  must have no ID's assigned after it to leave room for MAX_NUM_RELOADABLE_FILENAMES id's
+// currently MAX_NUM_RELOADABLE_FILENAMES  = 9
+
+#define vID_MI_PREV_FILE_1              120
+
+// do not define anything witinh the range 120 to 128
+
+
+// menu item ID's for the Window submenu
+
+#define vID_MI_CASCADE                  130
+#define vID_MI_TILE                     131
+#define vID_MI_HORIZONTAL               132
+#define vID_MI_VERTICAL                 133
+#define vID_MI_ARRANGE                  134
+#define vID_MI_CLOSEALL                 135
+
+/// menu item ID's for the File | New submenu
+
+#define vID_MI_NEW_COMPARTMENT_SCHEME   140
+#define vID_MI_NEW_1D_SCHEME            141
+#define vID_MI_NEW_2D_SCHEME            142
+#define vID_MI_NEW_3D_SCHEME            143
+
+// menu item ID's for the Help submenu
+
+#define vID_MI_ABOUT                    160
+#define vID_MI_HELPHELP                 161
+#define vID_MI_HELPBALLOON              162
+
+#include "help.hhc"
+
+
+// used as starting pt for assiging IDs to loaded rxn scheme window names
+// must have no ID's assigned after it to leave room for MAX_NUM_LOADED_FILENAMES id's
+// currently MAX_NUM_LOADED_FILENAMES = 30
+
+#define vID_MI_LOADED_FILE_1            5000
+
+
+
+// toolbox item id's
+
+#define vID_TI_ADD_COMPARTMENT         140
+#define vID_TI_ADD_PATH                141
+
+#define vID_TI_CUT                     142
+#define vID_TI_COPY                    143
+#define vID_TI_PASTE                   144
+#define vID_TI_DELETE                  145
+
+#define vID_TI_SELECT_ALL_COMPTS       160
+#define vID_TI_SELECT_ALL_XFERPATHS    161
+
+#define vID_TI_SPECIES_PROPERTIES      146
+#define vID_TI_USER_NOTES              147
+#define vID_TI_SUMMARY                 148
+#define vID_TI_RESULTS                 149
+#define vID_TI_SIM_OPTIONS             150
+#define vID_TI_START_SIMULATION        154
+#define vID_TI_ABORT_SIMULATION        155
+#define vID_TI_SCHEMEWIN_HELP          156
+
+#define vID_TI_ZOOMIN                  151
+#define vID_TI_ZOOMOUT                 152
+#define vID_TI_ZOOM100                 153
+
+#define vID_TI_XYPLOT_ATTRIBUTES       2
+#define vID_TI_XYPLOT_SAVE             3
+#define vID_TI_XYPLOT_HELP             4
+#define vID_TI_XYPLOT_PRINT            5
+
+
+#define vID_TI_TEXT_HELP               10
+#define vID_TI_TEXT_SAVE               11
+#define vID_TI_TEXT_PRINT              12

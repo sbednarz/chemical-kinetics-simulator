@@ -1,0 +1,4 @@
+/* StarView ressource header file */
+#define vID_WIN_LOGO       256
+#define vID_DLG_ABOUT      257
+

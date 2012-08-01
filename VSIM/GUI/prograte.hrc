@@ -1,0 +1,14 @@
+#define vID_DLG_RATE_PROFILE        5400
+#define vID_BTN_CLOSE               1
+#define vID_BTN_UNDO                2
+#define vID_BTN_HELP                1
+#define vID_BTN_DEFAULTS            4
+#define vID_STEXT_FILENAME          1
+#define vID_STEXT_EDIT_PROF_LABEL   2
+#define vID_MLE_EDIT_PROFILE        1
+#define vID_BTN_SELECT_FILE         5
+#define vID_BTN_PROFILE_CREATE      6
+#define vID_BTN_REFRESH             7
+#define vID_BTN_SAVEAS              8
+#define vID_WINDOW_PLOT_WINDOW      1
+

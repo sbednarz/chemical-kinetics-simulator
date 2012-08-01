@@ -1,0 +1,56 @@
+/* StarView ressource header file */
+
+#define vID_DLG_MULT_COMPT_PLOT_SETUP 8080
+
+// checkboxes 
+
+#define vID_RB_CONC_V_TIME 1
+#define vID_RB_TEMP_V_TIME 2
+#define vID_RB_VOLUME_V_TIME 3
+#define vID_RB_PRESS_V_TIME 4
+#define vID_RB_CONC_V_TEMP 5
+#define vID_RB_VOLUME_V_TEMP 6
+#define vID_RB_PRESS_V_TEMP 7
+#define vID_CB_PLOT_EXTRNDATA 8
+
+// PushButtons 
+
+#define vID_BTN_SELECT_EXTERN_FILE 1
+#define vID_BTN_SELECT_ALL_SPECIES 3
+#define vID_BTN_DESELECT_ALL_SPECIES 4
+#define vID_BTN_PREV_SPECIES_SELECT 5
+
+// OKButton 
+
+#define vID_BTN_PLOT 1
+
+// listboxes 
+
+#define vID_LB_SPECIES_LIST 1
+
+#define vID_LB_COMPT_LIST 1
+#define vID_LB_EXTDAT_TYPE 2
+
+// group boxes 
+
+#define vID_GB_SPECIES_LABEL 7
+
+// static text 
+
+#define vID_STEXT_NUM_POINTS_AVAIL 1
+#define vID_STEXT_NUM_SPECIES_SELECTED 2
+#define vID_STEXT_EXTDATA_TYPE_LABEL 6
+#define vID_STEXT_NUM_PLOTS_SPECIFIED 8
+#define vID_STEXT_NUM_SPECIES_SELECTED_LABEL 9
+
+// entry field 
+#define vID_EF_MAX_POINTS_TO_PLOT 1
+
+// help button 
+
+#define vID_BTN_HELP 1
+
+// Cancel Button 
+
+#define vID_BTN_CANCEL 1
+

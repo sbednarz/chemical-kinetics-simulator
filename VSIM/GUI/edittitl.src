@@ -1,0 +1,47 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "edittitl.hrc"
+#include "help.hhc"          
+ModalDialog v_ID_DLG_EDIT_TITLE {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 40, 10 );
+        Size = MAP_SYSFONT( 160, 58 );
+        Text = "Edit Plot Title";
+        Moveable = TRUE;
+        Closeable = TRUE;
+        HelpID = HLP_EDITTITL;           
+        OKButton vID_BTN_CLOSE {
+                        Pos = MAP_SYSFONT( 5, 43 );
+                        Size = MAP_SYSFONT( 42, 11 );
+                        Text = "~OK";
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 113, 43 );
+                        Size = MAP_SYSFONT( 42, 11 );
+                        TabStop = TRUE;
+                };
+        PushButton vID_BTN_UNDO {
+                        Disable = TRUE;
+                        Pos = MAP_SYSFONT( 59, 43 );
+                        Size = MAP_SYSFONT( 42, 11 );
+                        Text = "~Undo";
+                        TabStop = TRUE;
+                };
+        Edit vID_EF_TITLE_TEXT {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 9, 17 );
+                        Size = MAP_SYSFONT( 143, 10 );
+                        Text = "Edit";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                };
+        GroupBox 1 {
+                        Pos = MAP_SYSFONT( 5, 5 );
+                        Size = MAP_SYSFONT( 150, 32 );
+                        Text = "Plot Title Text";
+                };
+};
+

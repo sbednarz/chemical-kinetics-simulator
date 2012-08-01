@@ -1,0 +1,25 @@
+;*************** GFC Program Module Definition File (.DEF) ***************
+;
+;  The module definition file supplies extra information about the program
+;  module to the LINKER.
+;
+
+
+NAME   GFC WINDOWAPI
+
+DESCRIPTION 'Version of file comparision program for PM'
+
+
+DATA    MULTIPLE
+
+STACKSIZE  16384
+HEAPSIZE    1024
+
+PROTMODE
+EXPORTS ClientWndProc
+        OpenDlgProc
+        AboutDlgProc
+        SetColoursProc
+        FontsDlgProc
+        MyEntryFieldProc
+

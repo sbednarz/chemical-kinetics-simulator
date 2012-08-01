@@ -1,0 +1,50 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "status.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_STATUS {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 11, 8 );
+	Size = MAP_SYSFONT( 220, 158 );
+	Text = "Statistics - ";
+	Moveable = TRUE;
+	Closeable = TRUE;
+     HelpID = HLP_STATS;   
+	ListBox vID_LB_STATUS_TYPE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 15, 5 );
+			Size = MAP_SYSFONT( 190, 50 );
+			TabStop = TRUE;
+			DropDown = TRUE;
+			StringList = {
+			"File Statistics";
+			"Scheme Statistics";
+			"Simulation Statistics";
+			};
+		};
+	MultiLineEdit vID_MLE_DETAILS {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 10, 25 );
+			Size = MAP_SYSFONT( 200, 110 );
+			TabStop = TRUE;
+			Left = TRUE;
+			ReadOnly = TRUE;
+			HScroll = TRUE;
+			VScroll = TRUE;
+		};
+	OKButton vID_BTN_OK {
+			Pos = MAP_SYSFONT( 10, 140 );
+			Size = MAP_SYSFONT( 40, 12 );
+			TabStop = TRUE;
+			Text = "~OK";
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 61, 140 );
+			Size = MAP_SYSFONT( 40, 12 );
+			TabStop = TRUE;
+               HelpID = HLP_STATS;   
+			Text = "~Help";
+		};
+
+};

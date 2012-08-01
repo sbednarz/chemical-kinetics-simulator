@@ -1,0 +1,131 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "editaxis.hrc"
+#include "help.hhc"          
+ModalDialog vID_DLG_EDIT_AXIS {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 70, 16 );
+        Size = MAP_SYSFONT( 150, 155 );
+        Text = "Edit Axis Properties";
+        Moveable = TRUE;
+        HelpID = HLP_EDITAXIS;   
+        Closeable = TRUE;
+        FixedText 2 {
+                        Pos = MAP_SYSFONT( 8, 30 );
+                        Size = MAP_SYSFONT( 80, 8 );
+                        Text = "Maximum Value";
+                        Right = TRUE;
+                };
+        FixedText 3 {
+                        Pos = MAP_SYSFONT( 8, 45 );
+                        Size = MAP_SYSFONT( 80, 8 );
+                        Text = "Tic Mark Interval";
+                        Right = TRUE;
+                };
+        ListBox vID_LB_NUM_DEC_PLACES {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 92, 60 );
+                        Size = MAP_SYSFONT( 48, 54 );
+                        TabStop = TRUE;
+                        DropDown = TRUE;
+                        StringList = {
+                        "0";
+                        "1";
+                        "2";
+                        "3";
+                        "4";
+                        "5";
+                        };
+                };
+        FixedText 1 {
+                        Pos = MAP_SYSFONT( 8, 15 );
+                        Size = MAP_SYSFONT( 80, 8 );
+                        Text = "Minimum Value";
+                        Right = TRUE;
+                };
+        FixedText 4 {
+                        Pos = MAP_SYSFONT( 8, 60 );
+                        Size = MAP_SYSFONT( 80, 8 );
+                        Text = "Number of Decimal Places";
+                        Right = TRUE;
+                };
+        Edit vID_EF_MIN_VALUE {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 92, 14 );
+                        Size = MAP_SYSFONT( 48, 10 );
+                        Text = "Edit";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                };
+        Edit vID_EF_MAX_VALUE {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 92, 29 );
+                        Size = MAP_SYSFONT( 48, 10 );
+                        Text = "Edit";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                };
+        Edit vID_EF_TIC_SPACING {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 92, 44 );
+                        Size = MAP_SYSFONT( 48, 10 );
+                        Text = "Edit";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                };
+        FixedText 5 {
+                        Pos = MAP_SYSFONT( 10, 106 );
+                        Size = MAP_SYSFONT( 32, 8 );
+                        Text = "Axis Title";
+                        Right = TRUE;
+                };
+        Edit vID_EF_TITLE {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 45, 105 );
+                        Size = MAP_SYSFONT( 94, 10 );
+                        Text = "Edit";
+                        TabStop = TRUE;
+                        Left = TRUE;
+                };
+        CheckBox vID_CB_SHOW_UNITS {
+                        Pos = MAP_SYSFONT( 19, 120 );
+                        Size = MAP_SYSFONT( 80, 10 );
+                        Text = "Show Units Information";
+                        TabStop = TRUE;
+                };
+        CheckBox vID_CB_SHOW_GRID {
+                        Pos = MAP_SYSFONT( 19, 73 );
+                        Size = MAP_SYSFONT( 80, 10 );
+                        Text = "Show Grid";
+                        TabStop = TRUE;
+                };
+        OKButton vID_BTN_OK {
+                        Pos = MAP_SYSFONT( 5, 138 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        TabStop = TRUE;
+                };
+        PushButton vID_BTN_UNDO {
+                        Disable = TRUE;
+                        Pos = MAP_SYSFONT( 53, 138 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        Text = "~Undo";
+                        TabStop = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 101, 138 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        TabStop = TRUE;
+                };
+        GroupBox 1 {
+                        Pos = MAP_SYSFONT( 5, 5 );
+                        Size = MAP_SYSFONT( 140, 83 );
+                        Text = "Numeric Properties";
+                };
+        GroupBox 2 {
+                        Pos = MAP_SYSFONT( 5, 95 );
+                        Size = MAP_SYSFONT( 140, 38 );
+                        Text = "Text Properties";
+                };
+};
+

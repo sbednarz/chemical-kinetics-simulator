@@ -1,0 +1,47 @@
+;*******************************************************************
+;*  VSIM.HPJ
+;*  Author : Bill Hinsberg
+;*  last modified 8/13/96           
+;*******************************************************************
+
+; use this hpj file to build the help files for all VSIM online help
+;
+; OS/2    : (1) run "toipf vsim"; (2) edit vsim.ipf and change all 
+;           instances of facename='Helv'" to "facename='default'";
+;           (3) run "ipfc msim.ipf" from the \bcos2\ipfc directory
+;           since ipfc needs some include files found there; (4)
+;
+; MAC     : ...
+; 
+; AIX     : ...  
+;
+;
+
+[MAP]
+#include "..\gui\help.hhc"
+
+; in the StarView Help compiler for MAC/AIX the word INDEX is used instead of CONTENTS
+
+
+[OPTIONS]
+CONTENTS=MI_INDEX
+
+; note : the SV help compiler does not accept the #defines used in 
+; msim.hhc. If I remove the 'msim' prefix from the ID's then it 
+; accepts the names without problems. That's why these things
+; are all defined again here with the same names as in msim.hhc
+; but no 'msim...' prefix 
+
+
+; [FILES] section: the rtf file mainhelp.rtf contains all the
+; help source common to all platforms. The files winhelp.rtf, 
+; machelp.rtf and aixhelp.rtf contain platform-specific help source
+;
+; For OS/2, use the winhelp.rtf module. 
+
+[FILES]
+mainhelp.rtf
+; winhelp.rtf
+
+
+

@@ -1,0 +1,86 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "globconc.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_GLOBAL_CONC_CHANGE {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	HelpID = HLP_GLOB_CONC_CHANGE;
+	Pos = MAP_SYSFONT( 53, 38 );
+	Size = MAP_SYSFONT( 166, 112 );
+	Text = "Global Change of Species Concentration";
+	Moveable = TRUE;
+	Closeable = TRUE;
+	ListBox vID_LB_SPECIES_LIST {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 10, 12 );
+			Size = MAP_SYSFONT( 66, 53 );
+			TabStop = TRUE;
+			DropDown = TRUE;
+		};
+	RadioButton vID_RB_USE_SINGLE_VALUE {
+			Pos = MAP_SYSFONT( 10, 45 );
+			Size = MAP_SYSFONT( 62, 11 );
+			Text = "Use a ~single value of";
+			TabStop = TRUE;
+		};
+	Edit vID_EF_CONC_VALUE {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 75, 46 );
+			Size = MAP_SYSFONT( 45, 11 );
+			Text = "0.0";
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 14;
+		};
+	RadioButton vID_RB_USE_FILE {
+			Pos = MAP_SYSFONT( 10, 66 );
+			Size = MAP_SYSFONT( 146, 11 );
+			Text = "Use values from ~file ";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	GroupBox 2 {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 5, 3 );
+			Size = MAP_SYSFONT( 155, 25 );
+			Text = "Select species";
+		};
+	PushButton vID_BTN_SELECT_FILE {
+			Pos = MAP_SYSFONT( 34, 77 );
+			Size = MAP_SYSFONT( 50, 11 );
+			Text = "~Select file...";
+			TabStop = TRUE;
+		};
+	OKButton vID_BTN_OK {
+			Pos = MAP_SYSFONT( 5, 96 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Make Change";
+			TabStop = TRUE;
+		};
+	CancelButton vID_BTN_CANCEL {
+			Pos = MAP_SYSFONT( 55, 96 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Cancel";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 105, 96 );
+			Size = MAP_SYSFONT( 44, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+	FixedText vID_STEXT_CONC_UNITS {
+			Pos = MAP_SYSFONT( 122, 47 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "conc units";
+			Left = TRUE;
+		};
+	GroupBox 1 {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 5, 36 );
+			Size = MAP_SYSFONT( 155, 56 );
+			Text = "Select source for new values";
+		};
+};

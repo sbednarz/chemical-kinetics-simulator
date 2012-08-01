@@ -1,0 +1,47 @@
+#include "icons.hrc"
+Icon vID_ICO_SCHEME_ICON {
+        File = "scheme.ico";
+};
+
+Icon vID_ICO_SCHEME1D_ICON {
+        File = "scheme1d.ico";
+};
+
+Icon vID_ICO_SCHEME2D_ICON {
+        File = "scheme2d.ico";
+};
+
+Icon vID_ICO_SCHEME3D_ICON {
+        File = "scheme3d.ico";
+};
+
+Icon vID_ICO_XYPLOTWIN {
+        File = "plot.ico";
+};
+Icon vID_ICO_RUNNING_ICON {
+        File = "running.ico";
+};
+Icon vID_ICO_WATERFALL_PLOTWIN {
+        File = "watrfall.ico";
+};
+
+Icon vID_ICO_TEXTWIN {
+        File = "text.ico";
+};
+
+Bitmap vID_BITMAP_PASTE_COMPT {
+        File = "pastecmp.bmp";
+};
+Bitmap vID_BITMAP_PASTE_XFER {
+        File = "pastexfr.bmp";
+};
+Bitmap vID_BITMAP_PASTE      {
+        File = "paste.bmp";
+};
+
+Bitmap vID_BITMAP_FILL_COMPT {
+        File = "fillcmps.bmp";
+};
+Bitmap vID_BITMAP_FILL_XFER {
+        File = "fillxfrs.bmp";
+};

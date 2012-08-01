@@ -1,0 +1,119 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "plotattr.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_PLOT_ATTR {
+	OutputSize = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 78, 38 );
+	Size = MAP_SYSFONT( 168, 117 );
+	Text = "Set Plot Attributes";
+	Moveable = TRUE;
+     HelpID = HLP_PLOTATTR;   
+	CheckBox vID_CB_VARY_LINECOLOR {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 10, 16 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "Line ~Colors";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	CheckBox vID_CB_VARY_LINESTYLE {
+			Pos = MAP_SYSFONT( 10, 28 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "Line ~Styles";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_VARY_MARKERSTYLE {
+			Pos = MAP_SYSFONT( 10, 40 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "~Marker Styles";
+			TabStop = TRUE;
+		};
+	GroupBox 1 {
+			Pos = MAP_SYSFONT( 5, 5 );
+			Size = MAP_SYSFONT( 75, 50 );
+			Text = "Vary";
+		};
+	CheckBox vID_CB_SHOW_LINES {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 93, 16 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "~Lines";
+			TabStop = TRUE;
+			Group = TRUE;
+		};
+	CheckBox vID_CB_SHOW_MARKERS {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 93, 28 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "M~arkers";
+			TabStop = TRUE;
+		};
+	CheckBox vID_CB_SHOW_RECT {
+			HelpID = 1;
+			Pos = MAP_SYSFONT( 93, 40 );
+			Size = MAP_SYSFONT( 60, 8 );
+			Text = "~Bounding Box";
+			TabStop = TRUE;
+		};
+	GroupBox 2 {
+			Pos = MAP_SYSFONT( 88, 5 );
+			Size = MAP_SYSFONT( 75, 50 );
+			Text = "Show";
+		};
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 7, 81 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Maximum number to plot";
+			Right = TRUE;
+		};
+	FixedText 2 {
+			Pos = MAP_SYSFONT( 7, 68 );
+			Size = MAP_SYSFONT( 84, 8 );
+			Text = "Number of points available:";
+			Right = TRUE;
+		};
+	Edit vID_EF_MAX_POINTS_TO_PLOT {
+			Border = TRUE;
+			Pos = MAP_SYSFONT( 95, 80 );
+			Size = MAP_SYSFONT( 45, 11 );
+			TabStop = TRUE;
+			Group = TRUE;
+			Left = TRUE;
+			MaxTextLength = 10;
+		};
+	FixedText vID_STEXT_NUM_POINTS_AVAIL {
+			Pos = MAP_SYSFONT( 95, 68 );
+			Size = MAP_SYSFONT( 32, 8 );
+			Text = "0";
+			Left = TRUE;
+		};
+	GroupBox 3 {
+			Pos = MAP_SYSFONT( 5, 59 );
+			Size = MAP_SYSFONT( 158, 36 );
+			Text = "Data Points";
+			Group = TRUE;
+		};
+	OKButton vID_BTN_CLOSE {
+			Pos = MAP_SYSFONT( 5, 100 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~OK";
+			TabStop = TRUE;
+			Group = TRUE;
+			DefButton = TRUE;
+		};
+	PushButton vID_BTN_UNDO {
+			Disable = TRUE;
+			Pos = MAP_SYSFONT( 50, 100 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Undo";
+			TabStop = TRUE;
+		};
+	HelpButton vID_BTN_HELP {
+			Pos = MAP_SYSFONT( 95, 100 );
+			Size = MAP_SYSFONT( 40, 11 );
+			Text = "~Help";
+			TabStop = TRUE;
+		};
+};

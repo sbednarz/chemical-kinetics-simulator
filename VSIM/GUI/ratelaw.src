@@ -1,0 +1,190 @@
+/* StarView ressource file */
+#pragma CHARSET_ANSI
+#include "ratelaw.hrc"
+#include "help.hhc"
+ModalDialog vID_DLG_RATE_LAW {
+        OutputSize = TRUE;
+        SVLook = TRUE;
+        Pos = MAP_SYSFONT( 0, 0 );
+        Size = MAP_SYSFONT( 210, 137 );
+        Text = "Edit Special Rate Law: ";
+        Moveable = TRUE;
+        HelpID = HLP_EDIT_RATELAW;
+        FixedText vID_STEXT_FWD_K {
+                        Pos = MAP_SYSFONT( 8, 21 );
+                        Size = MAP_SYSFONT( 7, 10 );
+                        Text = "k";
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_FWD_SPECIES_1 {
+                        Pos = MAP_SYSFONT( 17, 21 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_FWD_SPECIES_2 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 112, 21 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_FWD_SPECIES_3 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 17, 41 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_FWD_SPECIES_4 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 112, 41 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        Edit vID_EF_FWD_EXPONENT_1 {
+                        Border = TRUE;
+                        Pos = MAP_SYSFONT( 80, 20 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_FWD_EXPONENT_2 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 172, 20 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_FWD_EXPONENT_3 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 80, 40 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_FWD_EXPONENT_4 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 172, 40 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        GroupBox vID_GB_FWD_RATE_LAW {
+                        Pos = MAP_SYSFONT( 4, 8 );
+                        Size = MAP_SYSFONT( 202, 48 );
+                        Text = "Rate Law for Forward Reaction:  Rate = ";
+                };
+        FixedText vID_STEXT_REV_K {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 10, 79 );
+                        Size = MAP_SYSFONT( 7, 10 );
+                        Text = "k";
+                        Left = TRUE;
+                };
+        FixedText vID_STEXT_REV_SPECIES_1 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 17, 79 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_REV_SPECIES_2 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 110, 79 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_REV_SPECIES_3 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 17, 97 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        FixedText vID_STEXT_REV_SPECIES_4 {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 120, 97 );
+                        Size = MAP_SYSFONT( 60, 10 );
+                        Text = "[XXXXXXXX]^";
+                        Right = TRUE;
+                };
+        Edit vID_EF_REV_EXPONENT_1 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 80, 78 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_REV_EXPONENT_2 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 172, 78 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_REV_EXPONENT_3 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 80, 96 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        Edit vID_EF_REV_EXPONENT_4 {
+                        Border = TRUE;
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 172, 96 );
+                        Size = MAP_SYSFONT( 30, 11 );
+                        TabStop = TRUE;
+                        Left = TRUE;
+                        MaxTextLength = 14;
+                };
+        GroupBox vID_GB_REV_RATE_LAW {
+                        Hide = TRUE;
+                        Pos = MAP_SYSFONT( 4, 66 );
+                        Size = MAP_SYSFONT( 202, 48 );
+                        Text = "Rate Law for Reverse Reaction:  Rate = ";
+                };
+        OKButton vID_BTN_OK {
+                        Pos = MAP_SYSFONT( 4, 120 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        Text = "~OK";
+                        TabStop = TRUE;
+                        DefButton = TRUE;
+                };
+        PushButton vID_BTN_UNDO {
+                        Disable = TRUE;
+                        Pos = MAP_SYSFONT( 55, 120 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        Text = "~Undo";
+                        TabStop = TRUE;
+                };
+        PushButton vID_BTN_DEFAULTS {
+                        Pos = MAP_SYSFONT( 108, 120 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        Text = "~Defaults";
+                        TabStop = TRUE;
+                };
+        HelpButton vID_BTN_HELP {
+                        Pos = MAP_SYSFONT( 162, 120 );
+                        Size = MAP_SYSFONT( 44, 11 );
+                        Text = "~Help";
+                        TabStop = TRUE;
+                };
+};
+

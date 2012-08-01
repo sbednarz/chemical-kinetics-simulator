@@ -1,0 +1,1297 @@
+#include "strings.hrc"
+
+String vID_STR_MAIN_WIN_TITLE {
+        Text = "VSIM Visual Simulator";
+};
+String vID_STR_MAIN_WIN_HELPTEXT {
+        Text = "Select a menu item or object";
+};
+String vID_STR_SCHEME_DEFAULT_NAME {
+     Text = "untitled";
+};
+
+String vID_STR_SCHEME_WINDOW_TITLE {
+     Text = " - Reaction scheme";
+};
+String vID_STR_DEFAULT_COMPT_STEM {
+     Text = "Compt. ";
+};
+String vID_STR_DEFAULT_XFEROBJ_STEM {
+     Text = "Xfer. ";
+};
+String vID_STR_SCHEMWIN_ADD_COMPT {
+     Text = "Click at the desired location for the new compartment - press Esc to cancel";
+};
+String vID_STR_SCHEMWIN_ADD_XFEROBJ1 {
+     Text = "Click on the Source Compartment - press Esc to cancel";
+};
+String vID_STR_SCHEMWIN_ADD_XFEROBJ2{
+     Text = "Click on the Target Compartment - press Esc to cancel";
+};
+
+String vID_STR_REACTION_STEP {
+     Text = "Reaction Step ";
+};
+String vID_STR_OF {
+     Text = " of ";
+};
+String vID_STR_RDE_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_RDE_INPUT_ERR2 {
+     Text = "] entered for the " ;
+};
+String vID_STR_RDE_INPUT_ERR3 {
+     Text = " is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_RATE_CONSTANT {
+     Text = "Rate Constant "   ;
+};
+String vID_STR_DIFFUSION_COEFFICIENT {
+     Text = "Diffusion Coefficient "   ;
+};
+String vID_STR_TEMP_EXPONENT {
+     Text =  "Temperature Exponent ";
+};
+String vID_STR_EA {
+     Text =  "Activation Energy ";
+};
+String vID_STR_k {
+     Text = "k";
+};
+String vID_STR_A_FACTOR {
+     Text = "A Factor ";
+};
+String vID_STR_EQN_NO_ERROR {
+     Text = "\"No error detected\"";
+};
+String vID_STR_EQN_UNKNOWN_ERROR {
+     Text = "\"<< Unknown Error >>\"" ;
+};
+String vID_STR_EQN_SYNTAX_ERROR  {
+     Text = "\"Incorrect equation syntax\"";
+};
+String vID_STR_EQN_SPECIES_ERROR {
+     Text = "\"Incorrect species name\"";
+};
+String vID_STR_EQN_STOICH_ERROR  {
+     Text = "\"Incorrect stoichiometric coefficient\"";
+};
+String vID_STR_EQN_NUMCOMP_ERROR {
+     Text = "\"Too many reactants or products in eqn\"";
+};
+String vID_STR_EQN_DBLNAME_ERROR {
+     Text = "\"Species appears twice on one side of eqn\"";
+};
+String vID_STR_EQN_EMPTY_ERROR   {
+     Text = "\"No equation entered\"";
+};
+String vID_STR_EQN_NAME_LEN_ERROR {
+     Text = "\"A species name exceeds the allowed length\"";
+};
+String vID_STR_EQN_ANALYSIS_ERROR1 {
+     Text = "An error was found in the current equation.\n\nDiagnostic message : ";
+};
+String vID_STR_EQN_ANALYSIS_ERROR2 {
+     Text = ".\n\n Correct the error and repeat your last operation.";
+};
+
+String vID_STR_SCHEME_WIN_CLOSE1 {
+     Text = "Reaction scheme '";
+};
+
+String vID_STR_SCHEME_WIN_CLOSE2 {
+     Text = "' has been modified. Do you want to save the current contents as a file?";
+};
+String vID_STR_SCHEME_WIN_CLOSE3 {
+     Text = "The notebook text of reaction scheme '";
+};
+
+String vID_STR_SCHEME_WIN_CLOSE4 {
+     Text = "' has been modified. Do you want to save these changes?";
+};
+
+String vID_STR_FOREIGN_INPUT_FILE_1 {
+     Text = "The file ";
+};
+
+String vID_STR_FOREIGN_INPUT_FILE_2 {
+     Text = " is a VSIM reaction file created using another operating system. It"
+" must be converted before use";
+};
+
+String vID_STR_INVALID_INPUT_FILE_1 {
+     Text = "The file ";
+};
+String vID_STR_INVALID_INPUT_FILE_2 {
+     Text = " is not a valid VSIM reaction file";
+};
+String vID_STR_INPUT_FILE_CORRUPT_1 {
+     Text = "The reaction file ";
+};
+String vID_STR_INPUT_FILE_CORRUPT_2 {
+     Text = " is corrupted";
+};
+
+String vID_STR_SAVE_AS_FILE_DLG_TITLE {
+     Text = "Select name to save file as";
+};
+String vID_STR_OPEN_FILE_DLG_TITLE {
+     Text = " Select file to open";
+};
+
+String vID_STR_FILE_OPEN_ERROR_1 {
+     Text = "The file ";
+};
+String vID_STR_FILE_OPEN_ERROR_2{
+     Text = " could not be opened";
+};
+
+String vID_STR_XFER_STEP_STATUS_1 {
+     Text = "Transfer Step ";
+};
+String vID_STR_DIFFN_STEP_STATUS_1 {
+     Text = "Diffusion Step ";
+};
+String vID_STR_XFER_STEP_STATUS_2 {
+     Text = " of ";
+};
+String vID_STR_FWD_XFER_RATE_TEXT_1 {
+     Text = "Forward rate = kf x [" ;
+};
+String vID_STR_FWD_XFER_RATE_TEXT_2 {
+     Text = "]^";
+};
+String  vID_STR_REV_XFER_RATE_TEXT_1 {
+     Text = "Reverse rate = kf x [" ;
+};
+String  vID_STR_REV_XFER_RATE_TEXT_2 {
+     Text = "]^";
+};
+String  vID_STR_REAL_ONE {
+     Text = "1.0";
+};
+String  vID_STR_REAL_ZERO {
+     Text = "0.0";
+};
+String vID_STR_CONC_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_CONC_INPUT_ERR2 {
+     Text = "] entered as the concentration is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_NO_SELECTION {
+     Text = "<none>" ;
+};
+String vID_STR_DEFAULT_VOLUME {
+     Text = "1.0" ;
+};
+String vID_STR_DEFAULT_TEMP {
+     Text = "298.0" ;
+};
+String vID_STR_DEFAULT_T_CONV_STD {
+     Text = "0.5" ;
+};
+String vID_STR_DEFAULT_PROG_T_RATE {
+     Text = "1.0" ;
+};
+String vID_STR_DEFAULT_PROG_T_MAX_VAL {
+     Text = "498.0" ;
+};
+String vID_STR_DEFAULT_PROG_T_MAX_STEP {
+     Text = "10.0" ;
+};
+String vID_STR_DEFAULT_PROG_T_FILENAME {
+     Text = "" ;
+};
+
+String vID_STR_CONST_TEMP_RB_STR1 {
+     Text = "~Constant at T = " ;
+};
+String vID_STR_CONST_TEMP_RB_STR2 {
+     Text = "" ;
+};
+String vID_STR_VAR_TEMP_RB_STR1   {
+     Text = "V~ariable starting from init T = " ;
+};
+String vID_STR_VAR_TEMP_RB_STR2   {
+     Text = "" ;
+};
+String vID_STR_ANAL_PROG_TEMP_RB_STR1 {
+     Text = "Fo~llow linear program T(t) = " ;
+};
+String vID_STR_ANAL_PROG_TEMP_RB_STR2 {
+     Text = " + " ;
+};
+String vID_STR_ANAL_PROG_TEMP_RB_STR3 {
+     Text = " t (t in " ;
+};
+String vID_STR_ANAL_PROG_TEMP_RB_STR4 {
+     Text = ")" ;
+};
+String vID_STR_EXT_PROG_TEMP_RB_STR1  {
+     Text = "Follow ~external profile in file: " ;
+};
+String vID_STR_CONST_VOL_RB_STR1      {
+     Text = "Cons~tant at V = " ;
+};
+String vID_STR_CONST_VOL_RB_STR2      {
+     Text = " " ;
+};
+String vID_STR_VAR_VOL_RB_STR1        {
+     Text = "~Variable starting from init V = " ;
+};
+String vID_STR_VAR_VOL_RB_STR2        {
+     Text = " " ;
+};
+String vID_STR_SIMPL_DLG_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_SIMPL_DLG_INPUT_ERR2 {
+     Text = "] entered as the " ;
+};
+String vID_STR_SIMPL_DLG_INPUT_ERR3 {
+     Text = " is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_SPDATA_DLG_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_SPDATA_DLG_INPUT_ERR2 {
+     Text = "] entered as the " ;
+};
+String vID_STR_SPDATA_DLG_INPUT_ERR3 {
+     Text = " is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_DEFAULT_MAX_NUM_MOLS   {
+     Text = "10000" ;
+};
+String vID_STR_DEFAULT_RECORD_INTERVAL {
+     Text = "75" ;
+};
+String vID_STR_DEFAULT_RANDOM_NUM_SEED {
+     Text = "12947" ;
+};
+String vID_STR_DEFAULT_MAX_NUM_EVENTS  {
+     Text = "4000000000" ;
+};
+String vID_STR_DEFAULT_ELAPSED_TIME_LIMIT {
+     Text = "0.0" ;
+};
+String vID_STR_DEFAULT_EQUIL_CYCLE_COUNT  {
+     Text = "100" ;
+};
+String vID_STR_DEFAULT_MIN_EQUIL_EFFICIENCY {
+     Text = "90.0" ;
+};
+String vID_STR_STATUS_DUMMY {
+     Text = "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM" ;
+};
+String vID_STR_NUM_COMPTS {
+     Text = " Compartments" ;
+};
+String vID_STR_NUM_XFERPATHS {
+     Text = " Transfer Pathways" ;
+};
+String vID_STR_NUM_COMPT_SINGULAR {
+     Text = " Compartment" ;
+};
+String vID_STR_NUM_XFERPATH_SINGULAR {
+     Text = " Transfer Pathway" ;
+};
+String vID_STR_STATUS_MODIFIED {
+     Text = "Scheme Modified  " ;
+};
+String vID_STR_STATUS_NEW_SIM {
+     Text = "New Scheme  " ;
+};
+String vID_STR_STATUS_UNMODIFIED {
+     Text = "Scheme Unmodified  " ;
+};
+String vID_STR_STATUS_READY {
+     Text = "Ready for Simulation  " ;
+};
+String vID_STR_STATUS_WAITING {
+     Text = "Waiting in Simulation Queue  " ;
+};
+String vID_STR_STATUS_RUNNING {
+     Text = "Simulation Running  " ;
+};
+String vID_STR_STATUS_TERM_ZEROPROB {
+     Text = "Simul'n terminated - zero probability  " ;
+};
+String vID_STR_STATUS_TERM_EVENTLIMIT {
+     Text = "Simul'n terminated at event limit  " ;
+};
+String vID_STR_STATUS_TERM_RECLIMIT {
+     Text = "Simul'n terminated at record limit  " ;
+};
+String vID_STR_STATUS_TERM_TIMELIMIT {
+     Text = "Simul'n terminated at time limit  " ;
+};
+String vID_STR_STATUS_TERM_FINALTEMP {
+     Text = "Simul'n terminated -final temp. reached  " ;
+};
+String vID_STR_STATUS_TERM_INTERRUPTED {
+     Text = "Simul'n interrupted by user  " ;
+};
+String vID_STR_STATUS_TERM_ABORT {
+     Text = "Simul'n aborted  " ;
+};
+String vID_STR_STATUS_TERM_FILEERROR {
+     Text = "Simul'n terminated by file error  " ;
+};
+String vID_STR_STATUS_TERM_SEGVIOLATION {
+     Text = "Simul'n terminated by segment violation  " ;
+};
+String vID_STR_STATUS_TERM_MATHERROR {
+     Text = "Simul'n terminated by math error  " ;
+};
+String vID_STR_STATUS_TERM_ILLEGALINSTR {
+     Text = "Simul'n terminated by illegal instr.  " ;
+};
+String vID_STR_STATUS_UNKNOWN {
+     Text = "Unknown Status Code = " ;
+};
+String vID_STR_000 {
+     Text = " 000" ;
+};
+String vID_STR_APPGROUP {
+     Text = "App" ;
+};
+String vID_STR_APPWIN_X {
+     Text = "X" ;
+};
+String vID_STR_APPWIN_Y {
+     Text = "Y" ;
+};
+String vID_STR_APPWIN_WIDTH {
+     Text = "Width" ;
+};
+String vID_STR_APPWIN_HEIGHT {
+     Text = "Height" ;
+};
+String vID_STR_NUM_PREV_FILENAMES {
+     Text = "PrevFileCnt" ;
+};
+String vID_STR_PREV_FILENAME_STUB {
+     Text = "PrevFile" ;
+};
+String vID_STR_RELOAD_HELP {
+     Text = "Load this Reaction Scheme File" ;
+};
+String vID_STR_LOADED_FILE_HELP {
+     Text = "View this window" ;
+};
+String vID_STR_AXIS_SCALING_HEAD {
+     Text = " [" ;
+};
+String vID_STR_AXIS_SCALING_TAIL {
+     Text = "]" ;
+};
+String vID_STR_RATELAW_HEAD {
+     Text = "x [" ;
+};
+String vID_STR_RATELAW_TAIL {
+     Text = "]" ;
+};
+String vID_STR_DEFAULT_EXPONENT_TAIL {
+     Text = ".00" ;
+};
+String vID_STR_SPECIES_SELECTED {
+     Text = " Species selected";
+};
+String vID_STR_PLOT_PTS_AVAIL_TAIL {
+     Text = " available";
+};
+String vID_STR_PLOTGROUP {
+     Text = "Plot";
+};
+String vID_STR_EXT_DATA_FILE {
+     Text = "ExtData";
+};
+String vID_STR_EXT_DATA_FILE_TYPE {
+     Text = "ExtDataType";
+};
+String vID_STR_CONC_TIME {
+     Text =            "Conc / time";
+};
+String vID_STR_CONC_TEMP {
+     Text =            "Conc / temp";
+};
+String vID_STR_AMOUNT_TIME {
+     Text =            "Amount / time";
+};
+String vID_STR_AMOUNT_TEMP {
+     Text =            "Amount / temp";
+};
+String vID_STR_VOLUME_TIME {
+     Text =            "Volume / time";
+};
+String vID_STR_VOLUME_TEMP {
+     Text =            "Volume / temp";
+};
+String vID_STR_PRESS_TIME {
+     Text =            "Pressure / time";
+};
+String vID_STR_PRESS_TEMP {
+     Text =            "Pressure / temp";
+};
+String vID_STR_TEMP_TIME {
+     Text =            "Temp / time";
+};
+String vID_STR_AMOUNT_TEMP_2 {
+        Text = "Amount / t~emp";
+};
+String vID_STR_AMOUNT_TIME_2 {
+        Text = "Amount / t~ime";
+};
+String vID_STR_CONC_TEMP_2 {
+        Text = "Conc / t~emp";
+};
+String vID_STR_CONC_TIME_2 {
+        Text = "Conc / t~ime";
+};
+String vID_STR_NUM_PREV_SPECIES_NAMES {
+     Text = "PrevSpecCnt" ;
+};
+String vID_STR_PREV_SPECIES_NAME_STUB {
+     Text = "PrevSpec" ;
+};
+String vID_STR_NUM_PREV_COMPT_NAMES {
+     Text = "PrevComptCnt" ;
+};
+String vID_STR_PREV_COMPT_NAME_STUB {
+     Text = "PrevCompt" ;
+};
+String vID_STR_NO_EXT_DATA_FILE {
+     Text = "<no file selected>";
+};
+String vID_STR_MAX_PLOT_PTS_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_MAX_PLOT_PTS_INPUT_ERR2 {
+     Text = "] entered for the 'Data Points - Maximum number to plot' is"
+" out of range or does not represent a numeric value. This entry must be"
+" an integer value between 2 and 536870894. Please correct the error and repeat your last"
+" operation.";
+};
+
+String vID_STR_MAX_SHOW_PTS_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_MAX_SHOW_PTS_INPUT_ERR2 {
+     Text = "] entered for the 'Data Points - Maximum number to plot' is"
+" out of range or does not represent a numeric value. This entry must be"
+" an integer value between 2 and 536870894. Please correct the error and repeat your last"
+" operation.";
+};
+
+
+String XY_DATAFILE_ERR_MSG_HEADER {
+        Text = "The following errors occurred while processing data file \"";
+};
+
+String XY_DATAFILE_ERR_MSG1 {
+        Text = "\" :";
+};
+String XY_DATAFILE_ERR_MSG2 {
+        Text = "\n\n-  File does not exist.";
+};
+String XY_DATAFILE_ERR_MSG3 {
+        Text = "\n\n-  File could not be opened.";
+};
+String XY_DATAFILE_ERR_MSG4 {
+        Text = "\n\n-  File could not be accessed.";
+};
+String XY_DATAFILE_ERR_MSG5 {
+        Text = "\n\n-  File is too large (exceeds 32000 bytes).";
+};
+String XY_DATAFILE_ERR_MSG6 {
+        Text = "\n\n-  File could not be read.";
+};
+String XY_DATAFILE_ERR_MSG7 {
+        Text = "\n\n-  Memory allocation error.";
+};
+String XY_DATAFILE_ERR_MSG8 {
+        Text = "\n\n-  File could not be written.";
+};
+String XY_DATAFILE_ERR_MSG9 {
+        Text = "\n\n-  Illegal parameter in fcn call.";
+};
+String XY_DATAFILE_ERR_MSG10 {
+        Text = "\n\n-  File contains less than two valid X,Y data pairs.";
+};
+String XY_DATAFILE_ERR_MSG11 {
+        Text = "\n\n-  File contains a non-zero initial X value.";
+};
+String XY_DATAFILE_ERR_MSG12 {
+        Text = "\n\n-  File contains data not in valid numeric format.";
+};
+String XY_DATAFILE_ERR_MSG13 {
+        Text = "\n\n-  File contains data where the value of X is less than or equal to "
+"preceding values.";
+};
+String XY_DATAFILE_ERR_MSG14 {
+        Text = "\n\n-  File contains more than 8000 X,Y data pairs.";
+};
+String XY_DATAFILE_ERR_MSG15 {
+        Text = " The line(s) containing this error are marked with the symbol ";
+};
+String XY_DATAFILE_ERR_MSG16 {
+        Text = "\n\n- File contains data where the Y value is less than zero";
+};
+String XY_DATAFILE_ERR_MSG17 {
+        Text = "\n\n- File contains data where the Y value is equal to zero.";
+};
+String vID_STR_CONCENTRATION {
+        Text = "Conc ";
+};
+String vID_STR_AMOUNT {
+        Text = "Amount ";
+};
+String vID_STR_PRESSURE {
+        Text = "Press ";
+};
+String vID_STR_VOLUME {
+        Text = "Vol ";
+};
+String vID_STR_TEMPERATURE {
+        Text = "Temp ";
+};
+String vID_STR_TIME {
+        Text = "Time ";
+};
+String vID_STR_CLOSE_PLOT_MSG1 {
+        Text = "Are you sure you want to close the window titled\n \n'";
+};
+String vID_STR_CLOSE_PLOT_MSG2 {
+        Text = "'?";
+};
+String vID_STR_XYPLOTWIN_TITLE {
+        Text = " [x-y plot]";
+};
+String vID_STR_TEXTWIN_TITLE {
+        Text = " [text]";
+};
+String vID_STR_WATERFALLPLOTWIN_TITLE {
+        Text = " [cascade plot]";
+};
+String vID_STR_EDIT_AXIS_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_EDIT_AXIS_ERR2 {
+     Text = "] entered as the Minimum Value is out of range or dose not represent a numeric value";
+};
+String vID_STR_EDIT_AXIS_ERR3 {
+     Text = "] entered as the Maximum Value is out of range or dose not represent a numeric value";
+};
+String vID_STR_EDIT_AXIS_ERR4 {
+     Text = "] entered as the Tic Mark Interval is out of range or dose not represent a numeric value";
+};
+String vID_STR_EDIT_AXIS_ERR5 {
+     Text =  "The Maximum Value cannot be less than or equal to the Minimum Value";
+};
+String vID_STR_EDIT_AXIS_ERR6 {
+     Text = "The Tic Mark Interval must be greater than zero and cannot be greater than "
+"(Max Value-Min Value)";
+};
+String vID_STR_EDIT_AXIS_ERR7 {
+     Text = "The Tic Mark Interval is too small for the range of axis values you have specified. "
+"A maximum of 40 tic marks can be drawn. Adjust the Minimum and Maximum or the Tic Mark Interval.";
+};
+String vID_STR_COLOR_SCHEME_BLACK {
+     Text = "Black";
+};
+String vID_STR_COLOR_SCHEME_WHITE {
+     Text = "White";
+};
+String vID_STR_COLOR_SCHEME_GRAY {
+     Text = "Gray";
+};
+String vID_STR_COLOR_SCHEME_CYAN {
+     Text = "Cyan";
+};
+String vID_STR_SAVED_FONT_FAMILY {
+     Text = "FontFamily";
+};
+String vID_STR_FONT_FAMILY_MODERN {
+     Text = "Modern";
+};
+String vID_STR_FONT_FAMILY_SWISS {
+     Text = "Swiss";
+};
+String vID_STR_FONT_FAMILY_ROMAN {
+     Text = "Roman";
+};
+String vID_STR_SAVED_FONT_HEIGHT {
+     Text = "FontHeight";
+};
+String vID_STR_SAVED_COLOR_SCHEME {
+     Text = "ColorScheme";
+};
+
+
+
+
+String vID_STR_FILE_SEEK_ERROR_1 {
+     Text = "An error occurred while positioning in file ";
+};
+String vID_STR_FILE_SEEK_ERROR_2 {
+     Text = "";
+};
+
+String vID_STR_FILE_READ_ERROR_1 {
+     Text = "An error occurred while reading from file ";
+};
+String vID_STR_FILE_READ_ERROR_2 {
+     Text = "";
+};
+
+String vID_STR_FILE_WRITE_ERROR_1 {
+     Text = "An error occurred while writing to file ";
+};
+String vID_STR_FILE_WRITE_ERROR_2{
+     Text = "";
+};
+String vID_STR_ENGINE_FILENAME {
+     Text = "engine.exe";
+};
+String vID_STR_3D_ENGINE_FILENAME {
+     Text = "3dengine.exe";
+};
+String vID_STR_TITLE_SEPARATOR {
+     Text = " | ";
+};
+String vID_STR_VERSUS {
+     Text = " vs. ";
+};
+String vID_STR_PLOT_SCALE_HEAD {
+     Text = "Plot displayed at ";
+};
+
+String vID_STR_PLOT_SCALE_TAIL {
+     Text = "% of full scale";
+};
+
+String vID_STR_TABLE_SCALE_HEAD {
+     Text = "Table displayed at ";
+};
+
+String vID_STR_TABLE_SCALE_TAIL {
+     Text = "% of full scale";
+};
+
+String vID_STR_RESULTS_WIN_CLOSE1 {
+     Text = "You have created ";
+};
+String vID_STR_RESULTS_WIN_CLOSE2 {
+     Text = " window(s) displaying current simulation results of the file '";
+};
+String vID_STR_RESULTS_WIN_CLOSE3 {
+     Text = "'. The current operation will invalidate these results. "
+" Select OK to delete these windows and continue with the operation, or"
+" select Cancel to preserve these windows and end the operation.";
+};
+String vID_STR_FILESTATS_1 {
+      Text = "Full file name = ";
+};
+String vID_STR_FILESTATS_2 {
+     Text = "File size =  ";
+};
+
+String vID_STR_FILESTATS_3 {
+     Text = " bytes";
+};
+
+String vID_STR_FILESTATS_4 {
+     Text = "File last modified on ";
+};
+
+String vID_STR_FILESTATS_5 {
+     Text = " at ";
+};
+String vID_STR_FILESTATS_6 {
+     Text = "     - Reaction scheme definition uses ";
+};
+String vID_STR_FILESTATS_7 {
+     Text = " bytes";
+};
+String vID_STR_FILESTATS_8 {
+     Text = "     - Simulation results data use ";
+};
+String vID_STR_FILESTATS_9 {
+     Text = " bytes";
+};
+String vID_STR_FILESTATS_10 {
+     Text = "     - Simulation state data use ";
+};
+String vID_STR_FILESTATS_11 {
+     Text = " bytes";
+};
+String vID_STR_FILESTATS_12 {
+     Text = "     - There are no simulation data in this file";
+};
+String vID_STR_SCHEMESTATS_1 {
+     Text = "Scheme created on ";
+};
+String vID_STR_SCHEMESTATS_3 {
+     Text = "Scheme last modified on ";
+};
+String vID_STR_SCHEMESTATS_5 {
+     Text = "Notebook last modified on ";
+};
+String vID_STR_SCHEMESTATS_7 {
+     Text = "Number of compartments = ";
+};
+String vID_STR_SCHEMESTATS_8 {
+     Text = "Number of transfer paths = ";
+};
+String vID_STR_SCHEMESTATS_9 {
+     Text = "Total number of defined species = ";
+};
+String vID_STR_SIMULATIONSTATS_1 {
+     Text = "Last simulation started on ";
+};
+String vID_STR_SIMULATIONSTATS_3 {
+     Text = "Total simulation time since last modification = ";
+};
+String vID_STR_SIMULATIONSTATS_4 {
+     Text = "";
+};
+String vID_STR_SIMULATIONSTATS_5 {
+     Text = "Simulation time during last session = ";
+};
+String vID_STR_SIMULATIONSTATS_6 {
+     Text = "";
+};
+String vID_STR_SIMULATIONSTATS_7 {
+     Text = "Number of simulation data points = ";
+};
+String vID_STR_HOURS             {
+     Text = " hr, ";
+};
+String vID_STR_MINUTES           {
+     Text = " min, ";
+};
+String vID_STR_SECONDS           {
+     Text = " sec";
+};
+String vID_STR_FILESTATS_13 {
+     Text = "There is no file system data available for this file";
+};
+
+String vID_STR_INVALID_TIME_STAMP {
+     Text = "[Date and Time not available]";
+};
+String vID_STR_TIMESTAMP_SEP      {
+     Text = " at ";
+};
+String vID_STR_SCHEME_SIM_ABORT_1 {
+     Text = "This will abort the simulation of scheme '";
+};
+String vID_STR_SCHEME_SIM_ABORT_2 {
+     Text = "' that is now in progress. OK to continue?";
+};
+String vID_STR_SCHEME_TITLE_SUFFIX {
+     Text = " [scheme]";
+};
+String vID_STR_WATERFALL_DLG_TITLE {
+	Text = "Create a waterfall plot of multiple compartments";
+};
+
+
+String vID_STR_DEFAULT_X_LENGTH  { 
+     Text = "1.0"; 
+};
+String vID_STR_DEFAULT_Y_LENGTH { 
+     Text = "1.0"; 
+}; 
+String vID_STR_DEFAULT_Z_LENGTH { 
+     Text = "1.0"; 
+}; 
+String vID_STR_3D_STAT1_1 { 
+     Text = "This scheme will contain "; 
+}; 
+String vID_STR_3D_STAT1_2 { 
+     Text = " compartments and "; 
+}; 
+String vID_STR_3D_STAT1_3 { 
+     Text = " transfer paths"; 
+}; 
+String vID_STR_3D_STATX { 
+     Text = "X : "; 
+}; 
+String vID_STR_LENGTH_UNITS {
+     Text = " length units"; 
+}; 
+String vID_STR_3D_STATY { 
+     Text = "Y : "; 
+}; 
+String vID_STR_3D_STATZ { 
+     Text = "Z : "; 
+}; 
+
+String vID_STR_ARRAY_COMPT_ROW_PREFIX { 
+     Text = "R"; 
+}; 
+String vID_STR_ARRAY_COMPT_COL_PREFIX { 
+     Text = "C"; 
+}; 
+String vID_STR_ARRAY_XFERPATH_ROOT { 
+     Text = "T "; 
+}; 
+
+String vID_STR_CREATED { 
+     Text = "Created "; 
+}; 
+String vID_STR_CREATING { 
+     Text = "Creating "; 
+}; 
+String vID_STR_ALIGN_COMPTS { 
+     Text = "Aligning compartments"; 
+}; 
+String vID_STR_ALIGN_XFERPATHS { 
+     Text = "Aligning transfer paths"; 
+}; 
+String vID_STR_COMPARTMENTS { 
+     Text = " compartments"; 
+}; 
+String vID_STR_XFERPATHS { 
+     Text = " transfer paths"; 
+}; 
+
+String vID_STR_WRAPPED_XFERPATHS { 
+     Text = " wrapped transfer paths"; 
+}; 
+
+String vID_STR_PASTE_COMPT_TEXT { 
+     Text = "Paste Compt"; 
+}; 
+String vID_STR_PASTE_COMPT_TEXT_MENU { 
+     Text = "~Paste Compartment"; 
+}; 
+String vID_STR_PASTE_COMPT_HELPTEXT { 
+     Text = "Paste the Compartment currently on the clipboard into the scheme"; 
+}; 
+String vID_STR_PASTE_XFER_TEXT { 
+     Text = "Paste Xfer"; 
+}; 
+String vID_STR_PASTE_XFER_TEXT_MENU { 
+     Text = "Paste Transfer Path"; 
+}; 
+String vID_STR_PASTE_XFER_HELPTEXT { 
+     Text = "Paste the Transfer Path currently on the clipboard into the scheme"; 
+}; 
+
+String vID_STR_PASTE_TEXT { 
+     Text = "Paste"; 
+}; 
+String vID_STR_PASTE_TEXT_MENU { 
+     Text = "Paste"; 
+}; 
+String vID_STR_PASTE_HELPTEXT { 
+     Text = "Paste the clipboard contents into the scheme"; 
+}; 
+
+String vID_STR_FILL_COMPT_TEXT { 
+     Text = "Fill Compts"; 
+}; 
+String vID_STR_FILL_COMPT_TEXT_MENU { 
+     Text = "Fill Compartments"; 
+}; 
+String vID_STR_FILL_COMPT_HELPTEXT { 
+     Text = "Fill the selected Compartments with the current clipboard contents"; 
+}; 
+String vID_STR_FILL_XFER_TEXT { 
+     Text = "Fill Xfers"; 
+}; 
+String vID_STR_FILL_XFER_TEXT_MENU { 
+     Text = "~Fill Transfer Paths"; 
+}; 
+String vID_STR_FILL_XFER_HELPTEXT { 
+     Text = "Fill the selected Transfer Paths with the current clipboard contents"; 
+}; 
+
+String  vID_STR_DIFFN_PATH_DLG_TITLE { 
+        Text = "Edit Diffusion Path";
+};
+String  vID_STR_DIFFN_PATH_DLG_PATH_NAME {
+        Text = "Name of Diffusion Path";
+};
+String  vID_STR_DIFFN_PATH_ADD_STEP_BTN { 
+        Text = "Set ~Diffusable";
+};
+String  vID_STR_DIFFN_PATH_XFER_LIST_LABEL { 
+        Text = "List of Diffusable Species";
+};
+
+String  vID_STR_DIFFN_STEP_DLG_TITLE { 
+        Text = "Diffusion Process Definition";
+};
+
+String  vID_STR_DIFFN_COEFF_FORM { 
+        Text = "Form of Diffusion Coefficient";
+};
+String  vID_STR_DIFFN_COEFF_VALUE { 
+        Text = "Values of Diffusion Coefficient";
+};
+String  vID_STR_DIFFN_COEFF_FWD { 
+        Text = "Forward Df";
+};
+String  vID_STR_DIFFN_COEFF_REV { 
+        Text = "Reverse Dr";
+};
+
+String vID_STR_FILE_FILTERNAME_ANY  { 
+        Text = "All Files";
+};
+String  vID_STR_FILE_EXTENSION_ANY { 
+        Text = "*";
+};
+String  vID_STR_FILE_FILTERTYPE_ANY { 
+        Text = "*";
+};
+String  vID_STR_FILE_FILTERNAME_RXN { 
+        Text = "Reaction Scheme Files";
+};
+String  vID_STR_FILE_EXTENSION_RXN { 
+        Text = "*.rxn";
+};
+String  vID_STR_FILE_FILTERTYPE_RXN { 
+        Text = "*.rxn";
+};
+String  vID_STR_FILE_FILTERNAME_TXT { 
+        Text = "Text Files";
+};
+String  vID_STR_FILE_EXTENSION_TXT { 
+        Text = "*.txt";
+};
+String  vID_STR_FILE_FILTERTYPE_TXT { 
+        Text = "*.txt";
+};
+
+String  vID_STR_FILE_FILTERNAME_RAT { 
+        Text = "Rate Constant Profile Files";
+};
+String  vID_STR_FILE_EXTENSION_RAT { 
+        Text = "*.rat";
+};
+String  vID_STR_FILE_FILTERTYPE_RAT { 
+        Text = "*.rat";
+};
+
+String  vID_STR_FILE_FILTERNAME_PRF { 
+        Text = "Temperature Profile Files";
+};
+String  vID_STR_FILE_EXTENSION_PRF { 
+        Text = "*.prf";
+};
+String  vID_STR_FILE_FILTERTYPE_PRF { 
+        Text = "*.prf";
+};
+
+String  vID_STR_RXN_FILE_PATH { 
+        Text = "DefRxnPath" ;
+};
+String  vID_STR_TXT_FILE_PATH { 
+        Text = "DefTxtPath";
+};
+String  vID_STR_TXT_TPROFILE_PATH { 
+        Text = "DefPrfPath";
+};
+String  vID_STR_TXT_RPROFILE_PATH { 
+        Text = "DefRatPath";
+};
+String  vID_STR_ANY_FILE_PATH { 
+        Text = "DefAnyPath";
+};
+String  vID_STR_DEFAULT_RXN_SUBDIR { 
+        Text = "reaction";
+};
+String  vID_STR_DEFAULT_TXT_SUBDIR { 
+        Text = "text";
+};
+String  vID_STR_DEFAULT_PRF_SUBDIR { 
+        Text = "tprofile";
+};
+String  vID_STR_DEFAULT_RAT_SUBDIR { 
+        Text = "rprofile";
+};
+String  vID_STR_DEFAULT_ANY_SUBDIR { 
+        Text = "";
+};
+String vID_STR_FILE_DLG_CB_STRING  {
+     Text = "~Retain Path";
+};
+
+
+String vID_STR_FILE_IN_MEMORY_1  {
+     Text = "The reaction scheme named ";
+};
+String vID_STR_FILE_IN_MEMORY_2  {
+     Text = " is already loaded";
+};
+
+String vID_STR_BALLOON_MODE {
+     Text = "BalloonMode";
+};
+String vID_STR_ON {
+     Text = "On";
+};
+String vID_STR_OFF {
+     Text = "Off";
+};
+
+
+String vID_STR_SHOW_BALLOON {
+            Text       = "Show Help ~Balloons";
+};
+String vID_STR_HIDE_BALLOON {
+            Text       = "Hide Help ~Balloons";
+};
+String vID_STR_SCHEME_HELP {
+            Text       = "Click on an object to Select, double-click to Edit";
+};
+
+String vID_STR_RESULTS_HDR1 {
+     Text = "Simulation data for file ";
+};
+String vID_STR_RESULTS_HDR2 {
+     Text = "This table was created on ";
+};
+String vID_STR_RESULTS_HDR3 {
+     Text = " at ";
+};
+String vID_STR_RESULTS_HDR4 {
+     Text = "using simulation data created on ";
+};
+String vID_STR_RESULTS_HDR5 {
+     Text = " at ";
+};
+String vID_STR_RESULTS_HDR6 {
+     Text = "";
+};
+String vID_STR_RESULTS_HDR7 {
+     Text = "";
+};
+String vID_STR_RESULTS_HDR8 {
+     Text = "";
+};
+
+String vID_STR_LEFT_BRACKET {
+     Text = "[";
+};
+String vID_STR_AMOUNT_UNITS_MOLE {
+     Text = "mole";
+};
+String vID_STR_RIGHT_BRACKET {
+     Text = "]";
+};
+String vID_STR_CONC_UNITS_MOLAR {
+     Text = "mole/l";
+};
+String vID_STR_TEMPERATURE_UNITS_DEGK {
+     Text = "deg K";
+};
+String vID_STR_VOLUME_UNITS_LITER {
+     Text = "liter";
+};
+String vID_STR_PRESSURE_UNITS_ATM {
+     Text = "atm";
+};
+String vID_STR_TIME_UNITS_SEC {
+     Text = "sec";
+};
+String vID_STR_DISTANCE_UNITS_CM {
+     Text = "cm";
+};
+String vID_STR_SYMBOL_DASH {
+     Text = "-";
+};
+String vID_STR_SYMBOL_SLASH {
+     Text = "/";
+};
+String vID_STR_SYMBOL_BLANK_SPACE {
+     Text = " ";
+};
+String vID_STR_SYMBOL_SQUARED {
+     Text = "2";
+};
+
+String vID_STR_PROCESSING_COMPT {
+     Text = "Formatting data from ";
+};
+
+String vID_STR_BUILDING_HEADER {
+     Text = "Building table header...";
+};
+String vID_STR_POINT {
+     Text = "Point";
+};
+String vID_STR_NUMBER {
+     Text = "Number";
+};
+
+String vID_STR_KILO {
+     Text = "k";
+};
+
+String vID_STR_ENERGY_UNITS_CAL {
+     Text = "cal";
+};
+String vID_STR_SYMBOL_EXPONENT_2 {
+     Text = "^2";
+};
+String vID_STR_SYMBOL_EXPONENT_3 {
+     Text = "^3";
+};
+String vID_STR_UNITS {
+     Text = "units"; 
+}; 
+
+String vID_STR_CREATE_3D_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_CREATE_3D_INPUT_ERR2 {
+     Text = "] entered for the Number of Cells in the " ;
+};
+String vID_STR_CREATE_3D_INPUT_ERR3 {
+     Text = " direction is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_CREATE_3D_INPUT_ERR4 {
+     Text = "The value [";
+};
+String vID_STR_CREATE_3D_INPUT_ERR5 {
+     Text = "] entered for the Array Dimensions in the " ;
+};
+String vID_STR_CREATE_3D_INPUT_ERR6 {
+     Text = " direction is out of range or does not represent a numeric value. Correct the error and repeat your last operation." ;
+};
+String vID_STR_SCHEME_SIM_RUNNING_1 {
+     Text = "A simulation of scheme ";
+};
+String vID_STR_SCHEME_SIM_RUNNING_2 {
+     Text = " is currently running. You must either interrupt or abort the simulation before closing this window";
+};
+String vID_STR_KEEP_WIN_DATA {
+     Text = "KeepWinData";
+};
+String vID_STR_CONFIRM_OVERWRITE {
+     Text = "ConfirmBeforeWrite";
+};
+String vID_STR_OVERWRITE_1 {
+     Text = "File \"";
+};
+String vID_STR_OVERWRITE_2 {
+     Text = "\" already exists -\nOK to replace it?\n";
+};
+String vID_STR_TPRO_1 {
+        Text = "The temperature profile data currently in memory has been modified - Do "
+"you want to save it to file \"";
+};
+String vID_STR_TPRO_2 {
+        Text = " \" before proceeding ?";
+};
+
+String vID_STR_RPRO_1 {
+        Text = "Time";
+};
+String vID_STR_RPRO_2 {
+        Text = "Rate constant";
+};
+String vID_STR_RPRO_3 {
+        Text = "Programmed Rate Constant vs. Time";
+};
+String vID_STR_RPRO_4 {
+        Text = "The rate constant profile data currently in memory has been modified - Do "
+"you want to save it to file \"";
+};
+String vID_STR_RPRO_5 {
+        Text = " \" before proceeding ?";
+};
+String vID_STR_PROGRATE_RB_LABEL {
+        Text = "Follow ~program in file : ";
+};
+String vID_STR_FILENAME_NONE_SELECTED {
+        Text = "<none selected>";
+};
+
+String vID_STR_MASS_XFER_DESCRIBE  {
+        Text = "  ( mass transfer,";
+};
+String vID_STR_STD_DIFFN_DESCRIBE  {
+        Text = "  ( standard diffusion,";
+};
+String vID_STR_VIRT_DIFFN_DESCRIBE {
+        Text = "  ( virtual diffusion,";
+};
+
+String vID_STR_DIR_SRC_TO_TRGT  {
+        Text = " source -> target )";
+};
+String vID_STR_DIR_REVERSIBLE  {
+        Text = " reversible )";
+};
+String vID_STR_DIR_TRGT_TO_SRC {
+        Text = " target -> source )";
+};
+String vID_STR_XFER_DESCRIBE_HEAD {
+        Text = "Species  ";
+};
+
+
+String vID_STR_CCD_INPUT_ERR1 {
+     Text = "The value [";
+};
+String vID_STR_CCD_INPUT_ERR2 {
+     Text = "] entered as the " ;
+};
+String vID_STR_CCD_INPUT_ERR3 {
+     Text = "dimension is out of range or does not represent a numeric value. The value must be greater than zero. Correct the error and repeat your last operation." ;
+};
+
+String vID_STR_CONC_FILENAME {
+     Text = "PrevConcFile";
+};
+
+String vID_STR_CGC_INPUT_ERR1 {
+     Text = "The selected filename \"";
+};
+String vID_STR_CGC_INPUT_ERR2 {
+     Text = "\" is invalid. Select another filename";
+};
+String vID_STR_CGC_INPUT_ERR3 {
+     Text = "The value [";
+};
+String vID_STR_CGC_INPUT_ERR4 {
+     Text = "] entered as the concentration is out of range or does not represent a numeric value. The value must be greater than zero. Correct the error and repeat "
+"your last operation.";
+};
+String vID_STR_CGC_INPUT_ERR5 {
+     Text = "An error occurred while reading concentration data from file \"";
+};
+String vID_STR_CGC_INPUT_ERR6 {
+     Text = "\". ";
+};
+String vID_STR_CGC_INPUT_ERR7 {
+     Text = ". The concentration values have not been changed."; 
+};
+String vID_STR_CGC_INPUT_ERR8 {
+     Text = "The file could not be opened" ;
+};
+String vID_STR_CGC_INPUT_ERR9 {
+     Text = "An I/O error occurred" ;
+};
+String vID_STR_CGC_INPUT_ERR10 {
+     Text = "An invalid or out-of-range numeric value was found";
+};
+String vID_STR_CGC_INPUT_ERR11 {
+     Text = "An unknown error has occurred";
+};
+String vID_STR_CGC_INPUT_ERR12 {
+     Text = "End-of-file was reached before all values were read";
+};
+String vID_STR_UPDATING_SPEC_DB{
+     Text = "Updating species database";
+};
+

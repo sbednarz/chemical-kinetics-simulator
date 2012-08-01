@@ -1,0 +1,16 @@
+/* StarView ressource header file */
+#define USER_PREFS_DLG 1575
+#define vID_RXN_FILE_DIR 1
+#define vID_TEXT_FILE_DIR 2
+#define vID_RPROG_FILE_DIR 4
+#define vID_TPROG_FILE_DIR 5
+#define vID_ANY_FILE_DIR 3
+#define vID_CB_SAVE_WINDOW_DATA 1
+#define vID_CB_CONFIRM_FILE_OVERWRITE 2
+#define vID_BTN_CLOSE 1
+#define vID_BTN_UNDO 1
+#define vID_BTN_DEFAULTS 2
+#define vID_BTN_HELP 1
+#define vID_RB_USE_CLIP_DIMS 1
+#define vID_RB_USE_TARGET_DIMS 2
+#define vID_RB_ALWAYS_ASK 3

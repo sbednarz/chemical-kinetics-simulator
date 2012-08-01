@@ -1,0 +1,15 @@
+/* StarView ressource header file */
+#define vID_DLG_CREATE_2D_ARRAY        4550
+#define vID_STEXT_HEIGHT_LENGTH_UNITS  2
+#define vID_STEXT_STATISTICS_2         7
+#define vID_CANCEL_BTN                 1
+#define vID_DEFAULTS_BTN               1
+#define vID_HELP_BTN                   1
+#define vID_EDIT_ARRAY_HEIGHT_NUMBER   4
+#define vID_EDIT_ARRAY_WIDTH_NUMBER    3
+#define vID_EDIT_ARRAY_WIDTH_LENGTH    2
+#define vID_EDIT_ARRAY_HEIGHT_LENGTH   1
+#define vID_OK_BTN                     1
+#define vID_STEXT_STATISTICS_1         8
+#define vID_STEXT_WIDTH_LENGTH_UNITS   4
+#define vID_WINDOW_SCHEMATIC           1

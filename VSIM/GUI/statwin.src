@@ -1,0 +1,39 @@
+/* StarView ressource file */
+#pragma CHARSET_IBMPC_437
+#include "statwin.hrc"
+WorkWindow vID_WIN_STATUS {
+	OutputSize = TRUE;
+	Border = TRUE;
+	Hide = TRUE;
+	SVLook = TRUE;
+	Pos = MAP_SYSFONT( 52, 39 );
+	Size = MAP_SYSFONT( 175, 30 );
+	FixedIcon vID_CLOCK_ICON {
+			Pos = MAP_SYSFONT( 10, 2 );
+			Size = MAP_SYSFONT( 15, 15 );
+			Fixed = Icon ,vID_CLOCK_ICON_1;
+		};
+	FixedText 1 {
+			Pos = MAP_SYSFONT( 5, 18 );
+			Size = MAP_SYSFONT( 38, 8 );
+			Text = "Please wait ...";
+			Left = TRUE;
+		};
+	FixedText vID_STEXT_CURRENT_OP {
+			BackgroundBrush = Brush  {
+				Style = BRUSH_25;
+				Transparent = TRUE;
+				BrushColor = Color  {
+					Predefine = COL_GRAY;
+				};
+			};
+			SVLook = TRUE;
+			Pos = MAP_SYSFONT( 50, 10 );
+			Size = MAP_SYSFONT( 120, 10 );
+			Text = "this is the status text";
+			Center = TRUE;
+		};
+};
+Icon vID_CLOCK_ICON_1 {
+	File = "clock1.ico";
+};
