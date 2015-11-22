@@ -1,0 +1,1 @@
+code for the Chemical Kinetics Simulator (CKS) program, externally distributed by IBM's Almaden Research Center. Also included is code for Visual Simulator, a descendant of CKS that provides for kinetic modeling of two- and three-dimensional systems that are not spatially homogenous in composition.
